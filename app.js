@@ -1,13 +1,24 @@
 const DATA_POINTS_URL = "data/points.json";
 const DATA_BOUNDARY_URL = "data/langsa.geojson";
 const LANGSA_CENTER = [4.476, 97.968];
+const LANGSA_LOCK_ZOOM = 13;
+const LANGSA_MAX_BOUNDS = L.latLngBounds(
+  [4.42, 97.91],
+  [4.53, 98.035]
+);
 
 const statusElement = document.querySelector("#load-status");
-const map = L.map("map").setView(LANGSA_CENTER, 12);
+const map = L.map("map", {
+  minZoom: LANGSA_LOCK_ZOOM,
+  maxBounds: LANGSA_MAX_BOUNDS,
+  maxBoundsViscosity: 1,
+  zoomSnap: 1,
+}).setView(LANGSA_CENTER, LANGSA_LOCK_ZOOM);
 
 const osmLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  noWrap: true,
 }).addTo(map);
 
 const familyLayer = L.layerGroup().addTo(map);
@@ -17,6 +28,20 @@ const markerOptions = {
   keluarga: { color: "#198754", fillColor: "#198754" },
   usaha: { color: "#cc7a00", fillColor: "#ffc107" },
 };
+
+
+function lockMapToLangsa(bounds) {
+  map.setMaxBounds(bounds);
+  map.setMinZoom(LANGSA_LOCK_ZOOM);
+
+  if (map.getZoom() < LANGSA_LOCK_ZOOM) {
+    map.setZoom(LANGSA_LOCK_ZOOM);
+  }
+
+  if (!bounds.contains(map.getCenter())) {
+    map.panInsideBounds(bounds, { animate: false });
+  }
+}
 
 function setStatus(message, isError = false) {
   statusElement.textContent = message;
@@ -42,21 +67,19 @@ function isValidPoint(point) {
   const type = normalizeType(point.type);
   return ["keluarga", "usaha"].includes(type)
     && Number.isFinite(point.lat)
-    && Number.isFinite(point.lng);
+    && Number.isFinite(point.lng)
+    && Boolean(point.id)
+    && Boolean(point.lapangan_usaha);
 }
 
 function createPopup(point) {
   const type = normalizeType(point.type);
-  const extra = type === "keluarga"
-    ? `<br><strong>Anggota:</strong> ${point.members ?? "-"}`
-    : `<br><strong>Sektor:</strong> ${point.sector ?? "-"}`;
 
   return `
-    <strong>${point.name ?? point.id}</strong><br>
-    <strong>ID:</strong> ${point.id ?? "-"}<br>
+    <strong>${point.id}</strong><br>
     <strong>Kategori:</strong> ${type}<br>
-    <strong>Kecamatan/Gampong:</strong> ${point.district ?? "-"}
-    ${extra}
+    <strong>Koordinat:</strong> ${point.lat}, ${point.lng}<br>
+    <strong>Lapangan usaha:</strong> ${point.lapangan_usaha ?? "-"}
   `;
 }
 
@@ -118,8 +141,18 @@ async function loadDashboard() {
     }
 
     if (combinedBounds.isValid()) {
-      map.fitBounds(combinedBounds, { padding: [30, 30] });
+      map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: LANGSA_LOCK_ZOOM });
     }
+
+    lockMapToLangsa(LANGSA_MAX_BOUNDS);
+
+    map.on("drag", () => {
+      map.panInsideBounds(LANGSA_MAX_BOUNDS, { animate: false });
+    });
+
+    map.on("zoomend", () => {
+      lockMapToLangsa(LANGSA_MAX_BOUNDS);
+    });
 
     L.control.layers(
       { OpenStreetMap: osmLayer },
@@ -131,6 +164,7 @@ async function loadDashboard() {
       { collapsed: false }
     ).addTo(map);
 
+    setStatus(`Berhasil memuat ${pointBounds.length} titik valid dari ${DATA_POINTS_URL}. Zoom-out dikunci pada level Kota Langsa; gunakan zoom-in untuk melihat detail.`);
     setStatus(`Berhasil memuat ${points.length} baris data dari ${DATA_POINTS_URL}.`);
   } catch (error) {
     setStatus(`${error.message}. Jalankan melalui server statis, bukan langsung dari file HTML.`, true);
