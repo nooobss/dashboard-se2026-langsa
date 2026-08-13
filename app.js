@@ -165,6 +165,7 @@ async function loadDashboard() {
     ).addTo(map);
 
     setStatus(`Berhasil memuat ${pointBounds.length} titik valid dari ${DATA_POINTS_URL}. Zoom-out dikunci pada level Kota Langsa; gunakan zoom-in untuk melihat detail.`);
+    setStatus(`Berhasil memuat ${points.length} baris data dari ${DATA_POINTS_URL}.`);
   } catch (error) {
     setStatus(`${error.message}. Jalankan melalui server statis, bukan langsung dari file HTML.`, true);
   }
