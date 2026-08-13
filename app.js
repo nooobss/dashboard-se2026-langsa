@@ -1,18 +1,9 @@
 const DATA_POINTS_URL = "data/points.json";
 const DATA_BOUNDARY_URL = "data/langsa.geojson";
 const LANGSA_CENTER = [4.476, 97.968];
-const LANGSA_MIN_ZOOM = 12;
-const LANGSA_MAX_BOUNDS = L.latLngBounds(
-  [4.415, 97.9],
-  [4.535, 98.045]
-);
 
 const statusElement = document.querySelector("#load-status");
-const map = L.map("map", {
-  minZoom: LANGSA_MIN_ZOOM,
-  maxBounds: LANGSA_MAX_BOUNDS,
-  maxBoundsViscosity: 1,
-}).setView(LANGSA_CENTER, LANGSA_MIN_ZOOM);
+const map = L.map("map").setView(LANGSA_CENTER, 12);
 
 const osmLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
@@ -51,19 +42,21 @@ function isValidPoint(point) {
   const type = normalizeType(point.type);
   return ["keluarga", "usaha"].includes(type)
     && Number.isFinite(point.lat)
-    && Number.isFinite(point.lng)
-    && Boolean(point.id)
-    && Boolean(point.lapangan_usaha);
+    && Number.isFinite(point.lng);
 }
 
 function createPopup(point) {
   const type = normalizeType(point.type);
+  const extra = type === "keluarga"
+    ? `<br><strong>Anggota:</strong> ${point.members ?? "-"}`
+    : `<br><strong>Sektor:</strong> ${point.sector ?? "-"}`;
 
   return `
-    <strong>${point.id}</strong><br>
+    <strong>${point.name ?? point.id}</strong><br>
+    <strong>ID:</strong> ${point.id ?? "-"}<br>
     <strong>Kategori:</strong> ${type}<br>
-    <strong>Koordinat:</strong> ${point.lat}, ${point.lng}<br>
-    <strong>Lapangan usaha:</strong> ${point.lapangan_usaha ?? "-"}
+    <strong>Kecamatan/Gampong:</strong> ${point.district ?? "-"}
+    ${extra}
   `;
 }
 
@@ -125,8 +118,7 @@ async function loadDashboard() {
     }
 
     if (combinedBounds.isValid()) {
-      map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: LANGSA_MIN_ZOOM });
-      map.setMinZoom(map.getZoom());
+      map.fitBounds(combinedBounds, { padding: [30, 30] });
     }
 
     L.control.layers(
@@ -139,7 +131,7 @@ async function loadDashboard() {
       { collapsed: false }
     ).addTo(map);
 
-    setStatus(`Berhasil memuat ${pointBounds.length} titik valid dari ${DATA_POINTS_URL}. Zoom-out dikunci pada area Kota Langsa.`);
+    setStatus(`Berhasil memuat ${points.length} baris data dari ${DATA_POINTS_URL}.`);
   } catch (error) {
     setStatus(`${error.message}. Jalankan melalui server statis, bukan langsung dari file HTML.`, true);
   }
