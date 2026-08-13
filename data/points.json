@@ -1,0 +1,10 @@
+[
+  { "id": "K-001", "type": "keluarga", "name": "Keluarga Gampong Jawa", "district": "Langsa Kota", "lat": 4.4752, "lng": 97.9684, "members": 5 },
+  { "id": "K-002", "type": "keluarga", "name": "Keluarga Alue Beurawe", "district": "Langsa Kota", "lat": 4.4717, "lng": 97.9568, "members": 4 },
+  { "id": "K-003", "type": "keluarga", "name": "Keluarga Matang Seulimeng", "district": "Langsa Barat", "lat": 4.4668, "lng": 97.9405, "members": 6 },
+  { "id": "K-004", "type": "keluarga", "name": "Keluarga Paya Bujok", "district": "Langsa Baro", "lat": 4.4911, "lng": 97.9591, "members": 3 },
+  { "id": "U-001", "type": "usaha", "name": "Warung Kopi Pusat Kota", "district": "Langsa Kota", "lat": 4.4794, "lng": 97.9635, "sector": "Kuliner" },
+  { "id": "U-002", "type": "usaha", "name": "Toko Kelontong Seuriget", "district": "Langsa Barat", "lat": 4.4629, "lng": 97.9512, "sector": "Perdagangan" },
+  { "id": "U-003", "type": "usaha", "name": "Bengkel Langsa Timur", "district": "Langsa Timur", "lat": 4.4818, "lng": 98.0006, "sector": "Jasa" },
+  { "id": "U-004", "type": "usaha", "name": "UMKM Kerajinan Baro", "district": "Langsa Baro", "lat": 4.5035, "lng": 97.9519, "sector": "Kerajinan" }
+]
