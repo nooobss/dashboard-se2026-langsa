@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Kota Langsa", "province": "Aceh", "note": "Batas indikatif untuk prototipe dashboard" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [97.905, 4.435], [97.945, 4.415], [98.020, 4.430], [98.045, 4.485],
+          [98.010, 4.535], [97.935, 4.535], [97.900, 4.490], [97.905, 4.435]
+        ]]
+      }
+    }
+  ]
+}
