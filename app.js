@@ -18,7 +18,9 @@ const KECAMATAN_COLORS = {
   "Langsa Timur": { stroke: "#d97706", fill: "#fbbf24" }
 };
 
-const statusElement = document.querySelector("#load-status");
+const statusContainer = document.querySelector("#load-status");
+const statusTextElement = document.querySelector("#load-status-text");
+const statusSpinner = document.querySelector("#load-spinner");
 const familyCountElement = document.querySelector("#family-count");
 const businessCountElement = document.querySelector("#business-count");
 const totalPointsElement = document.querySelector("#total-points");
@@ -32,6 +34,11 @@ const map = L.map("map", {
   maxBoundsViscosity: 0.8,
   zoomSnap: 1,
 }).setView(LANGSA_CENTER, 12);
+
+// By default, disable interactive map dragging/zoom to allow page scrolling/viewport panning.
+if (map.dragging) map.dragging.disable();
+if (map.scrollWheelZoom) map.scrollWheelZoom.disable();
+if (map.touchZoom) map.touchZoom.disable();
 
 // Standard OpenStreetMap Layer
 const osmLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -47,8 +54,11 @@ const darkLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x
   noWrap: true,
 });
 
-const familyLayer = L.layerGroup().addTo(map);
-const businessLayer = L.layerGroup().addTo(map);
+// Use marker clustering for better performance with many points
+const familyLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true }) : L.layerGroup();
+const businessLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true }) : L.layerGroup();
+familyLayer.addTo(map);
+businessLayer.addTo(map);
 
 let kotaBoundaryLayer = null;
 let kecamatanBoundaryLayer = null;
@@ -77,10 +87,15 @@ if (mapContainer && typeof ResizeObserver !== "undefined") {
 
 window.addEventListener("resize", refreshMapSize);
 
-function setStatus(message, isError = false) {
-  statusElement.textContent = message;
-  statusElement.classList.toggle("text-danger", isError);
-  statusElement.classList.toggle("text-secondary", !isError);
+function setStatus(message, isError = false, showSpinner = false) {
+  if (statusTextElement) statusTextElement.textContent = message;
+  if (statusContainer) {
+    statusContainer.classList.toggle("text-danger", isError);
+    statusContainer.classList.toggle("text-secondary", !isError);
+  }
+  if (statusSpinner) {
+    statusSpinner.style.display = showSpinner ? "inline-block" : "none";
+  }
 }
 
 async function fetchJson(url) {
@@ -169,15 +184,20 @@ function renderPoints(points) {
     counts[point.type] += 1;
     pointBounds.push([point.lat, point.lng]);
 
-    L.circleMarker([point.lat, point.lng], {
+    const marker = L.circleMarker([point.lat, point.lng], {
       ...markerOptions[point.type],
       radius: 8,
       weight: 2,
       opacity: 1,
       fillOpacity: 0.85,
-    })
-      .bindPopup(createPopup(point), { className: "custom-popup" })
-      .addTo(layer);
+    }).bindPopup(createPopup(point), { className: "custom-popup" });
+
+    // Add to cluster / layer group
+    if (layer && layer.addLayer) {
+      layer.addLayer(marker);
+    } else {
+      marker.addTo(map);
+    }
   });
 
   familyCountElement.textContent = counts.keluarga;
@@ -189,6 +209,7 @@ function renderPoints(points) {
 
 async function loadDashboard() {
   try {
+    setStatus("Memuat data peta dan titik...", false, true);
     const [kotaGeojson, kecamatanGeojson, points] = await Promise.all([
       fetchJson(DATA_KOTA_BOUNDARY_URL),
       fetchJson(DATA_KECAMATAN_BOUNDARY_URL),
@@ -287,8 +308,8 @@ async function loadDashboard() {
     const overlayLayers = {
       "<span style='color: #dc3545; font-weight: 600;'>Batas Kota Langsa</span>": kotaBoundaryLayer,
       "<span style='color: #0284c7; font-weight: 600;'>Batas Kecamatan</span>": kecamatanBoundaryLayer,
-      "Titik Keluarga": familyLayer,
-      "Titik Usaha": businessLayer,
+      "Titik Keluarga (Cluster)": familyLayer,
+      "Titik Usaha (Cluster)": businessLayer,
     };
 
     L.control.layers(baseLayers, overlayLayers, { collapsed: false }).addTo(map);
@@ -303,6 +324,8 @@ async function loadDashboard() {
         const btn = L.DomUtil.create("button", "leaflet-control-reset");
         btn.type = "button";
         btn.title = "Kembalikan tampilan fokus Kota Langsa";
+        btn.setAttribute('aria-label', 'Reset Fokus Kota Langsa');
+        btn.setAttribute('tabindex', '0');
         btn.innerHTML = `<i class="bi bi-compass"></i><span>Reset Fokus</span>`;
         btn.onclick = function (e) {
           e.stopPropagation();
@@ -310,18 +333,63 @@ async function loadDashboard() {
             map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: 14 });
           }
         };
+
+        // Keyboard support: Enter or Space triggers the button
+        btn.addEventListener('keydown', function (ev) {
+          if (ev.key === 'Enter' || ev.key === ' ') {
+            ev.preventDefault();
+            btn.click();
+          }
+        });
         return btn;
       },
     });
     map.addControl(new ResetControl());
 
+    // Add a custom interaction toggle control (top-left)
+    const InteractionControl = L.Control.extend({
+      options: { position: 'topleft' },
+      onAdd: function () {
+        const btn = L.DomUtil.create('button', 'leaflet-control-interaction');
+        btn.type = 'button';
+        btn.setAttribute('aria-pressed', 'false');
+        btn.title = 'Aktifkan interaksi peta (klik untuk toggle)';
+        btn.innerHTML = 'Aktifkan Interaksi';
+
+        btn.onclick = function (e) {
+          e.stopPropagation();
+          const pressed = btn.getAttribute('aria-pressed') === 'true';
+          if (pressed) {
+            // disable interactions
+            if (map.dragging) map.dragging.disable();
+            if (map.scrollWheelZoom) map.scrollWheelZoom.disable();
+            if (map.touchZoom) map.touchZoom.disable();
+            btn.setAttribute('aria-pressed', 'false');
+            btn.innerHTML = 'Aktifkan Interaksi';
+          } else {
+            // enable interactions
+            if (map.dragging) map.dragging.enable();
+            if (map.scrollWheelZoom) map.scrollWheelZoom.enable();
+            if (map.touchZoom) map.touchZoom.enable();
+            btn.setAttribute('aria-pressed', 'true');
+            btn.innerHTML = 'Nonaktifkan Interaksi';
+          }
+        };
+
+        // Prevent map dragging when interacting with the control
+        L.DomEvent.disableClickPropagation(btn);
+        return btn;
+      }
+    });
+    map.addControl(new InteractionControl());
+
     refreshMapSize();
     setTimeout(refreshMapSize, 200);
     setTimeout(refreshMapSize, 600);
 
-    setStatus(`Berhasil memuat ${pointBounds.length} titik sebaran dan batas wilayah Kota Langsa & 5 Kecamatan.`);
+    setStatus(`Berhasil memuat ${pointBounds.length} titik sebaran dan batas wilayah Kota Langsa & 5 Kecamatan.`, false, false);
   } catch (error) {
-    setStatus(`${error.message}. Gagal memuat data peta.`, true);
+    setStatus(`${error.message}. Gagal memuat data peta.`, true, false);
   }
 }
 

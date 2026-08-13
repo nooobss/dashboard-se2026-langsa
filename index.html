@@ -4,16 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dashboard Peta Kota Langsa</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9Oer+R4a2F5Nf3WOHAt1M18H87w6hWELQnqA2bdc7xY"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="styles.css?v=3" />
   </head>
@@ -75,14 +72,14 @@
                 </span>
                 
                 <div class="form-check form-switch mb-0">
-                  <input class="form-check-input shadow-none custom-switch-kota" type="checkbox" id="toggle-kota" checked role="switch">
+                  <input class="form-check-input shadow-none custom-switch-kota" type="checkbox" id="toggle-kota" checked role="switch" aria-label="Toggle Batas Kota">
                   <label class="form-check-label small fw-semibold user-select-none" for="toggle-kota">
                     <span class="legend-line border-kota"></span> Batas Kota
                   </label>
                 </div>
                 
                 <div class="form-check form-switch mb-0">
-                  <input class="form-check-input shadow-none custom-switch-kecamatan" type="checkbox" id="toggle-kecamatan" checked role="switch">
+                  <input class="form-check-input shadow-none custom-switch-kecamatan" type="checkbox" id="toggle-kecamatan" checked role="switch" aria-label="Toggle Batas Kecamatan">
                   <label class="form-check-label small fw-semibold user-select-none" for="toggle-kecamatan">
                     <span class="legend-line border-kecamatan"></span> Batas Kecamatan
                   </label>
@@ -100,31 +97,36 @@
           <!-- Kecamatan Color Palette Bar -->
           <div id="kecamatan-legend-bar" class="mt-3 pt-2 border-top d-flex flex-wrap align-items-center gap-2 small">
             <span class="fw-bold text-secondary text-uppercase small me-1" style="font-size: 0.75rem;"><i class="bi bi-geo-alt me-1"></i>Kecamatan:</span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(2, 132, 199, 0.15); color: #0284c7; border: 1px solid #0284c7;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(2, 132, 199, 0.15); color: #000; border: 1px solid #0284c7;">
               <i class="bi bi-square-fill me-1" style="color: #0284c7;"></i>Langsa Barat
             </span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(124, 58, 237, 0.15); color: #7c3aed; border: 1px solid #7c3aed;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(124, 58, 237, 0.15); color: #000; border: 1px solid #7c3aed;">
               <i class="bi bi-square-fill me-1" style="color: #7c3aed;"></i>Langsa Baro
             </span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(219, 39, 119, 0.15); color: #db2777; border: 1px solid #db2777;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(219, 39, 119, 0.15); color: #000; border: 1px solid #db2777;">
               <i class="bi bi-square-fill me-1" style="color: #db2777;"></i>Langsa Kota
             </span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(5, 150, 105, 0.15); color: #059669; border: 1px solid #059669;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(5, 150, 105, 0.15); color: #000; border: 1px solid #059669;">
               <i class="bi bi-square-fill me-1" style="color: #059669;"></i>Langsa Lama
             </span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(217, 119, 6, 0.15); color: #d97706; border: 1px solid #d97706;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(217, 119, 6, 0.15); color: #000; border: 1px solid #d97706;">
               <i class="bi bi-square-fill me-1" style="color: #d97706;"></i>Langsa Timur
             </span>
+
           </div>
         </div>
         <div class="map-frame">
           <div id="map" aria-label="Peta interaktif Kota Langsa"></div>
         </div>
-        <div id="load-status" class="card-footer small text-secondary">Memuat data peta dan mengunci tampilan pada Kota Langsa...</div>
+        <div id="load-status" class="card-footer small text-secondary d-flex align-items-center gap-2">
+          <div id="load-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></div>
+          <div id="load-status-text">Memuat data peta dan mengunci tampilan pada Kota Langsa...</div>
+        </div>
       </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
     <script src="app.js?v=3"></script>
   </body>
 </html>
