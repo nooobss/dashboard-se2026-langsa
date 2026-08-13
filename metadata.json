@@ -1,0 +1,6 @@
+{
+  "name": "Dashboard Peta Kota Langsa",
+  "description": "Dashboard peta interaktif Kota Langsa sebaran keluarga dan usaha",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "dashboard-se2026-langsa",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'No build required'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.4.0",
+    "express": "^4.19.2"
+  }
+}
