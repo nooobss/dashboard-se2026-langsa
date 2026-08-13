@@ -27,6 +27,10 @@ const totalPointsElement = document.querySelector("#total-points");
 const toggleKotaCheckbox = document.querySelector("#toggle-kota");
 const toggleKecamatanCheckbox = document.querySelector("#toggle-kecamatan");
 const kecamatanLegendBar = document.querySelector("#kecamatan-legend-bar");
+const bizFilterMenu = document.querySelector('#biz-filter-menu');
+const bizFilterOptions = document.querySelector('#biz-filter-options');
+const bizFilterSearch = document.querySelector('#biz-filter-search');
+const bizFilterClearBtn = document.querySelector('#biz-filter-clear');
 
 const map = L.map("map", {
   minZoom: LANGSA_MIN_ZOOM,
@@ -280,15 +284,29 @@ async function loadDashboard() {
             if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
               target.bringToFront();
             }
+            // Open tooltip and auto-close after 3 seconds
+            try {
+              layer.openTooltip();
+            } catch (err) {}
+            if (layer._tooltipTimeout) clearTimeout(layer._tooltipTimeout);
+            layer._tooltipTimeout = setTimeout(() => {
+              try { layer.closeTooltip(); } catch (err) {}
+            }, 3000);
           },
           mouseout: (e) => {
             kecamatanBoundaryLayer.resetStyle(e.target);
+            if (e.target && e.target._tooltipTimeout) {
+              clearTimeout(e.target._tooltipTimeout);
+              e.target._tooltipTimeout = null;
+            }
           },
         });
       },
     }).addTo(map);
 
-    const pointBounds = renderPoints(points);
+    // Normalize points once for filtering and rendering
+    const normalizedPoints = points.map(normalizePoint).filter(Boolean);
+    const pointBounds = renderPoints(normalizedPoints);
     combinedBounds = L.latLngBounds(pointBounds);
 
     if (kotaBoundaryLayer.getBounds().isValid()) {
@@ -345,6 +363,22 @@ async function loadDashboard() {
       },
     });
     map.addControl(new ResetControl());
+    // Auto-close popups after 3 seconds when opened
+    map.on('popupopen', (e) => {
+      const popup = e.popup;
+      if (popup && !popup._autoCloseTimer) {
+        popup._autoCloseTimer = setTimeout(() => {
+          try { map.closePopup(popup); } catch (err) {}
+        }, 3000);
+      }
+    });
+    map.on('popupclose', (e) => {
+      const popup = e.popup;
+      if (popup && popup._autoCloseTimer) {
+        clearTimeout(popup._autoCloseTimer);
+        popup._autoCloseTimer = null;
+      }
+    });
 
     // Add a custom interaction toggle control (top-left)
     const InteractionControl = L.Control.extend({
@@ -388,6 +422,57 @@ async function loadDashboard() {
     setTimeout(refreshMapSize, 600);
 
     setStatus(`Berhasil memuat ${pointBounds.length} titik sebaran dan batas wilayah Kota Langsa & 5 Kecamatan.`, false, false);
+    // Build compact dropdown multi-select for business fields
+    try {
+      if (bizFilterOptions) {
+        bizFilterOptions.innerHTML = '';
+        const fields = Array.from(new Set(normalizedPoints.map(p => p.lapangan_usaha))).sort();
+        fields.forEach((f, i) => {
+          const id = `biz-filter-${i}`;
+          const item = document.createElement('div');
+          item.className = 'form-check';
+          item.innerHTML = `<input class="form-check-input biz-filter" type="checkbox" id="${id}" data-value="${f}">
+            <label class="form-check-label" for="${id}">${f}</label>`;
+          bizFilterOptions.appendChild(item);
+        });
+
+        // Filter change
+        bizFilterOptions.addEventListener('change', () => {
+          const checked = Array.from(bizFilterOptions.querySelectorAll('input.biz-filter:checked')).map(i => i.dataset.value || i.value);
+          const selected = new Set(checked);
+          const filtered = normalizedPoints.filter(p => selected.size === 0 || selected.has(p.lapangan_usaha));
+          const bounds = filtered.length ? L.latLngBounds(filtered.map(p => [p.lat, p.lng])) : null;
+          renderPoints(filtered);
+          if (bounds && bounds.isValid()) {
+            map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
+          } else if (combinedBounds && combinedBounds.isValid()) {
+            map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: 14 });
+          }
+        });
+
+        // Search inside dropdown
+        if (bizFilterSearch) {
+          bizFilterSearch.addEventListener('input', (e) => {
+            const q = (e.target.value || '').toLowerCase().trim();
+            Array.from(bizFilterOptions.children).forEach(item => {
+              const label = item.textContent || '';
+              item.style.display = q && !label.toLowerCase().includes(q) ? 'none' : '';
+            });
+          });
+        }
+
+        // Clear button
+        if (bizFilterClearBtn) {
+          bizFilterClearBtn.addEventListener('click', () => {
+            Array.from(bizFilterOptions.querySelectorAll('input.biz-filter')).forEach(i => i.checked = false);
+            renderPoints(normalizedPoints);
+            if (combinedBounds && combinedBounds.isValid()) map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: 14 });
+          });
+        }
+      }
+    } catch (err) {
+      console.warn('Filter UI build failed', err);
+    }
   } catch (error) {
     setStatus(`${error.message}. Gagal memuat data peta.`, true, false);
   }

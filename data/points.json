@@ -125,4 +125,355 @@
     "lng": 98.005,
     "lapangan_usaha": "Perdagangan Hasil Tani"
   }
+  ,
+  {
+    "id": "KEL-011",
+    "type": "keluarga",
+    "lat": 4.470,
+    "lng": 97.969,
+    "lapangan_usaha": "Peternakan"
+  },
+  {
+    "id": "KEL-012",
+    "type": "keluarga",
+    "lat": 4.481,
+    "lng": 97.972,
+    "lapangan_usaha": "Perdagangan Kecil"
+  },
+  {
+    "id": "KEL-013",
+    "type": "keluarga",
+    "lat": 4.466,
+    "lng": 97.958,
+    "lapangan_usaha": "Jasa Pendidikan"
+  },
+  {
+    "id": "KEL-014",
+    "type": "keluarga",
+    "lat": 4.4765,
+    "lng": 97.982,
+    "lapangan_usaha": "Pelayanan Kesehatan"
+  },
+  {
+    "id": "KEL-015",
+    "type": "keluarga",
+    "lat": 4.489,
+    "lng": 97.966,
+    "lapangan_usaha": "Perikanan"
+  },
+  {
+    "id": "KEL-016",
+    "type": "keluarga",
+    "lat": 4.458,
+    "lng": 97.975,
+    "lapangan_usaha": "Pertanian"
+  },
+  {
+    "id": "KEL-017",
+    "type": "keluarga",
+    "lat": 4.472,
+    "lng": 97.955,
+    "lapangan_usaha": "Jasa Transportasi"
+  },
+  {
+    "id": "KEL-018",
+    "type": "keluarga",
+    "lat": 4.484,
+    "lng": 98.002,
+    "lapangan_usaha": "Perdagangan"
+  },
+  {
+    "id": "KEL-019",
+    "type": "keluarga",
+    "lat": 4.4695,
+    "lng": 97.948,
+    "lapangan_usaha": "Industri Rumah Tangga"
+  },
+  {
+    "id": "KEL-020",
+    "type": "keluarga",
+    "lat": 4.477,
+    "lng": 97.990,
+    "lapangan_usaha": "Jasa Perbankan"
+  },
+  {
+    "id": "KEL-021",
+    "type": "keluarga",
+    "lat": 4.463,
+    "lng": 97.961,
+    "lapangan_usaha": "Pertanian & Perkebunan"
+  },
+  {
+    "id": "KEL-022",
+    "type": "keluarga",
+    "lat": 4.490,
+    "lng": 97.979,
+    "lapangan_usaha": "Perikanan Budidaya"
+  },
+  {
+    "id": "KEL-023",
+    "type": "keluarga",
+    "lat": 4.455,
+    "lng": 97.971,
+    "lapangan_usaha": "Jasa Konstruksi"
+  },
+  {
+    "id": "KEL-024",
+    "type": "keluarga",
+    "lat": 4.479,
+    "lng": 97.954,
+    "lapangan_usaha": "Perdagangan Grosir"
+  },
+  {
+    "id": "KEL-025",
+    "type": "keluarga",
+    "lat": 4.468,
+    "lng": 98.008,
+    "lapangan_usaha": "Layanan IT"
+  },
+  {
+    "id": "KEL-026",
+    "type": "keluarga",
+    "lat": 4.486,
+    "lng": 97.957,
+    "lapangan_usaha": "Industri Pengolahan"
+  },
+  {
+    "id": "KEL-027",
+    "type": "keluarga",
+    "lat": 4.461,
+    "lng": 97.989,
+    "lapangan_usaha": "Usaha Mikro"
+  },
+  {
+    "id": "KEL-028",
+    "type": "keluarga",
+    "lat": 4.474,
+    "lng": 97.952,
+    "lapangan_usaha": "Jasa Kebersihan"
+  },
+  {
+    "id": "KEL-029",
+    "type": "keluarga",
+    "lat": 4.483,
+    "lng": 97.967,
+    "lapangan_usaha": "PNS / Pegawai Negeri"
+  },
+  {
+    "id": "KEL-030",
+    "type": "keluarga",
+    "lat": 4.4705,
+    "lng": 97.983,
+    "lapangan_usaha": "Pedagang Kaki Lima"
+  },
+  {
+    "id": "KEL-031",
+    "type": "keluarga",
+    "lat": 4.465,
+    "lng": 97.953,
+    "lapangan_usaha": "Perikanan"
+  },
+  {
+    "id": "KEL-032",
+    "type": "keluarga",
+    "lat": 4.487,
+    "lng": 97.970,
+    "lapangan_usaha": "Jasa Pendidikan"
+  },
+  {
+    "id": "KEL-033",
+    "type": "keluarga",
+    "lat": 4.4595,
+    "lng": 97.9665,
+    "lapangan_usaha": "Pertanian"
+  },
+  {
+    "id": "KEL-034",
+    "type": "keluarga",
+    "lat": 4.478,
+    "lng": 97.974,
+    "lapangan_usaha": "Perdagangan"
+  },
+  {
+    "id": "KEL-035",
+    "type": "keluarga",
+    "lat": 4.4712,
+    "lng": 97.9598,
+    "lapangan_usaha": "Industri Rumah Tangga"
+  },
+  {
+    "id": "KEL-036",
+    "type": "keluarga",
+    "lat": 4.492,
+    "lng": 97.962,
+    "lapangan_usaha": "Jasa Kesehatan"
+  },
+  {
+    "id": "KEL-037",
+    "type": "keluarga",
+    "lat": 4.464,
+    "lng": 98.012,
+    "lapangan_usaha": "Perdagangan"
+  },
+  {
+    "id": "KEL-038",
+    "type": "keluarga",
+    "lat": 4.4758,
+    "lng": 97.950,
+    "lapangan_usaha": "Jasa Transportasi"
+  },
+  {
+    "id": "KEL-039",
+    "type": "keluarga",
+    "lat": 4.4825,
+    "lng": 97.988,
+    "lapangan_usaha": "Perikanan"
+  },
+  {
+    "id": "KEL-040",
+    "type": "keluarga",
+    "lat": 4.4685,
+    "lng": 97.9602,
+    "lapangan_usaha": "Pertanian"
+  },
+  {
+    "id": "USH-009",
+    "type": "usaha",
+    "lat": 4.468,
+    "lng": 97.968,
+    "lapangan_usaha": "Laundry & Jasa Cuci"
+  },
+  {
+    "id": "USH-010",
+    "type": "usaha",
+    "lat": 4.480,
+    "lng": 97.966,
+    "lapangan_usaha": "Toko Elektronik"
+  },
+  {
+    "id": "USH-011",
+    "type": "usaha",
+    "lat": 4.4725,
+    "lng": 97.9825,
+    "lapangan_usaha": "Salon & Kecantikan"
+  },
+  {
+    "id": "USH-012",
+    "type": "usaha",
+    "lat": 4.4865,
+    "lng": 97.971,
+    "lapangan_usaha": "Apotek"
+  },
+  {
+    "id": "USH-013",
+    "type": "usaha",
+    "lat": 4.4615,
+    "lng": 97.9555,
+    "lapangan_usaha": "Toko Bangunan"
+  },
+  {
+    "id": "USH-014",
+    "type": "usaha",
+    "lat": 4.4795,
+    "lng": 97.993,
+    "lapangan_usaha": "Percetakan"
+  },
+  {
+    "id": "USH-015",
+    "type": "usaha",
+    "lat": 4.4555,
+    "lng": 97.9695,
+    "lapangan_usaha": "Agen Perjalanan"
+  },
+  {
+    "id": "USH-016",
+    "type": "usaha",
+    "lat": 4.4915,
+    "lng": 97.9545,
+    "lapangan_usaha": "Toko Kue & Roti"
+  },
+  {
+    "id": "USH-017",
+    "type": "usaha",
+    "lat": 4.4635,
+    "lng": 97.9895,
+    "lapangan_usaha": "Koperasi"
+  },
+  {
+    "id": "USH-018",
+    "type": "usaha",
+    "lat": 4.4752,
+    "lng": 97.9532,
+    "lapangan_usaha": "Distributor"
+  },
+  {
+    "id": "USH-019",
+    "type": "usaha",
+    "lat": 4.4828,
+    "lng": 97.9777,
+    "lapangan_usaha": "Toko Furniture"
+  },
+  {
+    "id": "USH-020",
+    "type": "usaha",
+    "lat": 4.4699,
+    "lng": 97.9455,
+    "lapangan_usaha": "Warung Internet"
+  },
+  {
+    "id": "USH-021",
+    "type": "usaha",
+    "lat": 4.4872,
+    "lng": 98.006,
+    "lapangan_usaha": "Klinik"
+  },
+  {
+    "id": "USH-022",
+    "type": "usaha",
+    "lat": 4.4588,
+    "lng": 97.9599,
+    "lapangan_usaha": "Gudang"
+  },
+  {
+    "id": "USH-023",
+    "type": "usaha",
+    "lat": 4.4744,
+    "lng": 97.9766,
+    "lapangan_usaha": "Kantin Sekolah"
+  },
+  {
+    "id": "USH-024",
+    "type": "usaha",
+    "lat": 4.4682,
+    "lng": 97.9722,
+    "lapangan_usaha": "Studio Foto"
+  },
+  {
+    "id": "USH-025",
+    "type": "usaha",
+    "lat": 4.4833,
+    "lng": 97.9644,
+    "lapangan_usaha": "Toko Alat Tulis"
+  },
+  {
+    "id": "USH-026",
+    "type": "usaha",
+    "lat": 4.4602,
+    "lng": 97.9901,
+    "lapangan_usaha": "Laundry Industri"
+  },
+  {
+    "id": "USH-027",
+    "type": "usaha",
+    "lat": 4.4769,
+    "lng": 97.9566,
+    "lapangan_usaha": "Bengkel Elektronik"
+  },
+  {
+  "id": "USH-028",
+  "type": "usaha",
+  "lat": 4.4722,
+  "lng": 97.9911,
+  "lapangan_usaha": "Jasa Pengiriman"
+  }
 ]
