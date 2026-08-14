@@ -248,9 +248,11 @@ async function loadDashboard() {
         return {
           color: palette.stroke,
           weight: 2,
+          opacity: 1,
           fillColor: palette.fill,
           fillOpacity: 0.2,
-          opacity: 0.9,
+          lineJoin: "round",
+          lineCap: "round",
         };
       },
       onEachFeature: (feature, layer) => {
@@ -273,6 +275,17 @@ async function loadDashboard() {
             <div class="small text-secondary">Provinsi: <strong>Aceh</strong></div>
           </div>
         `, { className: "custom-popup" });
+
+        // Prevent the SVG path from receiving native browser focus outlines; set tabindex after add
+        layer.on('add', () => {
+          try {
+            if (layer._path && layer._path.setAttribute) {
+              layer._path.setAttribute('tabindex', '-1');
+              // Prevent default focus behavior
+              layer._path.style.outline = 'none';
+            }
+          } catch (err) {}
+        });
 
         layer.on({
           mouseover: (e) => {
@@ -302,6 +315,21 @@ async function loadDashboard() {
               e.target._tooltipTimeout = null;
             }
           },
+          click: (e) => {
+            const target = e.target;
+            // Apply same visual as hover to avoid default black stroke being visible
+            target.setStyle({
+              color: palette.stroke,
+              weight: 3.5,
+              fillOpacity: 0.45,
+              opacity: 1,
+            });
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+              target.bringToFront();
+            }
+            // ensure the svg element does not capture focus
+            try { if (target._path && target._path.setAttribute) target._path.setAttribute('tabindex', '-1'); } catch (err) {}
+          }
         });
       },
     }).addTo(map);
