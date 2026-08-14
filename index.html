@@ -22,63 +22,62 @@
     </nav>
 
     <main class="container-fluid p-3 p-lg-4">
-      <section class="card shadow-sm mb-3">
+      <section class="card shadow-sm mb-3 summary-card-wrap">
         <div class="card-body p-2 p-md-3">
           <div class="row g-2 g-lg-3 align-items-center m-0">
             <div class="col-12 col-lg-4 border-end-lg border-bottom-sm">
-              <div id="card-total" class="d-flex align-items-center justify-content-between p-1">
-                <div class="text-secondary small text-uppercase fw-bold d-flex align-items-center gap-2">
-                  <i class="bi bi-layers-fill text-primary fs-5"></i>
+              <div id="card-total" class="stat-card d-flex align-items-center justify-content-between p-2 p-md-3">
+                <div class="stat-label d-flex align-items-center gap-2">
+                  <i class="bi bi-layers-fill fs-5"></i>
                   <span>Total Titik Sebaran</span>
                 </div>
-                <div id="total-points" class="h3 fw-bold text-dark mb-0 ms-auto me-3">0</div>
+                <div id="total-points" class="stat-value text-dark">0</div>
               </div>
             </div>
             <div class="col-12 col-lg-4 border-end-lg border-bottom-sm">
-              <div id="card-family" class="d-flex align-items-center justify-content-between p-1">
-                <div class="text-secondary small text-uppercase fw-bold d-flex align-items-center gap-2">
-                  <i class="bi bi-house-heart-fill text-success fs-5"></i>
+              <div id="card-family" class="stat-card d-flex align-items-center justify-content-between p-2 p-md-3">
+                <div class="stat-label d-flex align-items-center gap-2">
+                  <i class="bi bi-house-heart-fill fs-5"></i>
                   <span>Titik Keluarga</span>
                 </div>
-                <div id="family-count" class="h3 fw-bold text-success mb-0 ms-auto me-3">0</div>
+                <div id="family-count" class="stat-value text-success">0</div>
               </div>
             </div>
             <div class="col-12 col-lg-4">
-              <div id="card-business" class="d-flex align-items-center justify-content-between p-1">
-                <div class="text-secondary small text-uppercase fw-bold d-flex align-items-center gap-2">
-                  <i class="bi bi-shop-window text-warning fs-5"></i>
+              <div id="card-business" class="stat-card d-flex align-items-center justify-content-between p-2 p-md-3">
+                <div class="stat-label d-flex align-items-center gap-2">
+                  <i class="bi bi-shop-window fs-5"></i>
                   <span>Titik Usaha</span>
                 </div>
-                <div id="business-count" class="h3 fw-bold text-warning mb-0 ms-auto me-3">0</div>
+                <div id="business-count" class="stat-value text-warning">0</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="card shadow-sm">
+      <section class="card shadow-sm dashboard-shell">
         <div class="card-header bg-white py-3">
-          <div class="d-flex flex-column flex-xl-row gap-3 justify-content-between align-items-xl-center">
-            <div>
+          <div class="toolbar-header d-flex flex-column flex-xxl-row gap-3 justify-content-between align-items-xxl-center">
+            <div class="dashboard-heading">
               <h1 class="h4 mb-1 fw-bold text-dark">Sebaran Keluarga dan Usaha</h1>
               <p class="mb-0 text-secondary small">Visualisasi spasial data keluarga, usaha, dan batas wilayah administratif Kota Langsa.</p>
             </div>
-            
-            <div class="d-flex flex-wrap align-items-center gap-3">
-              <!-- Toggle Controls for Boundaries -->
-              <div class="bg-body-tertiary px-3 py-2 rounded-3 border d-flex flex-wrap align-items-center gap-3">
-                <span class="small fw-bold text-dark d-flex align-items-center gap-1">
-                  <i class="bi bi-bounding-box-circles text-primary"></i> Layer Batas:
+
+            <div class="toolbar-stack d-flex flex-wrap align-items-center gap-2 gap-lg-3">
+              <div class="toolbar-group layer-group d-flex flex-wrap align-items-center gap-3">
+                <span class="toolbar-label small fw-bold text-dark d-flex align-items-center gap-1">
+                  <i class="bi bi-bounding-box-circles"></i> Layer Batas:
                 </span>
-                
-                <div class="form-check form-switch mb-0">
+
+                <div class="form-check form-switch mb-0 control-option">
                   <input class="form-check-input shadow-none custom-switch-kota" type="checkbox" id="toggle-kota" checked role="switch" aria-label="Toggle Batas Kota">
                   <label class="form-check-label small fw-semibold user-select-none" for="toggle-kota">
                     <span class="legend-line border-kota"></span> Batas Kota
                   </label>
                 </div>
-                
-                <div class="form-check form-switch mb-0">
+
+                <div class="form-check form-switch mb-0 control-option">
                   <input class="form-check-input shadow-none custom-switch-kecamatan" type="checkbox" id="toggle-kecamatan" checked role="switch" aria-label="Toggle Batas Kecamatan">
                   <label class="form-check-label small fw-semibold user-select-none" for="toggle-kecamatan">
                     <span class="legend-line border-kecamatan"></span> Batas Kecamatan
@@ -86,13 +85,12 @@
                 </div>
               </div>
 
-              <!-- Point Type Legend -->
-              <div class="d-flex align-items-center gap-3 small fw-semibold bg-body-tertiary px-3 py-2 rounded-3 border">
-                <span><i class="legend-dot bg-success"></i> Keluarga</span>
-                <span><i class="legend-dot bg-warning"></i> Usaha</span>
+              <div class="toolbar-group legend-group d-flex align-items-center gap-3 small fw-semibold">
+                <span class="legend-item"><i class="legend-dot bg-success"></i> Keluarga</span>
+                <span class="legend-item"><i class="legend-dot bg-warning"></i> Usaha</span>
               </div>
-              <!-- Compact dropdown multi-select for business field filter -->
-              <div class="dropdown" data-bs-auto-close="outside">
+
+              <div class="toolbar-group filter-group dropdown" data-bs-auto-close="outside">
                 <button id="biz-filter-dropdown-btn" class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Filter Lapangan
                 </button>
@@ -111,25 +109,23 @@
             </div>
           </div>
 
-          <!-- Kecamatan Color Palette Bar -->
-          <div id="kecamatan-legend-bar" class="mt-3 pt-2 border-top d-flex flex-wrap align-items-center gap-2 small">
-            <span class="fw-bold text-secondary text-uppercase small me-1" style="font-size: 0.75rem;"><i class="bi bi-geo-alt me-1"></i>Kecamatan:</span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(2, 132, 199, 0.15); color: #000; border: 1px solid #0284c7;">
+          <div id="kecamatan-legend-bar" class="kecamatan-legend-bar mt-3 pt-2 d-flex flex-wrap align-items-center gap-2 small">
+            <span class="legend-title"><i class="bi bi-geo-alt me-1"></i>Kecamatan:</span>
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(2, 132, 199, 0.15); color: #082f49; border: 1px solid #0284c7;">
               <i class="bi bi-square-fill me-1" style="color: #0284c7;"></i>Langsa Barat
             </span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(124, 58, 237, 0.15); color: #000; border: 1px solid #7c3aed;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(124, 58, 237, 0.15); color: #2e1065; border: 1px solid #7c3aed;">
               <i class="bi bi-square-fill me-1" style="color: #7c3aed;"></i>Langsa Baro
             </span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(219, 39, 119, 0.15); color: #000; border: 1px solid #db2777;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(219, 39, 119, 0.15); color: #831843; border: 1px solid #db2777;">
               <i class="bi bi-square-fill me-1" style="color: #db2777;"></i>Langsa Kota
             </span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(5, 150, 105, 0.15); color: #000; border: 1px solid #059669;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(5, 150, 105, 0.12); color: #064e3b; border: 1px solid #059669;">
               <i class="bi bi-square-fill me-1" style="color: #059669;"></i>Langsa Lama
             </span>
-            <span class="badge rounded-pill kec-badge" style="background-color: rgba(217, 119, 6, 0.15); color: #000; border: 1px solid #d97706;">
+            <span class="badge rounded-pill kec-badge" style="background-color: rgba(217, 119, 6, 0.12); color: #78350f; border: 1px solid #d97706;">
               <i class="bi bi-square-fill me-1" style="color: #d97706;"></i>Langsa Timur
             </span>
-
           </div>
         </div>
         <div class="map-frame">
