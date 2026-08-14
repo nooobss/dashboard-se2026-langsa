@@ -327,14 +327,10 @@ async function loadDashboard() {
             if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
               target.bringToFront();
             }
-            // Open tooltip on click and auto-close after 2 seconds
+            // Open popup on click instead of tooltip to avoid overlapping tooltip+popup
             try {
-              layer.openTooltip();
+              layer.openPopup();
             } catch (err) {}
-            if (layer._tooltipTimeout) clearTimeout(layer._tooltipTimeout);
-            layer._tooltipTimeout = setTimeout(() => {
-              try { layer.closeTooltip(); } catch (err) {}
-            }, 2000);
             // ensure the svg element does not capture focus
             try { if (target._path && target._path.setAttribute) target._path.setAttribute('tabindex', '-1'); } catch (err) {}
           }
