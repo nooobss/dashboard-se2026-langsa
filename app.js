@@ -278,8 +278,10 @@ async function loadDashboard() {
           mouseover: (e) => {
             const target = e.target;
             target.setStyle({
+              color: palette.stroke,
               weight: 3.5,
               fillOpacity: 0.45,
+              opacity: 1,
             });
             if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
               target.bringToFront();
