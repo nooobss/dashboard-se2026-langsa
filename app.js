@@ -299,14 +299,14 @@ async function loadDashboard() {
             if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
               target.bringToFront();
             }
-            // Open tooltip and auto-close after 3 seconds
+            // Open tooltip and auto-close after 2 seconds
             try {
               layer.openTooltip();
             } catch (err) {}
             if (layer._tooltipTimeout) clearTimeout(layer._tooltipTimeout);
             layer._tooltipTimeout = setTimeout(() => {
               try { layer.closeTooltip(); } catch (err) {}
-            }, 3000);
+            }, 2000);
           },
           mouseout: (e) => {
             kecamatanBoundaryLayer.resetStyle(e.target);
@@ -327,6 +327,14 @@ async function loadDashboard() {
             if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
               target.bringToFront();
             }
+            // Open tooltip on click and auto-close after 2 seconds
+            try {
+              layer.openTooltip();
+            } catch (err) {}
+            if (layer._tooltipTimeout) clearTimeout(layer._tooltipTimeout);
+            layer._tooltipTimeout = setTimeout(() => {
+              try { layer.closeTooltip(); } catch (err) {}
+            }, 2000);
             // ensure the svg element does not capture focus
             try { if (target._path && target._path.setAttribute) target._path.setAttribute('tabindex', '-1'); } catch (err) {}
           }
