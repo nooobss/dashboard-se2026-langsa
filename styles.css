@@ -204,11 +204,16 @@ body {
 }
 
 /* Custom Leaflet Reset Control */
+.leaflet-control-reset,
+.leaflet-control-interaction {
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+}
+
 .leaflet-control-reset {
   background: #ffffff;
-  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   padding: 4px 10px;
   cursor: pointer;
   font-weight: 600;
@@ -217,34 +222,54 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .leaflet-control-reset:hover {
   background: #0d6efd;
   color: #ffffff;
-  border-color: #0d6efd;
 }
 
-.leaflet-control-reset:focus {
-  outline: 3px solid rgba(13,110,253,0.25);
-  outline-offset: 2px;
+.leaflet-control-reset:focus,
+.leaflet-control-interaction:focus,
+.leaflet-control-reset:active,
+.leaflet-control-interaction:active {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
 }
 
 /* Map interaction toggle control */
 .leaflet-control-interaction {
   background: #ffffff;
-  border: 2px solid rgba(0,0,0,0.12);
   border-radius: 6px;
   padding: 6px 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
   font-weight: 600;
   cursor: pointer;
 }
 .leaflet-control-interaction[aria-pressed="true"] {
   background: #0d6efd;
   color: #fff;
-  border-color: #0d6efd;
+}
+
+/* Remove aggressive focus outlines for map controls while keeping subtle visual hint for keyboard users */
+.leaflet-control-reset:focus,
+.leaflet-control-interaction:focus,
+.leaflet-control-reset:active,
+.leaflet-control-interaction:active,
+.leaflet-control a:focus,
+.leaflet-control button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  opacity: 0.98; /* slight dim so it doesn't feel jarring */
+}
+
+/* Provide minimal focus-visible ring only for keyboard navigation (soft and low-contrast) */
+.leaflet-control-reset:focus-visible,
+.leaflet-control-interaction:focus-visible,
+.leaflet-control a:focus-visible,
+.leaflet-control button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08) !important;
+  outline: none !important;
 }
 
 /* Enhanced Popup Styling */
