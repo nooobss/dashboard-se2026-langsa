@@ -70,10 +70,13 @@
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --lh-heading: 1.2;
   --lh-body: 1.5;
+
+  /* Layout */
+  --navbar-h: 56px;
 }
 
 /* ============================================================
-   Base
+   Base — layout full viewport tanpa scroll
    ============================================================ */
 html,
 body {
@@ -85,10 +88,12 @@ body {
   background: linear-gradient(180deg, var(--c-neutral-50) 0%, var(--c-primary-50) 100%);
   color: var(--c-neutral-900);
   line-height: var(--lh-body);
+  overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: var(--lh-heading);
+main.container-fluid {
+  height: calc(100vh - var(--navbar-h, 56px));
+  overflow: hidden;
 }
 
 .navbar {
@@ -109,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat-card {
-  min-height: 80px;
+  min-height: 56px;
   border-radius: var(--r-lg);
   background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(239,246,255,0.9));
   border: 1px solid var(--c-neutral-200);
@@ -143,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat-value {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.25rem, 1.6vw, 1.6rem);
   font-weight: 800;
   line-height: 1.1;
   margin-left: var(--s-4);
@@ -165,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
-   Map frame
+   Map frame — mengisi sisa viewport
    ============================================================ */
 .map-frame {
   background: var(--c-neutral-0);
@@ -174,21 +179,35 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--s-2);
   position: relative;
   width: 100%;
+  min-height: 0;
 }
 
 #map {
   border: 1px solid rgba(37, 99, 235, 0.28);
   border-radius: var(--r-md);
-  height: 60vh;
-  min-height: 360px;
-  max-height: 80vh;
+  height: 100%;
   width: 100%;
   position: relative;
   z-index: 1;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.dashboard-shell {
+  min-height: 0;
 }
 
 .dashboard-shell .card-header {
   background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,250,252,0.96));
+}
+
+.dashboard-shell .map-frame {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: var(--lh-heading);
 }
 
 /* ============================================================
@@ -463,7 +482,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  #map {
-    height: 65vh;
+  .dashboard-heading h1 {
+    font-size: 1rem;
+  }
+  .dashboard-heading p {
+    display: none;
+  }
+  .kecamatan-legend-bar {
+    display: none !important;
   }
 }
