@@ -12,7 +12,7 @@ const SUPPORTED_TYPES = new Set(["keluarga", "usaha"]);
 
 const KECAMATAN_COLORS = {
   "Langsa Barat": { stroke: "#0284c7", fill: "#38bdf8" },
-  "Langsa Baro": { stroke: "#7c3aed", fill: "#a78bfa" },
+  "Langsa Baro": { stroke: "#0d9488", fill: "#5eead4" },
   "Langsa Kota": { stroke: "#db2777", fill: "#f472b6" },
   "Langsa Lama": { stroke: "#059669", fill: "#34d399" },
   "Langsa Timur": { stroke: "#d97706", fill: "#fbbf24" }
@@ -140,6 +140,12 @@ function normalizePoint(point) {
   };
 }
 
+function escapeHtml(value) {
+  const div = document.createElement("div");
+  div.textContent = String(value ?? "");
+  return div.innerHTML;
+}
+
 function createPopup(point) {
   const container = document.createElement("div");
   container.className = "popup-body";
@@ -166,8 +172,8 @@ function createPopup(point) {
   const content = document.createElement("div");
   content.className = "small mt-2";
   content.innerHTML = `
-    <div class="mb-1"><strong>Lapangan Usaha:</strong> ${point.lapangan_usaha || "-"}</div>
-    <div class="text-secondary"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>${point.lat}, ${point.lng}</div>
+    <div class="mb-1"><strong>Lapangan Usaha:</strong> ${escapeHtml(point.lapangan_usaha || "-")}</div>
+    <div class="text-secondary"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>${escapeHtml(point.lat)}, ${escapeHtml(point.lng)}</div>
   `;
   container.appendChild(content);
 
@@ -208,6 +214,10 @@ function renderPoints(points) {
   businessCountElement.textContent = counts.usaha;
   totalPointsElement.textContent = validPoints.length;
 
+  [familyCountElement, businessCountElement, totalPointsElement].forEach((el) => {
+    if (el && el.classList.contains("is-loading")) el.classList.remove("is-loading");
+  });
+
   return pointBounds;
 }
 
@@ -244,7 +254,7 @@ async function loadDashboard() {
     kecamatanBoundaryLayer = L.geoJSON(kecamatanGeojson, {
       style: (feature) => {
         const districtName = feature.properties?.district || "Lainnya";
-        const palette = KECAMATAN_COLORS[districtName] || { stroke: "#0d6efd", fill: "#0d6efd" };
+        const palette = KECAMATAN_COLORS[districtName] || { stroke: "#2563eb", fill: "#2563eb" };
         return {
           color: palette.stroke,
           weight: 2,
@@ -257,7 +267,7 @@ async function loadDashboard() {
       },
       onEachFeature: (feature, layer) => {
         const distName = feature.properties?.district || "Kecamatan";
-        const palette = KECAMATAN_COLORS[distName] || { stroke: "#0d6efd" };
+        const palette = KECAMATAN_COLORS[distName] || { stroke: "#2563eb" };
 
         layer.bindTooltip(`Kecamatan ${distName}`, {
           className: "kecamatan-tooltip",
@@ -397,13 +407,13 @@ async function loadDashboard() {
       },
     });
     map.addControl(new ResetControl());
-    // Auto-close popups after 3 seconds when opened
+    // Auto-close popups after 6 seconds when opened (memberi waktu baca yang cukup)
     map.on('popupopen', (e) => {
       const popup = e.popup;
       if (popup && !popup._autoCloseTimer) {
         popup._autoCloseTimer = setTimeout(() => {
           try { map.closePopup(popup); } catch (err) {}
-        }, 3000);
+        }, 6000);
       }
     });
     map.on('popupclose', (e) => {
@@ -465,8 +475,17 @@ async function loadDashboard() {
           const id = `biz-filter-${i}`;
           const item = document.createElement('div');
           item.className = 'form-check';
-          item.innerHTML = `<input class="form-check-input biz-filter" type="checkbox" id="${id}" data-value="${f}">
-            <label class="form-check-label" for="${id}">${f}</label>`;
+          const input = document.createElement('input');
+          input.className = 'form-check-input biz-filter';
+          input.type = 'checkbox';
+          input.id = id;
+          input.dataset.value = f;
+          const label = document.createElement('label');
+          label.className = 'form-check-label';
+          label.htmlFor = id;
+          label.textContent = f;
+          item.appendChild(input);
+          item.appendChild(label);
           bizFilterOptions.appendChild(item);
         });
 

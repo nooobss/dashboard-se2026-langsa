@@ -1,74 +1,184 @@
+/* ============================================================
+   Design Tokens — Kota Langsa Dashboard
+   Sistem: 6 ramp warna + neutral, spacing 4/8, radius 6/8/12
+   ============================================================ */
+:root {
+  /* Primary (biru) */
+  --c-primary-50: #eff6ff;
+  --c-primary-100: #dbeafe;
+  --c-primary-500: #2563eb;
+  --c-primary-600: #1d4ed8;
+  --c-primary-700: #1e40af;
+
+  /* Secondary (slate neutral) */
+  --c-neutral-0: #ffffff;
+  --c-neutral-50: #f8fafc;
+  --c-neutral-100: #f1f5f9;
+  --c-neutral-200: #e2e8f0;
+  --c-neutral-300: #cbd5e1;
+  --c-neutral-400: #94a3b8;
+  --c-neutral-500: #64748b;
+  --c-neutral-700: #334155;
+  --c-neutral-900: #0f172a;
+
+  /* Success (hijau) */
+  --c-success-500: #16a34a;
+  --c-success-600: #15803d;
+
+  /* Warning (amber) */
+  --c-warning-500: #d97706;
+  --c-warning-600: #b45309;
+
+  /* Danger (kota boundary) */
+  --c-danger-500: #dc2626;
+  --c-danger-600: #b91c1c;
+
+  /* Accent (teal — pengganti ungu Baro) */
+  --c-accent-500: #0d9488;
+  --c-accent-600: #0f766e;
+
+  /* Spacing (4px base) */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-8: 3rem;
+
+  /* Radius */
+  --r-sm: 0.375rem;
+  --r-md: 0.5rem;
+  --r-lg: 0.75rem;
+  --r-xl: 1rem;
+
+  /* Focus ring — kontras cukup untuk WCAG 2.4.7 */
+  --ring-focus: 0 0 0 3px rgba(37, 99, 235, 0.5);
+  --ring-focus-soft: 0 0 0 2px rgba(37, 99, 235, 0.35);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 24px rgba(15, 23, 42, 0.10);
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 0.15s;
+  --dur: 0.2s;
+
+  /* Typography */
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --lh-heading: 1.2;
+  --lh-body: 1.5;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
 html,
 body {
   height: 100%;
 }
 
 body {
-  background: linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%);
-  color: #0f172a;
+  font-family: var(--font-sans);
+  background: linear-gradient(180deg, var(--c-neutral-50) 0%, var(--c-primary-50) 100%);
+  color: var(--c-neutral-900);
+  line-height: var(--lh-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: var(--lh-heading);
 }
 
 .navbar {
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow-lg);
 }
 
 .card {
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  border-radius: 1rem;
+  border: 1px solid var(--c-neutral-200);
+  border-radius: var(--r-xl);
   overflow: hidden;
 }
 
+/* ============================================================
+   Summary stat cards
+   ============================================================ */
 .summary-card-wrap .card-body {
   background: rgba(255, 255, 255, 0.7);
 }
 
 .stat-card {
   min-height: 80px;
-  border-radius: 0.9rem;
+  border-radius: var(--r-lg);
   background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(239,246,255,0.9));
-  border: 1px solid rgba(148, 163, 184, 0.22);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--c-neutral-200);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), var(--shadow-sm);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), var(--shadow-md);
 }
 
 .stat-label {
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   font-weight: 700;
-  color: #475569;
+  color: var(--c-neutral-500);
   text-transform: uppercase;
 }
 
 .stat-label i {
-  color: #2563eb;
+  color: var(--c-primary-500);
 }
 
 #card-family .stat-label i {
-  color: #16a34a;
+  color: var(--c-success-500);
 }
 
 #card-business .stat-label i {
-  color: #d97706;
+  color: var(--c-warning-500);
 }
 
 .stat-value {
   font-size: clamp(1.5rem, 2vw, 2rem);
   font-weight: 800;
-  line-height: 1;
-  margin-left: 1rem;
+  line-height: 1.1;
+  margin-left: var(--s-4);
 }
 
+/* Skeleton shimmer untuk stat-value sebelum data dimuat */
+.stat-value.is-loading {
+  color: transparent !important;
+  background: linear-gradient(90deg, var(--c-neutral-100), var(--c-neutral-200), var(--c-neutral-100));
+  background-size: 200% 100%;
+  border-radius: var(--r-sm);
+  animation: shimmer 1.4s linear infinite;
+  min-width: 2.5rem;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ============================================================
+   Map frame
+   ============================================================ */
 .map-frame {
-  background: #ffffff;
-  border: 4px solid #ffffff;
+  background: var(--c-neutral-0);
+  border: 4px solid var(--c-neutral-0);
   box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.14);
-  padding: 0.5rem;
+  padding: var(--s-2);
   position: relative;
   width: 100%;
 }
 
 #map {
-  border: 1px solid rgba(13, 110, 253, 0.28);
-  border-radius: 0.5rem;
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  border-radius: var(--r-md);
   height: 60vh;
   min-height: 360px;
   max-height: 80vh;
@@ -81,6 +191,9 @@ body {
   background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,250,252,0.96));
 }
 
+/* ============================================================
+   Toolbar
+   ============================================================ */
 .toolbar-header {
   width: 100%;
 }
@@ -97,9 +210,9 @@ body {
 
 .toolbar-group {
   background: rgba(241, 245, 249, 0.96);
-  border: 1px solid rgba(148, 163, 184, 0.28);
-  border-radius: 0.8rem;
-  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--c-neutral-200);
+  border-radius: var(--r-lg);
+  padding: var(--s-2) var(--s-3);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
 }
 
@@ -108,13 +221,13 @@ body {
 }
 
 .toolbar-label {
-  color: #1e293b;
+  color: var(--c-neutral-700);
 }
 
 .control-option {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--s-2);
   min-height: 24px;
 }
 
@@ -123,7 +236,7 @@ body {
 }
 
 .legend-group {
-  color: #334155;
+  color: var(--c-neutral-700);
 }
 
 .legend-item {
@@ -134,31 +247,36 @@ body {
 
 .filter-group .btn,
 .filter-group .dropdown-menu {
-  border-radius: 0.75rem;
+  border-radius: var(--r-lg);
 }
 
 .filter-group .btn {
-  border-color: rgba(148, 163, 184, 0.7);
-  color: #1e293b;
+  border-color: var(--c-neutral-300);
+  color: var(--c-neutral-700);
   background: rgba(255,255,255,0.75);
   font-weight: 600;
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 
 .filter-group .btn:hover,
 .filter-group .btn:focus {
   border-color: rgba(37, 99, 235, 0.7);
-  color: #0f172a;
+  color: var(--c-neutral-900);
   background: rgba(239,246,255,0.9);
 }
 
+/* ============================================================
+   Kecamatan legend bar
+   ============================================================ */
 .kecamatan-legend-bar {
-  border-top: 1px solid rgba(148, 163, 184, 0.22);
-  padding-top: 0.9rem;
+  border-top: 1px solid var(--c-neutral-200);
+  padding-top: var(--s-3);
+  gap: var(--s-2) !important;
 }
 
 .legend-title {
   font-weight: 700;
-  color: #475569;
+  color: var(--c-neutral-500);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-size: 0.7rem;
@@ -168,25 +286,28 @@ body {
   font-weight: 600;
   padding: 0.4em 0.7em;
   font-size: 0.77rem;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .kec-badge:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), var(--shadow-sm);
 }
 
-/* Horizontal Summary Card Border Dividers */
+/* ============================================================
+   Responsive dividers
+   ============================================================ */
 @media (min-width: 992px) {
   .border-end-lg {
-    border-right: 1px solid rgba(148, 163, 184, 0.2) !important;
+    border-right: 1px solid var(--c-neutral-200) !important;
   }
 }
 
 @media (max-width: 991.98px) {
   .border-bottom-sm {
-    border-bottom: 1px solid rgba(148, 163, 184, 0.2) !important;
-    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--c-neutral-200) !important;
+    padding-bottom: var(--s-2);
   }
 
   .toolbar-stack {
@@ -203,18 +324,20 @@ body {
   }
 }
 
-/* Custom Leaflet Reset Control */
+/* ============================================================
+   Leaflet custom controls — Reset & Interaction
+   ============================================================ */
 .leaflet-control-reset,
 .leaflet-control-interaction {
   border: none !important;
   outline: none !important;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+  box-shadow: var(--shadow-md);
 }
 
 .leaflet-control-reset {
-  background: #ffffff;
-  border-radius: 6px;
-  padding: 4px 10px;
+  background: var(--c-neutral-0);
+  border-radius: var(--r-sm);
+  padding: var(--s-1) var(--s-3);
   cursor: pointer;
   font-weight: 600;
   font-size: 0.825rem;
@@ -222,61 +345,49 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+  transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
 }
 
 .leaflet-control-reset:hover {
-  background: #0d6efd;
-  color: #ffffff;
+  background: var(--c-primary-600);
+  color: var(--c-neutral-0);
+  transform: translateY(-1px);
 }
 
-.leaflet-control-reset:focus,
-.leaflet-control-interaction:focus,
-.leaflet-control-reset:active,
-.leaflet-control-interaction:active {
-  outline: none !important;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+.leaflet-control-reset:active {
+  transform: translateY(0);
 }
 
 /* Map interaction toggle control */
 .leaflet-control-interaction {
-  background: #ffffff;
-  border-radius: 6px;
+  background: var(--c-neutral-0);
+  border-radius: var(--r-sm);
   padding: 6px 10px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
 }
 .leaflet-control-interaction[aria-pressed="true"] {
-  background: #0d6efd;
-  color: #fff;
+  background: var(--c-primary-600);
+  color: var(--c-neutral-0);
 }
 
-/* Remove aggressive focus outlines for map controls while keeping subtle visual hint for keyboard users */
-.leaflet-control-reset:focus,
-.leaflet-control-interaction:focus,
-.leaflet-control-reset:active,
-.leaflet-control-interaction:active,
-.leaflet-control a:focus,
-.leaflet-control button:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  opacity: 0.98; /* slight dim so it doesn't feel jarring */
-}
-
-/* Provide minimal focus-visible ring only for keyboard navigation (soft and low-contrast) */
+/* Focus ring — konsisten & terlihat (WCAG 2.4.7) */
 .leaflet-control-reset:focus-visible,
 .leaflet-control-interaction:focus-visible,
 .leaflet-control a:focus-visible,
 .leaflet-control button:focus-visible {
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08) !important;
   outline: none !important;
+  box-shadow: var(--ring-focus) !important;
 }
 
-/* Enhanced Popup Styling */
+/* ============================================================
+   Popup styling
+   ============================================================ */
 .custom-popup .leaflet-popup-content-wrapper {
-  border-radius: 8px;
+  border-radius: var(--r-md);
   padding: 4px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  box-shadow: var(--shadow-md);
 }
 
 .custom-popup .leaflet-popup-content {
@@ -294,6 +405,9 @@ body {
   padding-bottom: 4px;
 }
 
+/* ============================================================
+   Legend chips & lines
+   ============================================================ */
 .legend-dot,
 .legend-area,
 .legend-line {
@@ -316,45 +430,36 @@ body {
 }
 
 .legend-line.border-kota {
-  background-color: #dc3545;
-  border: 1px dashed #a71d2a;
+  background-color: var(--c-danger-500);
+  border: 1px dashed var(--c-danger-600);
 }
 
 .legend-line.border-kecamatan {
-  background: linear-gradient(90deg, #0284c7, #7c3aed, #db2777, #059669, #d97706);
+  background: linear-gradient(90deg, #0284c7, #0d9488, #db2777, #059669, #d97706);
 }
 
 .custom-switch-kota:checked {
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: var(--c-danger-500);
+  border-color: var(--c-danger-500);
 }
 
 .custom-switch-kecamatan:checked {
-  background-color: #0284c7;
-  border-color: #0284c7;
+  background-color: var(--c-primary-500);
+  border-color: var(--c-primary-500);
 }
 
-.kec-badge {
-  font-weight: 600;
-  padding: 0.35em 0.65em;
-  font-size: 0.78rem;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.kec-badge:hover {
-  transform: translateY(-1px);
-}
-
-/* Custom Leaflet Tooltip for Kecamatan */
+/* ============================================================
+   Kecamatan tooltip
+   ============================================================ */
 .kecamatan-tooltip {
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--r-sm);
   font-size: 0.825rem;
   font-weight: 700;
   padding: 4px 8px;
-  color: #1e293b;
+  color: var(--c-neutral-700);
 }
 
 @media (max-width: 768px) {
