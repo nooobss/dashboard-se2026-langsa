@@ -454,7 +454,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .legend-line.border-kecamatan {
-  background: linear-gradient(90deg, #0284c7, #0d9488, #db2777, #059669, #d97706);
+  background: linear-gradient(90deg, #0284c7, #0d9488, #db2777, #7c3aed, #d97706);
 }
 
 .custom-switch-kota:checked {

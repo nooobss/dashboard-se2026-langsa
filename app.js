@@ -52,7 +52,7 @@ const KECAMATAN_COLORS = {
   "Langsa Barat": { stroke: "#0284c7", fill: "#38bdf8" },
   "Langsa Baro": { stroke: "#0d9488", fill: "#5eead4" },
   "Langsa Kota": { stroke: "#db2777", fill: "#f472b6" },
-  "Langsa Lama": { stroke: "#059669", fill: "#34d399" },
+  "Langsa Lama": { stroke: "#7c3aed", fill: "#c4b5fd" },
   "Langsa Timur": { stroke: "#d97706", fill: "#fbbf24" }
 };
 
