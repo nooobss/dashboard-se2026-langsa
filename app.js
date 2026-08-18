@@ -1,4 +1,4 @@
-const DATA_POINTS_URL = "data/points.json";
+const DATA_POINTS_URLS = ["data/points.geojson", "data/points.json"];
 const DATA_KOTA_BOUNDARY_URL = "data/kota_langsa.geojson";
 const DATA_KECAMATAN_BOUNDARY_URL = "data/kecamatan_langsa.geojson";
 
@@ -8,7 +8,29 @@ const LANGSA_MAX_BOUNDS = L.latLngBounds(
   [4.35, 97.80],
   [4.60, 98.15]
 );
-const SUPPORTED_TYPES = new Set(["keluarga", "usaha"]);
+const SUPPORTED_TYPES = new Set(["keluarga", "usaha", "a", "c", "g", "h", "r", "s"]);
+
+const CATEGORY_LABELS = {
+  A: "Kategori A",
+  C: "Kategori C",
+  G: "Kategori G",
+  H: "Kategori H",
+  R: "Kategori R",
+  S: "Kategori S",
+  KELUARGA: "Keluarga",
+  USAHA: "Usaha",
+};
+
+const CATEGORY_COLORS = {
+  A: { color: "#16a34a", fillColor: "#22c55e" },
+  C: { color: "#2563eb", fillColor: "#60a5fa" },
+  G: { color: "#7c3aed", fillColor: "#a78bfa" },
+  H: { color: "#f59e0b", fillColor: "#fbbf24" },
+  R: { color: "#ef4444", fillColor: "#f87171" },
+  S: { color: "#0f766e", fillColor: "#2dd4bf" },
+  KELUARGA: { color: "#198754", fillColor: "#198754" },
+  USAHA: { color: "#cc7a00", fillColor: "#ffc107" },
+};
 
 const KECAMATAN_COLORS = {
   "Langsa Barat": { stroke: "#0284c7", fill: "#38bdf8" },
@@ -61,8 +83,10 @@ const darkLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x
 // Use marker clustering for better performance with many points
 const familyLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true }) : L.layerGroup();
 const businessLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true }) : L.layerGroup();
+const categoryLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true }) : L.layerGroup();
 familyLayer.addTo(map);
 businessLayer.addTo(map);
+categoryLayer.addTo(map);
 
 let kotaBoundaryLayer = null;
 let kecamatanBoundaryLayer = null;
@@ -70,6 +94,12 @@ let kecamatanBoundaryLayer = null;
 const markerOptions = {
   keluarga: { color: "#198754", fillColor: "#198754" },
   usaha: { color: "#cc7a00", fillColor: "#ffc107" },
+  A: { color: "#16a34a", fillColor: "#22c55e" },
+  C: { color: "#2563eb", fillColor: "#60a5fa" },
+  G: { color: "#7c3aed", fillColor: "#a78bfa" },
+  H: { color: "#f59e0b", fillColor: "#fbbf24" },
+  R: { color: "#ef4444", fillColor: "#f87171" },
+  S: { color: "#0f766e", fillColor: "#2dd4bf" },
 };
 
 let combinedBounds = null;
@@ -110,6 +140,18 @@ async function fetchJson(url) {
   return response.json();
 }
 
+async function fetchPointsData() {
+  let lastError = null;
+  for (const url of DATA_POINTS_URLS) {
+    try {
+      return await fetchJson(url);
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError || new Error("Gagal memuat data titik peta.");
+}
+
 function normalizeType(type) {
   return String(type || "").trim().toLowerCase();
 }
@@ -119,24 +161,60 @@ function toFiniteNumber(value) {
   return Number.isFinite(number) ? number : null;
 }
 
-function normalizePoint(point) {
-  const type = normalizeType(point.type);
-  const lat = toFiniteNumber(point.lat);
-  const lng = toFiniteNumber(point.lng);
-  const id = String(point.id || "").trim();
-  const lapanganUsaha = String(point.lapangan_usaha || "").trim();
+function getCategoryKey(point) {
+  const rawCategory = String(point.kategori ?? point.category ?? point.type ?? "").trim().toUpperCase();
+  return rawCategory || "";
+}
 
-  if (!SUPPORTED_TYPES.has(type) || lat === null || lng === null || !id || !lapanganUsaha) {
+function isUsahaPoint(point) {
+  const rawType = normalizeType(point?.type ?? point?.kategori ?? point?.category ?? "");
+  const category = String(point?.kategori ?? point?.category ?? "").trim().toUpperCase();
+  const type = rawType || category;
+
+  if (type === "keluarga") return false;
+  if (type === "usaha" || type === "business") return true;
+  return true;
+}
+
+function normalizePoint(point, index = 0) {
+  const raw = point && point.properties ? point.properties : point;
+  const geometry = point && point.geometry ? point.geometry : null;
+  const legacyType = normalizeType(raw.type);
+  const categoryKey = getCategoryKey(raw);
+  const latValue = raw.lat ?? raw.latitude ?? (geometry && geometry.type === "Point" ? geometry.coordinates[1] : null);
+  const lngValue = raw.lng ?? raw.longitude ?? (geometry && geometry.type === "Point" ? geometry.coordinates[0] : null);
+  const lat = toFiniteNumber(latValue);
+  const lng = toFiniteNumber(lngValue);
+  const id = String(raw.assignment_id ?? raw.id ?? `${categoryKey || legacyType || "POINT"}-${index + 1}`).trim();
+  const lapanganUsaha = String(raw.lapangan_usaha ?? raw.nama_usaha ?? raw.kategori ?? raw.category ?? raw.type ?? "").trim();
+  const normalizedCategory = categoryKey && SUPPORTED_TYPES.has(categoryKey.toLowerCase()) ? categoryKey.toUpperCase() : categoryKey.toUpperCase();
+
+  if ((legacyType === "keluarga" || legacyType === "usaha") && lat !== null && lng !== null && id && lapanganUsaha) {
+    return {
+      ...raw,
+      id,
+      type: legacyType,
+      lat,
+      lng,
+      lapangan_usaha: lapanganUsaha,
+      kategori: raw.kategori || legacyType.toUpperCase(),
+      categoryLabel: CATEGORY_LABELS[legacyType.toUpperCase()] || "Kategori",
+    };
+  }
+
+  if (!normalizedCategory || lat === null || lng === null || !id) {
     return null;
   }
 
   return {
-    ...point,
+    ...raw,
     id,
-    type,
+    type: normalizedCategory.toLowerCase(),
     lat,
     lng,
-    lapangan_usaha: lapanganUsaha,
+    lapangan_usaha: lapanganUsaha || CATEGORY_LABELS[normalizedCategory] || `Kategori ${normalizedCategory}`,
+    kategori: normalizedCategory,
+    categoryLabel: CATEGORY_LABELS[normalizedCategory] || `Kategori ${normalizedCategory}`,
   };
 }
 
@@ -158,13 +236,13 @@ function createPopup(point) {
   header.appendChild(title);
 
   const badge = document.createElement("span");
-  if (point.type === "keluarga") {
-    badge.className = "badge bg-success";
-    badge.textContent = "Keluarga";
-  } else {
-    badge.className = "badge bg-warning text-dark";
-    badge.textContent = "Usaha";
-  }
+  const badgeKey = String(point.kategori || point.type || "").toUpperCase();
+  const badgeLabel = point.categoryLabel || CATEGORY_LABELS[badgeKey] || "Kategori";
+  const badgeStyle = CATEGORY_COLORS[badgeKey] || CATEGORY_COLORS[point.type] || { color: "#0d6efd", fillColor: "#0d6efd" };
+  badge.className = "badge rounded-pill";
+  badge.style.backgroundColor = badgeStyle.fillColor || badgeStyle.color || "#0d6efd";
+  badge.style.color = "#fff";
+  badge.textContent = badgeLabel;
   header.appendChild(badge);
 
   container.appendChild(header);
@@ -172,37 +250,61 @@ function createPopup(point) {
   const content = document.createElement("div");
   content.className = "small mt-2";
   content.innerHTML = `
-    <div class="mb-1"><strong>Lapangan Usaha:</strong> ${escapeHtml(point.lapangan_usaha || "-")}</div>
-    <div class="text-secondary"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>${escapeHtml(point.lat)}, ${escapeHtml(point.lng)}</div>
+    <div class="mb-1"><strong>Kategori:</strong> ${badgeLabel}</div>
+    <div class="mb-1"><strong>Label:</strong> ${point.lapangan_usaha || "-"}</div>
+    <div class="text-secondary"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>${point.lat}, ${point.lng}</div>
   `;
   container.appendChild(content);
 
   return container;
 }
 
-function renderPoints(points) {
+function getRenderLayer(point) {
+  if (point.type === "keluarga") return familyLayer;
+  if (point.type === "usaha") return businessLayer;
+  return categoryLayer;
+}
+
+function normalizePointList(rawPoints) {
+  if (!rawPoints) return [];
+
+  if (Array.isArray(rawPoints)) {
+    return rawPoints.map((point, index) => normalizePoint(point, index)).filter(Boolean);
+  }
+
+  if (rawPoints.type === "FeatureCollection" && Array.isArray(rawPoints.features)) {
+    return rawPoints.features
+      .map((feature, index) => normalizePoint(feature, index))
+      .filter(Boolean);
+  }
+
+  return [];
+}
+
+function renderPoints(points, districtFeatures = []) {
   familyLayer.clearLayers();
   businessLayer.clearLayers();
+  categoryLayer.clearLayers();
 
-  const validPoints = points.map(normalizePoint).filter(Boolean);
-  const counts = { keluarga: 0, usaha: 0 };
+  const validPoints = normalizePointList(points).filter(isUsahaPoint);
+  const counts = { usaha: 0 };
   const pointBounds = [];
 
   validPoints.forEach((point) => {
-    const layer = point.type === "keluarga" ? familyLayer : businessLayer;
-
-    counts[point.type] += 1;
+    const layer = businessLayer;
+    counts.usaha += 1;
     pointBounds.push([point.lat, point.lng]);
 
+    const categoryValue = String(point.kategori || point.type || "").toUpperCase();
+    const markerOptionsForPoint = markerOptions[categoryValue] || markerOptions[point.type] || { color: "#cc7a00", fillColor: "#ffc107" };
     const marker = L.circleMarker([point.lat, point.lng], {
-      ...markerOptions[point.type],
+      ...markerOptionsForPoint,
       radius: 8,
       weight: 2,
       opacity: 1,
       fillOpacity: 0.85,
     }).bindPopup(createPopup(point), { className: "custom-popup" });
 
-    // Add to cluster / layer group
     if (layer && layer.addLayer) {
       layer.addLayer(marker);
     } else {
@@ -210,9 +312,9 @@ function renderPoints(points) {
     }
   });
 
-  familyCountElement.textContent = counts.keluarga;
-  businessCountElement.textContent = counts.usaha;
-  totalPointsElement.textContent = validPoints.length;
+  if (totalPointsElement) {
+    totalPointsElement.textContent = validPoints.length;
+  }
 
   [familyCountElement, businessCountElement, totalPointsElement].forEach((el) => {
     if (el && el.classList.contains("is-loading")) el.classList.remove("is-loading");
@@ -227,7 +329,7 @@ async function loadDashboard() {
     const [kotaGeojson, kecamatanGeojson, points] = await Promise.all([
       fetchJson(DATA_KOTA_BOUNDARY_URL),
       fetchJson(DATA_KECAMATAN_BOUNDARY_URL),
-      fetchJson(DATA_POINTS_URL),
+      fetchPointsData(),
     ]);
 
     // 1. Batas Kota Langsa Layer (Red Crimson Dash Border)
@@ -349,8 +451,8 @@ async function loadDashboard() {
     }).addTo(map);
 
     // Normalize points once for filtering and rendering
-    const normalizedPoints = points.map(normalizePoint).filter(Boolean);
-    const pointBounds = renderPoints(normalizedPoints);
+    const normalizedPoints = normalizePointList(points);
+    const pointBounds = renderPoints(normalizedPoints, kecamatanGeojson?.features || []);
     combinedBounds = L.latLngBounds(pointBounds);
 
     if (kotaBoundaryLayer.getBounds().isValid()) {
@@ -370,7 +472,6 @@ async function loadDashboard() {
     const overlayLayers = {
       "<span style='color: #dc3545; font-weight: 600;'>Batas Kota Langsa</span>": kotaBoundaryLayer,
       "<span style='color: #0284c7; font-weight: 600;'>Batas Kecamatan</span>": kecamatanBoundaryLayer,
-      "Titik Keluarga (Cluster)": familyLayer,
       "Titik Usaha (Cluster)": businessLayer,
     };
 
@@ -470,7 +571,7 @@ async function loadDashboard() {
     try {
       if (bizFilterOptions) {
         bizFilterOptions.innerHTML = '';
-        const fields = Array.from(new Set(normalizedPoints.map(p => p.lapangan_usaha))).sort();
+        const fields = Array.from(new Set(normalizedPoints.map(p => p.categoryLabel || p.lapangan_usaha || p.kategori || p.type))).sort();
         fields.forEach((f, i) => {
           const id = `biz-filter-${i}`;
           const item = document.createElement('div');
@@ -493,9 +594,9 @@ async function loadDashboard() {
         bizFilterOptions.addEventListener('change', () => {
           const checked = Array.from(bizFilterOptions.querySelectorAll('input.biz-filter:checked')).map(i => i.dataset.value || i.value);
           const selected = new Set(checked);
-          const filtered = normalizedPoints.filter(p => selected.size === 0 || selected.has(p.lapangan_usaha));
+          const filtered = normalizedPoints.filter(p => selected.size === 0 || selected.has(p.categoryLabel || p.lapangan_usaha || p.kategori || p.type));
           const bounds = filtered.length ? L.latLngBounds(filtered.map(p => [p.lat, p.lng])) : null;
-          renderPoints(filtered);
+          renderPoints(filtered, kecamatanGeojson?.features || []);
           if (bounds && bounds.isValid()) {
             map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
           } else if (combinedBounds && combinedBounds.isValid()) {
@@ -518,7 +619,7 @@ async function loadDashboard() {
         if (bizFilterClearBtn) {
           bizFilterClearBtn.addEventListener('click', () => {
             Array.from(bizFilterOptions.querySelectorAll('input.biz-filter')).forEach(i => i.checked = false);
-            renderPoints(normalizedPoints);
+            renderPoints(normalizedPoints, kecamatanGeojson?.features || []);
             if (combinedBounds && combinedBounds.isValid()) map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: 14 });
           });
         }
