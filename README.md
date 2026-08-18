@@ -78,4 +78,7 @@ Kemudian buka `http://localhost:8000`.
 - Project ini bersifat statis, jadi GitHub Pages cocok untuk hostingnya.
 - Karena data dimuat lewat `fetch()`, hindari memindahkan file `data/` atau mengganti nama file tanpa ikut mengubah referensinya di `app.js`.
 - Filter kategori hanya aktif jika ada titik data dengan kategori yang berbeda-beda di `data/points.json`
+
+## Roadmap
 - ~~Kalau nanti kamu menambahkan routing khusus atau framework SPA, mungkin perlu penyesuaian tambahan. Untuk versi sekarang belum perlu.~~
+- ~~Menambahkan layer batas desa/gampong menggunakan `data/batas_desa_langa.geojson` sebagai layer opsional pada dashboard.~~
