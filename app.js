@@ -469,11 +469,7 @@ async function loadDashboard() {
       "Mode Gelap (Dark Matter)": darkLayer,
     };
 
-    const overlayLayers = {
-      "<span style='color: #dc3545; font-weight: 600;'>Batas Kota Langsa</span>": kotaBoundaryLayer,
-      "<span style='color: #0284c7; font-weight: 600;'>Batas Kecamatan</span>": kecamatanBoundaryLayer,
-      "Titik Usaha (Cluster)": businessLayer,
-    };
+    const overlayLayers = {};
 
     L.control.layers(baseLayers, overlayLayers, { collapsed: false }).addTo(map);
 
@@ -572,6 +568,25 @@ async function loadDashboard() {
       if (bizFilterOptions) {
         bizFilterOptions.innerHTML = '';
         const fields = Array.from(new Set(normalizedPoints.map(p => p.categoryLabel || p.lapangan_usaha || p.kategori || p.type))).sort();
+        
+        // Create "Select All" checkbox
+        const selectAllId = 'biz-filter-select-all';
+        const selectAllDiv = document.createElement('div');
+        selectAllDiv.className = 'form-check mb-2 pb-2 border-bottom';
+        selectAllDiv.style.borderColor = '#dee2e6';
+        const selectAllInput = document.createElement('input');
+        selectAllInput.className = 'form-check-input';
+        selectAllInput.type = 'checkbox';
+        selectAllInput.id = selectAllId;
+        selectAllInput.dataset.selectAll = 'true';
+        const selectAllLabel = document.createElement('label');
+        selectAllLabel.className = 'form-check-label fw-semibold';
+        selectAllLabel.htmlFor = selectAllId;
+        selectAllLabel.textContent = 'Pilih Semua';
+        selectAllDiv.appendChild(selectAllInput);
+        selectAllDiv.appendChild(selectAllLabel);
+        bizFilterOptions.appendChild(selectAllDiv);
+        
         fields.forEach((f, i) => {
           const id = `biz-filter-${i}`;
           const item = document.createElement('div');
@@ -590,11 +605,28 @@ async function loadDashboard() {
           bizFilterOptions.appendChild(item);
         });
 
+        // Handle "Select All" checkbox
+        selectAllInput.addEventListener('change', (e) => {
+          const isChecked = e.target.checked;
+          Array.from(bizFilterOptions.querySelectorAll('input.biz-filter')).forEach(checkbox => {
+            checkbox.checked = isChecked;
+          });
+          // Trigger filter update
+          bizFilterOptions.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+
         // Filter change
         bizFilterOptions.addEventListener('change', () => {
-          const checked = Array.from(bizFilterOptions.querySelectorAll('input.biz-filter:checked')).map(i => i.dataset.value || i.value);
+          const allCheckboxes = Array.from(bizFilterOptions.querySelectorAll('input.biz-filter'));
+          const checkedCheckboxes = allCheckboxes.filter(cb => cb.checked);
+          
+          // Update "Select All" checkbox state
+          selectAllInput.checked = allCheckboxes.length > 0 && allCheckboxes.length === checkedCheckboxes.length;
+          selectAllInput.indeterminate = checkedCheckboxes.length > 0 && checkedCheckboxes.length < allCheckboxes.length;
+          
+          const checked = checkedCheckboxes.map(i => i.dataset.value || i.value);
           const selected = new Set(checked);
-          const filtered = normalizedPoints.filter(p => selected.size === 0 || selected.has(p.categoryLabel || p.lapangan_usaha || p.kategori || p.type));
+          const filtered = normalizedPoints.filter(p => selected.size > 0 && selected.has(p.categoryLabel || p.lapangan_usaha || p.kategori || p.type));
           const bounds = filtered.length ? L.latLngBounds(filtered.map(p => [p.lat, p.lng])) : null;
           renderPoints(filtered, kecamatanGeojson?.features || []);
           if (bounds && bounds.isValid()) {
@@ -619,6 +651,8 @@ async function loadDashboard() {
         if (bizFilterClearBtn) {
           bizFilterClearBtn.addEventListener('click', () => {
             Array.from(bizFilterOptions.querySelectorAll('input.biz-filter')).forEach(i => i.checked = false);
+            selectAllInput.checked = false;
+            selectAllInput.indeterminate = false;
             renderPoints(normalizedPoints, kecamatanGeojson?.features || []);
             if (combinedBounds && combinedBounds.isValid()) map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: 14 });
           });
