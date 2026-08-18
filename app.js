@@ -11,12 +11,28 @@ const LANGSA_MAX_BOUNDS = L.latLngBounds(
 const SUPPORTED_TYPES = new Set(["keluarga", "usaha", "a", "c", "g", "h", "r", "s"]);
 
 const CATEGORY_LABELS = {
-  A: "Kategori A",
-  C: "Kategori C",
-  G: "Kategori G",
-  H: "Kategori H",
-  R: "Kategori R",
-  S: "Kategori S",
+  A: "Kategori A - Pertanian, Kehutanan, dan Perikanan",
+  B: "Kategori B - Pertambangan dan Penggalian",
+  C: "Kategori C - Industri",
+  D: "Kategori D - Penyediaan Listrik, Gas, Uap/Air Panas dan Udara Dingin",
+  E: "Kategori E - Pengadaan Air, Pengelolaan Air Limbah, Pengelolaan Limbah, dan Remediasi",
+  F: "Kategori F - Konstruksi",
+  G: "Kategori G - Perdagangan Besar dan Eceran",
+  H: "Kategori H - Transportasi dan Penyimpanan",
+  I: "Kategori I - Aktivitas Penyediaan Akomodasi dan Makan Minum",
+  J: "Kategori J - Aktivitas Penerbitan, Penyiaran, serta Produksi dan Distribusi Konten",
+  K: "Kategori K - Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastuktur Komputasi, dan Jasa Informasi Lainnya",
+  L: "Kategori L - Aktivitas Keuangan dan Asuransi",
+  M: "Kategori M - Aktivitas Real Estate",
+  N: "Kategori N - Aktivitas Profesional, Ilmiah, dan Teknis",
+  O: "Kategori O - Aktivitas Administratif dan Penunjang Usaha",
+  P: "Kategori P - Administrasi Pemerintahan, Pertahanan, dan Asuransi Sosial Wajib",
+  Q: "Kategori Q - Pendidikan",
+  R: "Kategori R - Aktivitas Kesehatan Manusia dan Aktivitas Sosial",
+  S: "Kategori S - Kesenian, Olahraga, dan Rekreasi",
+  T: "Kategori T - Aktivitas Jasa Lainnya",
+  U: "Kategori U - Aktivitas Rumah Tangga sebagai Pemberi Kerja; Pembuatan Barang dan Jasa Undifferentiated",
+  V: "Kategori V - Aktivitas Badan Internasional dan Badan Ekstra Internasional Lainnya",
   KELUARGA: "Keluarga",
   USAHA: "Usaha",
 };
@@ -567,7 +583,11 @@ async function loadDashboard() {
     try {
       if (bizFilterOptions) {
         bizFilterOptions.innerHTML = '';
-        const fields = Array.from(new Set(normalizedPoints.map(p => p.categoryLabel || p.lapangan_usaha || p.kategori || p.type))).sort();
+        
+        // Extract unique categories that actually exist in the data
+        const availableCategories = Array.from(
+          new Set(normalizedPoints.map(p => p.kategori).filter(Boolean))
+        ).sort();
         
         // Create "Select All" checkbox
         const selectAllId = 'biz-filter-select-all';
@@ -587,7 +607,8 @@ async function loadDashboard() {
         selectAllDiv.appendChild(selectAllLabel);
         bizFilterOptions.appendChild(selectAllDiv);
         
-        fields.forEach((f, i) => {
+        // Create checkbox for each available category
+        availableCategories.forEach((category, i) => {
           const id = `biz-filter-${i}`;
           const item = document.createElement('div');
           item.className = 'form-check';
@@ -595,11 +616,17 @@ async function loadDashboard() {
           input.className = 'form-check-input biz-filter';
           input.type = 'checkbox';
           input.id = id;
-          input.dataset.value = f;
+          input.dataset.value = category;
+          
+          // Get label from CATEGORY_LABELS or use default format
+          const displayLabel = CATEGORY_LABELS[category] || `Kategori ${category}`;
+          
           const label = document.createElement('label');
           label.className = 'form-check-label';
           label.htmlFor = id;
-          label.textContent = f;
+          label.textContent = displayLabel;
+          label.title = displayLabel; // Add tooltip for long labels
+          
           item.appendChild(input);
           item.appendChild(label);
           bizFilterOptions.appendChild(item);
@@ -624,9 +651,11 @@ async function loadDashboard() {
           selectAllInput.checked = allCheckboxes.length > 0 && allCheckboxes.length === checkedCheckboxes.length;
           selectAllInput.indeterminate = checkedCheckboxes.length > 0 && checkedCheckboxes.length < allCheckboxes.length;
           
-          const checked = checkedCheckboxes.map(i => i.dataset.value || i.value);
-          const selected = new Set(checked);
-          const filtered = normalizedPoints.filter(p => selected.size > 0 && selected.has(p.categoryLabel || p.lapangan_usaha || p.kategori || p.type));
+          // Get selected categories
+          const selectedCategories = new Set(checkedCheckboxes.map(cb => cb.dataset.value));
+          
+          // Filter points by selected categories
+          const filtered = normalizedPoints.filter(p => selectedCategories.size > 0 && selectedCategories.has(p.kategori));
           const bounds = filtered.length ? L.latLngBounds(filtered.map(p => [p.lat, p.lng])) : null;
           renderPoints(filtered, kecamatanGeojson?.features || []);
           if (bounds && bounds.isValid()) {
