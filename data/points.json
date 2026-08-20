@@ -12,12 +12,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "11bd04ca-a57b-4a3d-aaab-93a9738ba0d4",
-    "latitude": "4.466034",
-    "longitude": "97.9540809",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "4cb20d39-a029-4311-9b1e-861d3dde3835",
     "latitude": "4.4769965",
     "longitude": "97.947132",
@@ -58,12 +52,6 @@
     "latitude": "4.4498583",
     "longitude": "98.0113971",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "ca41b886-a22d-421d-9e93-4ba474b0def8",
-    "latitude": "4.515629",
-    "longitude": "97.9451554",
-    "kategori": "A"
   },
   {
     "assignment_id": "ca41b886-a22d-421d-9e93-4ba474b0def8",
@@ -138,12 +126,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "0dcf23e1-f35d-4988-b7b6-008f76338929",
-    "latitude": "4.5314162",
-    "longitude": "97.934105",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "229100d6-a570-4a28-bae4-564cad00c12d",
     "latitude": "4.5332148",
     "longitude": "97.9325967",
@@ -192,18 +174,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "0246d492-5283-42ec-880a-74cab9b23a1b",
-    "latitude": "4.5084045",
-    "longitude": "97.9373082",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "0246d492-5283-42ec-880a-74cab9b23a1b",
-    "latitude": "4.5084045",
-    "longitude": "97.9373082",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "10c37754-5c17-4152-b943-0d2e2fe20b0a",
     "latitude": "4.4539054",
     "longitude": "98.016788",
@@ -219,30 +189,6 @@
     "assignment_id": "3b9824d2-4c3e-4f2b-8ab6-b088e3d2284c",
     "latitude": "4.4659971",
     "longitude": "97.9372671",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3b9824d2-4c3e-4f2b-8ab6-b088e3d2284c",
-    "latitude": "4.4659971",
-    "longitude": "97.9372671",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "56fbebb7-be20-49aa-a0e3-455de7025a06",
-    "latitude": "4.5037779",
-    "longitude": "97.9644356",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "56fbebb7-be20-49aa-a0e3-455de7025a06",
-    "latitude": "4.5037779",
-    "longitude": "97.9644356",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "56fbebb7-be20-49aa-a0e3-455de7025a06",
-    "latitude": "4.5037779",
-    "longitude": "97.9644356",
     "kategori": "A"
   },
   {
@@ -267,18 +213,6 @@
     "assignment_id": "ffb48bc1-68f1-4975-9dfb-9b30c7dbaf80",
     "latitude": "4.479286",
     "longitude": "97.9752758",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ffb48bc1-68f1-4975-9dfb-9b30c7dbaf80",
-    "latitude": "4.479286",
-    "longitude": "97.9752758",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "50e10232-ed26-4c54-b089-9da322a2fdf9",
-    "latitude": "4.4596009",
-    "longitude": "97.9348373",
     "kategori": "A"
   },
   {
@@ -315,12 +249,6 @@
     "assignment_id": "8d923f01-069c-4715-a83e-2dac402fd394",
     "latitude": "4.4489232",
     "longitude": "98.02998025",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "933eb373-e686-4998-a85c-77f72fd5dead",
-    "latitude": "4.466978",
-    "longitude": "97.9658103",
     "kategori": "A"
   },
   {
@@ -372,12 +300,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "92f898d6-131b-4761-a395-e28200582da9",
-    "latitude": "4.5141133333333325",
-    "longitude": "97.91019",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "ab10013d-1cc3-4cc6-ba8f-4ddef54ca5d0",
     "latitude": "4.5309381",
     "longitude": "97.9311674",
@@ -414,12 +336,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "b6d042b4-5634-4329-91ba-302ca566f227",
-    "latitude": "4.438747",
-    "longitude": "98.0180541",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "c09192dd-9622-4feb-91a3-d90ada65b688",
     "latitude": "4.5015806",
     "longitude": "97.9551263",
@@ -435,30 +351,12 @@
     "assignment_id": "d2cbed0b-0ce8-4340-9552-17a7fc5ced9c",
     "latitude": "4.51899466",
     "longitude": "97.94143503",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d2cbed0b-0ce8-4340-9552-17a7fc5ced9c",
-    "latitude": "4.51899466",
-    "longitude": "97.94143503",
     "kategori": "C"
   },
   {
     "assignment_id": "d50f897c-33bf-4c9a-a538-68af9c0543f7",
     "latitude": "4.4576483",
     "longitude": "97.9994763",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d50f897c-33bf-4c9a-a538-68af9c0543f7",
-    "latitude": "4.4576483",
-    "longitude": "97.9994763",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f63217da-14f4-4aa8-aafd-a802b385afa2",
-    "latitude": "4.4356535",
-    "longitude": "97.9899813",
     "kategori": "A"
   },
   {
@@ -516,12 +414,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "9da818d9-668e-4359-92ab-a5bd423511f1",
-    "latitude": "4.4344517",
-    "longitude": "98.035765",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "0c8dd30a-79c0-4cf0-aee4-1ce4892dc908",
     "latitude": "4.483967707492411",
     "longitude": "97.97057770192623",
@@ -561,18 +453,6 @@
     "assignment_id": "87db179f-f649-455f-89a1-c81fcdeef873",
     "latitude": "4.440336666666667",
     "longitude": "97.99285499999999",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "87db179f-f649-455f-89a1-c81fcdeef873",
-    "latitude": "4.440336666666667",
-    "longitude": "97.99285499999999",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "87db179f-f649-455f-89a1-c81fcdeef873",
-    "latitude": "4.440336666666667",
-    "longitude": "97.99285499999999",
     "kategori": "G"
   },
   {
@@ -592,12 +472,6 @@
     "latitude": "4.4667527",
     "longitude": "97.9636157",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "72c39dc1-fab5-4914-b508-d2da4f690ee1",
-    "latitude": "4.438280183333333",
-    "longitude": "98.02167298333333",
-    "kategori": "A"
   },
   {
     "assignment_id": "72c39dc1-fab5-4914-b508-d2da4f690ee1",
@@ -636,12 +510,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "5bae38bb-4a64-4da9-8203-0efea9e03ca6",
-    "latitude": "4.438734",
-    "longitude": "98.0147983",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "5dd2d492-17ea-482b-a25a-23efcdc01425",
     "latitude": "4.46893852",
     "longitude": "97.98369736",
@@ -657,12 +525,6 @@
     "assignment_id": "b71f5a5f-081a-40bf-9891-9f77bc69c894",
     "latitude": "4.4417877",
     "longitude": "98.0175717",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f32976da-81d4-4b41-9932-1562515badfe",
-    "latitude": "4.490953",
-    "longitude": "97.9581978",
     "kategori": "A"
   },
   {
@@ -690,12 +552,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "44b2af08-0697-490b-ad41-144b96ad3e10",
-    "latitude": "4.4374233",
-    "longitude": "97.9901583",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "4be40553-ae16-4ab4-9d94-f63e8fc5186b",
     "latitude": "4.499671666666667",
     "longitude": "97.96907166666666",
@@ -711,24 +567,6 @@
     "assignment_id": "f435b64d-d008-4fca-a176-4482e4f5e209",
     "latitude": "4.454491666666667",
     "longitude": "97.97677333333334",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f435b64d-d008-4fca-a176-4482e4f5e209",
-    "latitude": "4.454491666666667",
-    "longitude": "97.97677333333334",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f435b64d-d008-4fca-a176-4482e4f5e209",
-    "latitude": "4.454491666666667",
-    "longitude": "97.97677333333334",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "fcc407bf-fd23-439f-b697-261fb7d22854",
-    "latitude": "4.4373029",
-    "longitude": "97.9896452",
     "kategori": "A"
   },
   {
@@ -813,12 +651,6 @@
     "assignment_id": "f6471267-ded6-4a97-80d6-6be3928c6380",
     "latitude": "4.507575",
     "longitude": "97.9375783",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f6471267-ded6-4a97-80d6-6be3928c6380",
-    "latitude": "4.507575",
-    "longitude": "97.9375783",
     "kategori": "H"
   },
   {
@@ -831,18 +663,6 @@
     "assignment_id": "3e981bc3-1131-4aef-8b38-8eff0014e433",
     "latitude": "4.509592526592314",
     "longitude": "97.94353617355227",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3e981bc3-1131-4aef-8b38-8eff0014e433",
-    "latitude": "4.509592526592314",
-    "longitude": "97.94353617355227",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "acdf710e-ad03-4ebe-8a4c-da0255fb1df5",
-    "latitude": "4.47755",
-    "longitude": "97.98061666666666",
     "kategori": "A"
   },
   {
@@ -886,12 +706,6 @@
     "latitude": "4.451288",
     "longitude": "97.9523579",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "3d69f01a-6754-4737-99ad-4446a41c545c",
-    "latitude": "4.489513333333333",
-    "longitude": "97.97013166666666",
-    "kategori": "A"
   },
   {
     "assignment_id": "3d69f01a-6754-4737-99ad-4446a41c545c",
@@ -966,12 +780,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "c66b0032-35d8-4bb4-8286-c90e900a2a7c",
-    "latitude": "4.434135",
-    "longitude": "98.0230567",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "6f3c1387-8edf-4cb9-8847-859d1faf7d2d",
     "latitude": "4.456626666666667",
     "longitude": "97.983775",
@@ -1005,19 +813,7 @@
     "assignment_id": "50de94cc-8279-4deb-95d0-6fea897be083",
     "latitude": "4.4883077",
     "longitude": "97.9569251",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "50de94cc-8279-4deb-95d0-6fea897be083",
-    "latitude": "4.4883077",
-    "longitude": "97.9569251",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "5e60a9d3-75e7-4b8b-b509-04131a6b56fe",
-    "latitude": "4.44923278",
-    "longitude": "98.02180421",
-    "kategori": "A"
   },
   {
     "assignment_id": "5e60a9d3-75e7-4b8b-b509-04131a6b56fe",
@@ -1047,18 +843,6 @@
     "assignment_id": "9cf2912c-18f8-4af2-a08f-8b2347c9fecc",
     "latitude": "4.4659849",
     "longitude": "97.947198",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a95d8db3-3bc7-4e12-8fae-7be210b2e4ff",
-    "latitude": "4.4340917",
-    "longitude": "98.0228617",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a95d8db3-3bc7-4e12-8fae-7be210b2e4ff",
-    "latitude": "4.4340917",
-    "longitude": "98.0228617",
     "kategori": "A"
   },
   {
@@ -1104,18 +888,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "da45e5ac-d424-43e3-bc08-607891ea87ba",
-    "latitude": "4.5051833",
-    "longitude": "97.9650117",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "da45e5ac-d424-43e3-bc08-607891ea87ba",
-    "latitude": "4.5051833",
-    "longitude": "97.9650117",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "86942d1c-6c3c-4807-84d6-bc41467b1d04",
     "latitude": "4.460361",
     "longitude": "98.0016128",
@@ -1131,12 +903,6 @@
     "assignment_id": "d707e3c1-43c1-4cee-a8b3-ad388d89f57f",
     "latitude": "4.4489014",
     "longitude": "97.9766657",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e156ffd7-3150-4a44-9e5c-fdddfd8af34a",
-    "latitude": "4.4646084",
-    "longitude": "97.9792273",
     "kategori": "A"
   },
   {
@@ -1257,12 +1023,6 @@
     "assignment_id": "5b3f0252-2b1b-48a8-88ed-e7384f7fec98",
     "latitude": "4.49584",
     "longitude": "97.97400666666665",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "5b3f0252-2b1b-48a8-88ed-e7384f7fec98",
-    "latitude": "4.49584",
-    "longitude": "97.97400666666665",
     "kategori": "G"
   },
   {
@@ -1329,19 +1089,7 @@
     "assignment_id": "523bec1e-a669-4274-802f-1d339c0d31b2",
     "latitude": "4.436658333333333",
     "longitude": "98.00373833333333",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "523bec1e-a669-4274-802f-1d339c0d31b2",
-    "latitude": "4.436658333333333",
-    "longitude": "98.00373833333333",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "66571f2f-a516-4972-99c8-4511ab345056",
-    "latitude": "4.4649903",
-    "longitude": "97.9861096",
-    "kategori": "A"
   },
   {
     "assignment_id": "66571f2f-a516-4972-99c8-4511ab345056",
@@ -1374,18 +1122,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "9fabffea-0a7d-497b-af31-30e799253cf8",
-    "latitude": "4.4414244",
-    "longitude": "97.9743529",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9fabffea-0a7d-497b-af31-30e799253cf8",
-    "latitude": "4.4414244",
-    "longitude": "97.9743529",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b99041d2-ca45-4077-8dd3-67881b755564",
     "latitude": "4.512979527935386",
     "longitude": "97.94361747801304",
@@ -1401,18 +1137,6 @@
     "assignment_id": "18c65839-bf91-4eb9-9aa6-992165e9ae39",
     "latitude": "4.4776787",
     "longitude": "97.9585633",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "18c65839-bf91-4eb9-9aa6-992165e9ae39",
-    "latitude": "4.4776787",
-    "longitude": "97.9585633",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "bfb6928a-50b5-4b5d-a001-b7740fc94f47",
-    "latitude": "4.470406666666666",
-    "longitude": "97.93388333333333",
     "kategori": "A"
   },
   {
@@ -1464,12 +1188,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "931d54a1-433c-42c2-a408-bc6edd357901",
-    "latitude": "4.4676839",
-    "longitude": "97.9413735",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "98843f4e-67e8-4e41-b473-f45fd4a8145b",
     "latitude": "4.4546352",
     "longitude": "97.9280841",
@@ -1498,12 +1216,6 @@
     "latitude": "4.4703396",
     "longitude": "97.9726189",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "14031bab-9d56-4a7b-862a-9fce74b30aee",
-    "latitude": "4.505606966666666",
-    "longitude": "97.94541348333333",
-    "kategori": "A"
   },
   {
     "assignment_id": "14031bab-9d56-4a7b-862a-9fce74b30aee",
@@ -1560,12 +1272,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "c143e122-0db9-4180-8ab7-07700dfc3727",
-    "latitude": "4.4402805",
-    "longitude": "97.9910205",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "c9c3206d-7fbd-4246-a028-0fbf5316f457",
     "latitude": "4.4663682",
     "longitude": "97.9422629",
@@ -1612,12 +1318,6 @@
     "latitude": "4.45953248",
     "longitude": "97.97899083",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "f47de440-957e-4494-8696-a9f19014813f",
-    "latitude": "4.439544",
-    "longitude": "97.9686585",
-    "kategori": "A"
   },
   {
     "assignment_id": "f47de440-957e-4494-8696-a9f19014813f",
@@ -1716,12 +1416,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "0f822452-45bf-4c05-aa00-3b3f1a7582a2",
-    "latitude": "4.4317872",
-    "longitude": "98.0231725",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "160c0182-51ea-40e6-8958-90bbe5ef18f5",
     "latitude": "4.464625",
     "longitude": "97.93696999999999",
@@ -1761,12 +1455,6 @@
     "assignment_id": "dfb7a8df-f666-47b8-b9a8-ff6ee55a5d94",
     "latitude": "4.4444977",
     "longitude": "97.9784811",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ece640d3-1998-43c9-923a-a6cc525b4e79",
-    "latitude": "4.4321381",
-    "longitude": "98.0206081",
     "kategori": "A"
   },
   {
@@ -1842,33 +1530,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "a972ceac-89e5-4573-898f-e37ca1570572",
-    "latitude": "4.453667",
-    "longitude": "98.0184383",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b5ba5508-dbf7-4b8f-8fb7-02997e67f83a",
     "latitude": "4.4226153",
     "longitude": "98.0208987",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "c0efdc62-3fc0-4145-8fc0-c1ad4df3c950",
-    "latitude": "4.4672092",
-    "longitude": "97.951965",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "c0efdc62-3fc0-4145-8fc0-c1ad4df3c950",
-    "latitude": "4.4672092",
-    "longitude": "97.951965",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "c0efdc62-3fc0-4145-8fc0-c1ad4df3c950",
-    "latitude": "4.4672092",
-    "longitude": "97.951965",
     "kategori": "A"
   },
   {
@@ -1905,12 +1569,6 @@
     "assignment_id": "365e7487-7197-4398-b91f-3c6312295144",
     "latitude": "4.45603065",
     "longitude": "97.99602004",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "365e7487-7197-4398-b91f-3c6312295144",
-    "latitude": "4.45603065",
-    "longitude": "97.99602004",
     "kategori": "H"
   },
   {
@@ -1924,12 +1582,6 @@
     "latitude": "4.4570217",
     "longitude": "97.9805303",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "a21fc82d-2e8a-4181-9da3-723a98362454",
-    "latitude": "4.4230836",
-    "longitude": "98.0214892",
-    "kategori": "A"
   },
   {
     "assignment_id": "a21fc82d-2e8a-4181-9da3-723a98362454",
@@ -2016,12 +1668,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "c911c4cd-6b8e-4e05-a0d3-d3a8d76d26e6",
-    "latitude": "4.4444785",
-    "longitude": "97.9786453",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "480d6096-dc7b-4d73-b1d3-bd7982d69e7b",
     "latitude": "4.4921750000000005",
     "longitude": "97.96796333333332",
@@ -2058,18 +1704,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "8b40ba22-7d3e-499e-b465-532ab0e4725a",
-    "latitude": "4.4763889",
-    "longitude": "97.9857758",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b64c06d2-857e-4455-a38b-bf27a6f2f367",
-    "latitude": "4.4707732",
-    "longitude": "97.9324103",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b64c06d2-857e-4455-a38b-bf27a6f2f367",
     "latitude": "4.4707732",
     "longitude": "97.9324103",
@@ -2092,18 +1726,6 @@
     "latitude": "4.4900498",
     "longitude": "97.9580554",
     "kategori": "F"
-  },
-  {
-    "assignment_id": "d6b88edc-02bf-4d29-8143-9aec73562a7e",
-    "latitude": "4.44630311",
-    "longitude": "98.02908004",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d6b88edc-02bf-4d29-8143-9aec73562a7e",
-    "latitude": "4.44630311",
-    "longitude": "98.02908004",
-    "kategori": "A"
   },
   {
     "assignment_id": "d6b88edc-02bf-4d29-8143-9aec73562a7e",
@@ -2160,18 +1782,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "59f7a015-2fea-4b04-ad50-2b7c1cc011fc",
-    "latitude": "4.4722658",
-    "longitude": "97.9367045",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "59f7a015-2fea-4b04-ad50-2b7c1cc011fc",
-    "latitude": "4.4722658",
-    "longitude": "97.9367045",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "8abc0872-0c73-4e87-8b7f-89dd38446eac",
     "latitude": "4.4743459",
     "longitude": "97.9485845",
@@ -2200,12 +1810,6 @@
     "latitude": "4.4370726",
     "longitude": "98.0192241",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "f2a20b57-4e2d-449a-b804-57d5e9aa969d",
-    "latitude": "4.511463325470686",
-    "longitude": "97.94518464244902",
-    "kategori": "A"
   },
   {
     "assignment_id": "f2a20b57-4e2d-449a-b804-57d5e9aa969d",
@@ -2268,21 +1872,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "73b63a45-1f83-4fc9-80ae-0ed508ffaa54",
-    "latitude": "4.44711",
-    "longitude": "98.004111",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "85b5000e-384c-42e0-9f20-ada63f8434b1",
     "latitude": "4.4605617",
     "longitude": "97.9929016",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9a638212-b759-41d8-a8a4-61469e3c856d",
-    "latitude": "4.453453966666667",
-    "longitude": "98.01151908333334",
     "kategori": "A"
   },
   {
@@ -2346,18 +1938,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2182fe68-dc0c-4743-93a9-883602d72dbc",
-    "latitude": "4.4916405",
-    "longitude": "97.9615511",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "2182fe68-dc0c-4743-93a9-883602d72dbc",
-    "latitude": "4.4916405",
-    "longitude": "97.9615511",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "4271994c-903b-481d-ac4a-25f1d4294d58",
     "latitude": "4.4792715",
     "longitude": "97.9424772",
@@ -2373,12 +1953,6 @@
     "assignment_id": "65fa398c-17da-4a76-bcfe-33beee384680",
     "latitude": "4.4672867",
     "longitude": "97.9316307",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "8e583c65-d240-4f3f-ba87-cba0911a3de7",
-    "latitude": "4.4417383",
-    "longitude": "97.9722883",
     "kategori": "A"
   },
   {
@@ -2434,12 +2008,6 @@
     "latitude": "4.466444999999999",
     "longitude": "97.93258333333333",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "93e6effe-a25a-495d-8fac-5eb8aaf06e20",
-    "latitude": "4.454036133333333",
-    "longitude": "98.02929051666666",
-    "kategori": "C"
   },
   {
     "assignment_id": "93e6effe-a25a-495d-8fac-5eb8aaf06e20",
@@ -2544,12 +2112,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "ad29488a-f9c9-46cc-b054-a91ae76ece04",
-    "latitude": "4.455665",
-    "longitude": "97.97654499999999",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b11659ef-92ee-4d69-9bf5-b7d7c4adf045",
     "latitude": "4.421191666666667",
     "longitude": "98.02449166666665",
@@ -2572,18 +2134,6 @@
     "latitude": "4.460759",
     "longitude": "97.9369433",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "d004b3e5-fe3b-460c-a309-159897ff0ed8",
-    "latitude": "4.44912585",
-    "longitude": "98.01700337",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d004b3e5-fe3b-460c-a309-159897ff0ed8",
-    "latitude": "4.44912585",
-    "longitude": "98.01700337",
-    "kategori": "A"
   },
   {
     "assignment_id": "d004b3e5-fe3b-460c-a309-159897ff0ed8",
@@ -2625,12 +2175,6 @@
     "assignment_id": "e602f7c8-0cda-44bd-b8ba-2871ceaa2858",
     "latitude": "4.5507193",
     "longitude": "98.0644188",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f2f96269-6b20-4b92-8871-789098536f95",
-    "latitude": "4.447092799999999",
-    "longitude": "97.94225655",
     "kategori": "A"
   },
   {
@@ -2697,25 +2241,7 @@
     "assignment_id": "07fc6b54-24a4-45e0-a6d8-6f7ba2b8c787",
     "latitude": "4.490703333333333",
     "longitude": "97.96984499999999",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "07fc6b54-24a4-45e0-a6d8-6f7ba2b8c787",
-    "latitude": "4.490703333333333",
-    "longitude": "97.96984499999999",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "1f414f5a-6232-42dc-9455-9bd6214ea0df",
-    "latitude": "4.462062",
-    "longitude": "97.9712443",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1f414f5a-6232-42dc-9455-9bd6214ea0df",
-    "latitude": "4.462062",
-    "longitude": "97.9712443",
-    "kategori": "A"
   },
   {
     "assignment_id": "1f414f5a-6232-42dc-9455-9bd6214ea0df",
@@ -2727,12 +2253,6 @@
     "assignment_id": "08048327-70cb-44ba-8491-cded3987d785",
     "latitude": "4.4389494",
     "longitude": "98.0175149",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "409fb7b4-c7ab-4d87-b8b9-860ba0705243",
-    "latitude": "4.479782371781766",
-    "longitude": "97.97725422307849",
     "kategori": "A"
   },
   {
@@ -2775,19 +2295,7 @@
     "assignment_id": "caa29b48-f9c8-47e8-8afb-8a9a11e82ab5",
     "latitude": "4.4945018",
     "longitude": "97.9537676",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "caa29b48-f9c8-47e8-8afb-8a9a11e82ab5",
-    "latitude": "4.4945018",
-    "longitude": "97.9537676",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "f2931d34-9ec9-4bdc-bb8f-56ad728f64b6",
-    "latitude": "4.4491286",
-    "longitude": "98.02065286",
-    "kategori": "A"
   },
   {
     "assignment_id": "f2931d34-9ec9-4bdc-bb8f-56ad728f64b6",
@@ -2808,12 +2316,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2b71fd12-6de3-4383-bd8d-f931a1d4741e",
-    "latitude": "4.4437265",
-    "longitude": "97.9808456",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "2d073801-ba4e-4839-bb9a-f3a57590d670",
     "latitude": "4.476313333333334",
     "longitude": "97.94810000000001",
@@ -2823,18 +2325,6 @@
     "assignment_id": "8e9f344d-d399-4166-b48f-8c3789b421f9",
     "latitude": "4.4533291",
     "longitude": "98.0147069",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "8e9f344d-d399-4166-b48f-8c3789b421f9",
-    "latitude": "4.4533291",
-    "longitude": "98.0147069",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ef53dd17-fc60-43b7-94cb-55d87eb5173a",
-    "latitude": "4.45582322",
-    "longitude": "97.98798202",
     "kategori": "A"
   },
   {
@@ -2866,18 +2356,6 @@
     "latitude": "4.457278333333333",
     "longitude": "97.97354333333332",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "3c21aa29-3d57-4e0b-abf6-0ff79d0cca0e",
-    "latitude": "4.4462498",
-    "longitude": "97.996151",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3c21aa29-3d57-4e0b-abf6-0ff79d0cca0e",
-    "latitude": "4.4462498",
-    "longitude": "97.996151",
-    "kategori": "A"
   },
   {
     "assignment_id": "3c21aa29-3d57-4e0b-abf6-0ff79d0cca0e",
@@ -2940,18 +2418,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "40de898e-5255-4283-b699-e60a498a5cb2",
-    "latitude": "4.4956119",
-    "longitude": "97.9517577",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "40de898e-5255-4283-b699-e60a498a5cb2",
-    "latitude": "4.4956119",
-    "longitude": "97.9517577",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "cdbdb3b5-ae1a-442c-8fe3-035f2f15cec6",
     "latitude": "4.440761666666666",
     "longitude": "97.98775833333333",
@@ -2982,27 +2448,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "76000a75-e6c2-4bb4-895f-0866203a10fa",
-    "latitude": "4.4347",
-    "longitude": "98.021775",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "7c0aed0f-1d70-4b21-a989-32817acd9b81",
     "latitude": "4.5069968",
     "longitude": "98.0110093",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "bcb054af-8451-4e6a-b039-119933be108e",
-    "latitude": "4.438981",
-    "longitude": "97.9706917",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "bcb054af-8451-4e6a-b039-119933be108e",
-    "latitude": "4.438981",
-    "longitude": "97.9706917",
     "kategori": "A"
   },
   {
@@ -3054,12 +2502,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "40dba4d7-16e8-430a-b9c9-8165eaf30fd9",
-    "latitude": "4.5034027",
-    "longitude": "97.9645192",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "82930c2f-c178-400c-84cd-f10ca474d3d9",
     "latitude": "4.5004387",
     "longitude": "97.9549797",
@@ -3100,12 +2542,6 @@
     "latitude": "4.4684944",
     "longitude": "97.9477617",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "61cc4ec7-cf6f-4fcc-8af5-7da9ae21812a",
-    "latitude": "4.4349708",
-    "longitude": "98.0140519",
-    "kategori": "A"
   },
   {
     "assignment_id": "61cc4ec7-cf6f-4fcc-8af5-7da9ae21812a",
@@ -3252,12 +2688,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "e348470e-8ec9-4cb6-b2b3-8c104db986fe",
-    "latitude": "4.4357617",
-    "longitude": "98.0223083",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "e4209822-763f-42bf-9697-6b52bddd5dbf",
     "latitude": "4.4353113",
     "longitude": "97.9888857",
@@ -3360,21 +2790,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "cb6644e0-aa68-4434-85a5-a1520b7fa6fe",
-    "latitude": "4.47416",
-    "longitude": "97.98545",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "cfade0c8-a55c-4ea6-86ea-3536339b3e46",
     "latitude": "4.4343117",
     "longitude": "98.0225783",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f211cac2-f005-4ea7-9579-59be344066e4",
-    "latitude": "4.524675",
-    "longitude": "97.9389383",
     "kategori": "A"
   },
   {
@@ -3402,12 +2820,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "72ab83cd-292f-4857-b9c9-4aeeab3986ee",
-    "latitude": "4.4592057",
-    "longitude": "97.9890124",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "fe7cf45e-4a85-4861-b53e-c11c4c434174",
     "latitude": "4.469984999999999",
     "longitude": "97.93402833333333",
@@ -3424,12 +2836,6 @@
     "latitude": "4.4480147",
     "longitude": "98.0037077",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "43b03bbb-7058-4e61-a0b5-44a5a04958b3",
-    "latitude": "4.4341732",
-    "longitude": "98.0218083",
-    "kategori": "A"
   },
   {
     "assignment_id": "43b03bbb-7058-4e61-a0b5-44a5a04958b3",
@@ -3507,24 +2913,6 @@
     "assignment_id": "58e17b5a-205a-470b-967c-2ee5b7ba2fe1",
     "latitude": "4.514642120338976",
     "longitude": "97.94196062721312",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "58e17b5a-205a-470b-967c-2ee5b7ba2fe1",
-    "latitude": "4.514642120338976",
-    "longitude": "97.94196062721312",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7a0b5154-4ba7-4e73-a215-afaf8fca004c",
-    "latitude": "4.4397807",
-    "longitude": "97.9715419",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7a0b5154-4ba7-4e73-a215-afaf8fca004c",
-    "latitude": "4.4397807",
-    "longitude": "97.9715419",
     "kategori": "A"
   },
   {
@@ -3654,12 +3042,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "7318b21c-3615-48be-9ebe-6b77956c1d3c",
-    "latitude": "4.472245",
-    "longitude": "97.90212666666666",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "78f6329d-e6a9-4e05-b812-3d4bdde42e42",
     "latitude": "4.4648666666666665",
     "longitude": "97.93703333333333",
@@ -3754,12 +3136,6 @@
     "latitude": "4.48067134",
     "longitude": "97.97692325",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "39ab96c2-55d1-4396-9771-c0c0d7b92615",
-    "latitude": "4.4526697",
-    "longitude": "98.0154618",
-    "kategori": "A"
   },
   {
     "assignment_id": "39ab96c2-55d1-4396-9771-c0c0d7b92615",
@@ -3870,12 +3246,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2831bb10-fc7e-4c7d-ba57-4d34084963bf",
-    "latitude": "4.4338865",
-    "longitude": "98.0139655",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "441fc0f2-d1c6-4643-a4ea-1af9fec953d0",
     "latitude": "4.4694133",
     "longitude": "97.9850734",
@@ -3954,12 +3324,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2343fd74-8b9e-438c-894d-13824c50478f",
-    "latitude": "4.494655",
-    "longitude": "97.95009666666668",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "34f195c6-ca85-40ee-a513-27f5325eba1f",
     "latitude": "4.420673333333334",
     "longitude": "98.02655333333333",
@@ -3999,12 +3363,6 @@
     "assignment_id": "7d83d6ff-f6e0-4e27-8873-30876d8f629c",
     "latitude": "4.4764346",
     "longitude": "97.9756335",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "67df649c-bdef-4504-9c31-e5285190875a",
-    "latitude": "4.4758443",
-    "longitude": "97.9389686",
     "kategori": "A"
   },
   {
@@ -4122,28 +3480,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "bb08b81e-d0ba-4c12-bb48-695f895ac71e",
-    "latitude": "4.4342507",
-    "longitude": "98.0133156",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "e883efe3-8f9b-4611-8269-417aa401700a",
     "latitude": "4.465893333333333",
     "longitude": "97.95060166666666",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "06f031b5-e805-4e4e-9bb6-6792df1dc31e",
-    "latitude": "4.43126",
-    "longitude": "98.036515",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "06f031b5-e805-4e4e-9bb6-6792df1dc31e",
-    "latitude": "4.43126",
-    "longitude": "98.036515",
-    "kategori": "A"
   },
   {
     "assignment_id": "06f031b5-e805-4e4e-9bb6-6792df1dc31e",
@@ -4170,27 +3510,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "ef84f568-e713-4313-8efe-45a3743e5a2a",
-    "latitude": "4.490125000000001",
-    "longitude": "97.97183333333332",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ef84f568-e713-4313-8efe-45a3743e5a2a",
-    "latitude": "4.490125000000001",
-    "longitude": "97.97183333333332",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "7f7a4d44-8727-4b3a-9738-7d99eac12405",
     "latitude": "4.470165",
     "longitude": "97.94168499999999",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1d772d7a-3d4b-4f3d-bfed-f0a2686254ed",
-    "latitude": "4.461079",
-    "longitude": "97.9845979",
     "kategori": "A"
   },
   {
@@ -4269,12 +3591,6 @@
     "assignment_id": "d7da4981-34f9-479a-89ff-0219afba9d81",
     "latitude": "4.4743248",
     "longitude": "97.9497218",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d7da4981-34f9-479a-89ff-0219afba9d81",
-    "latitude": "4.4743248",
-    "longitude": "97.9497218",
     "kategori": "C"
   },
   {
@@ -4290,22 +3606,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "1d0b59c4-26c5-4515-8428-0647c1cb0ea5",
-    "latitude": "4.45669633",
-    "longitude": "97.98974145",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "f4dae49d-c779-4578-a2bf-f1e13a6f2c8b",
     "latitude": "4.4929295",
     "longitude": "97.9497823",
     "kategori": "F"
-  },
-  {
-    "assignment_id": "01d3dc57-97a4-4a84-8d50-f3e2a6517af0",
-    "latitude": "4.4739265",
-    "longitude": "97.9380522",
-    "kategori": "A"
   },
   {
     "assignment_id": "01d3dc57-97a4-4a84-8d50-f3e2a6517af0",
@@ -4354,18 +3658,6 @@
     "latitude": "4.460333333333334",
     "longitude": "97.97119333333333",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "161edbb1-6820-4ae0-9d57-ade35492434b",
-    "latitude": "4.4399187",
-    "longitude": "97.9920416",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "161edbb1-6820-4ae0-9d57-ade35492434b",
-    "latitude": "4.4399187",
-    "longitude": "97.9920416",
-    "kategori": "A"
   },
   {
     "assignment_id": "161edbb1-6820-4ae0-9d57-ade35492434b",
@@ -4470,12 +3762,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "5e676491-42a9-4d2c-87e1-e28d24991176",
-    "latitude": "4.44831768",
-    "longitude": "98.02989465",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "781b52cd-c7a3-48e8-bcf1-dc912a2153fc",
     "latitude": "4.55253215",
     "longitude": "98.06476211666669",
@@ -4540,12 +3826,6 @@
     "latitude": "4.4713817",
     "longitude": "97.9697073",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "f0e588d1-2322-4f25-b766-e8618cb7333f",
-    "latitude": "4.4787007",
-    "longitude": "97.9816814",
-    "kategori": "A"
   },
   {
     "assignment_id": "f0e588d1-2322-4f25-b766-e8618cb7333f",
@@ -4644,18 +3924,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "0a7489b4-3eb7-4faa-90bd-5777a7e943f6",
-    "latitude": "4.4581381",
-    "longitude": "97.9942005",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "0a7489b4-3eb7-4faa-90bd-5777a7e943f6",
-    "latitude": "4.4581381",
-    "longitude": "97.9942005",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "23894e0c-ed1e-4d42-887b-8ad9d1f76757",
     "latitude": "4.4432216",
     "longitude": "98.0138352",
@@ -4692,21 +3960,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "c14a02f8-c036-4a7e-a607-4c512d20e1d0",
-    "latitude": "4.4910657",
-    "longitude": "97.9718001",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "ce5476b4-d508-4d03-9952-6450469d5d55",
     "latitude": "4.4812612",
     "longitude": "97.9447432",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "eb28bd1b-a372-4462-a20e-0f4991b5d6cf",
-    "latitude": "4.4350577",
-    "longitude": "97.9882192",
     "kategori": "A"
   },
   {
@@ -4752,12 +4008,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "9d889b89-663b-4719-b171-11395ae9ea30",
-    "latitude": "4.440476666666667",
-    "longitude": "97.98837499999999",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "aed42728-d66a-48b5-a7d3-d4b22688bdb0",
     "latitude": "4.47196168",
     "longitude": "97.98011775",
@@ -4780,18 +4030,6 @@
     "latitude": "4.48138139",
     "longitude": "97.97502576",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "7a8e565f-7d14-4bec-a41f-b16820e3021b",
-    "latitude": "4.439739733333334",
-    "longitude": "97.93625706666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7a8e565f-7d14-4bec-a41f-b16820e3021b",
-    "latitude": "4.439739733333334",
-    "longitude": "97.93625706666666",
-    "kategori": "A"
   },
   {
     "assignment_id": "7a8e565f-7d14-4bec-a41f-b16820e3021b",
@@ -4842,22 +4080,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "c5320434-3b23-47fa-90fc-3e8030dadcd7",
-    "latitude": "4.4415659",
-    "longitude": "98.0153979",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "ef9d9618-15f4-4177-9470-95651085079c",
     "latitude": "4.4856047",
     "longitude": "97.9610752",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "d4d7ace4-5c0d-4e5d-b1a8-6b6f268e6c44",
-    "latitude": "4.4530769999999995",
-    "longitude": "98.01478245000001",
-    "kategori": "A"
   },
   {
     "assignment_id": "d4d7ace4-5c0d-4e5d-b1a8-6b6f268e6c44",
@@ -4920,18 +4146,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "b7ee2696-5156-44ea-ad79-0b8e3bf10c5c",
-    "latitude": "4.43939",
-    "longitude": "98.00202499999999",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b7ee2696-5156-44ea-ad79-0b8e3bf10c5c",
-    "latitude": "4.43939",
-    "longitude": "98.00202499999999",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "e15bd392-e064-4fbb-920a-849693b17b59",
     "latitude": "4.4587603",
     "longitude": "97.9977623",
@@ -4968,12 +4182,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "261652a8-6e17-4ab5-8bf4-a7f1c14ac742",
-    "latitude": "4.450316466666666",
-    "longitude": "97.97395216666668",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "5788bb43-dbc8-4244-a4ae-0a590f800e10",
     "latitude": "4.46992457",
     "longitude": "97.97387382",
@@ -4989,12 +4197,6 @@
     "assignment_id": "7db8f51e-654c-4a22-a226-f13e3fc97ecf",
     "latitude": "4.4886753",
     "longitude": "97.9598577",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7db8f51e-654c-4a22-a226-f13e3fc97ecf",
-    "latitude": "4.4886753",
-    "longitude": "97.9598577",
     "kategori": "C"
   },
   {
@@ -5008,12 +4210,6 @@
     "latitude": "4.4560948",
     "longitude": "98.0061264",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "0c1b91a9-80fa-49a5-9cc6-78166b49bf6d",
-    "latitude": "4.45796769",
-    "longitude": "97.99717819",
-    "kategori": "A"
   },
   {
     "assignment_id": "0c1b91a9-80fa-49a5-9cc6-78166b49bf6d",
@@ -5050,12 +4246,6 @@
     "latitude": "4.4768805",
     "longitude": "97.9823081",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "acde031f-38db-4043-b506-f41fdd12a77a",
-    "latitude": "4.441752683333333",
-    "longitude": "98.01400829999999",
-    "kategori": "A"
   },
   {
     "assignment_id": "acde031f-38db-4043-b506-f41fdd12a77a",
@@ -5145,12 +4335,6 @@
     "assignment_id": "7d26d4bd-d0be-4d4d-bc80-717662b1a816",
     "latitude": "4.4545651",
     "longitude": "97.9810018",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7d26d4bd-d0be-4d4d-bc80-717662b1a816",
-    "latitude": "4.4545651",
-    "longitude": "97.9810018",
     "kategori": "H"
   },
   {
@@ -5172,12 +4356,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "04f04c8f-e832-43b0-bd76-cc5c55a21312",
-    "latitude": "4.441701666666666",
-    "longitude": "97.990235",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "68a76081-b5dc-4b3e-bbf0-105d8408ab7b",
     "latitude": "4.466983",
     "longitude": "97.9625671",
@@ -5188,12 +4366,6 @@
     "latitude": "4.4765786",
     "longitude": "97.9805523",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "813f29bd-d1cd-41df-99fb-f422ef2d6c0d",
-    "latitude": "4.44847235",
-    "longitude": "98.02941281",
-    "kategori": "A"
   },
   {
     "assignment_id": "813f29bd-d1cd-41df-99fb-f422ef2d6c0d",
@@ -5229,18 +4401,6 @@
     "assignment_id": "0070d8d2-73d2-4250-bb93-49f2de027cb8",
     "latitude": "4.5095717",
     "longitude": "97.94072",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "0070d8d2-73d2-4250-bb93-49f2de027cb8",
-    "latitude": "4.5095717",
-    "longitude": "97.94072",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "86008128-cc73-46d5-9b2b-69866df2bcf0",
-    "latitude": "4.5079615",
-    "longitude": "97.9439027",
     "kategori": "A"
   },
   {
@@ -5310,12 +4470,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "6d419efd-8c5e-453b-a744-49ebd22d05a9",
-    "latitude": "4.4404913",
-    "longitude": "97.973663",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "a0698eac-74ac-4be7-a616-0f9548be8a59",
     "latitude": "4.477343",
     "longitude": "97.9729078",
@@ -5326,12 +4480,6 @@
     "latitude": "4.44646013",
     "longitude": "98.03027889",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "f93e49ba-bd7f-4e89-823a-f8e741865c72",
-    "latitude": "4.433983333333333",
-    "longitude": "98.00746666666667",
-    "kategori": "A"
   },
   {
     "assignment_id": "f93e49ba-bd7f-4e89-823a-f8e741865c72",
@@ -5374,18 +4522,6 @@
     "latitude": "4.475425",
     "longitude": "97.98051666666667",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "9f083ed6-b67b-4ad5-b126-16bc7354fa55",
-    "latitude": "4.508575",
-    "longitude": "97.9437711",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9f083ed6-b67b-4ad5-b126-16bc7354fa55",
-    "latitude": "4.508575",
-    "longitude": "97.9437711",
-    "kategori": "A"
   },
   {
     "assignment_id": "9f083ed6-b67b-4ad5-b126-16bc7354fa55",
@@ -5451,12 +4587,6 @@
     "assignment_id": "c0ab2a9b-8a31-4d29-8aea-6111cb474e86",
     "latitude": "4.4350733",
     "longitude": "98.0218717",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "c7e4a158-120c-4c68-908c-929495dc6ee5",
-    "latitude": "4.4642241",
-    "longitude": "97.9554905",
     "kategori": "A"
   },
   {
@@ -5556,12 +4686,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2ff8b748-6bba-4119-8bb4-287999495286",
-    "latitude": "4.451015",
-    "longitude": "98.0124267",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "3f203ae8-5f20-4ba3-a207-84d5fe5c6aa5",
     "latitude": "4.5066373",
     "longitude": "97.9379803",
@@ -5628,18 +4752,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "75ccb20d-104a-4f6f-a66a-d92ba1e3b390",
-    "latitude": "4.4627426",
-    "longitude": "97.9699396",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "75ccb20d-104a-4f6f-a66a-d92ba1e3b390",
-    "latitude": "4.4627426",
-    "longitude": "97.9699396",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "c340a943-fa88-4ced-9564-6ad7719cfa35",
     "latitude": "4.4808908",
     "longitude": "97.9427481",
@@ -5667,18 +4779,6 @@
     "assignment_id": "4bb7f3a4-9cc3-481c-8d63-daa2965705e1",
     "latitude": "4.4969817",
     "longitude": "97.9438597",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "4bb7f3a4-9cc3-481c-8d63-daa2965705e1",
-    "latitude": "4.4969817",
-    "longitude": "97.9438597",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "54dfa141-fc80-44bd-b025-cf2590c9153c",
-    "latitude": "4.469516",
-    "longitude": "97.9808252",
     "kategori": "A"
   },
   {
@@ -5904,12 +5004,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "61d46bb0-df88-4e03-b559-f481d59de7f2",
-    "latitude": "4.44838698",
-    "longitude": "98.0282265",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "da2bfd79-5e9f-4753-893f-f50333763313",
     "latitude": "4.4782676",
     "longitude": "97.9507875",
@@ -5938,18 +5032,6 @@
     "latitude": "4.4619391",
     "longitude": "97.9399439",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "121759c2-066d-4f4c-a599-e22e402cc1a7",
-    "latitude": "4.51225386466831",
-    "longitude": "97.94467938132584",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "121759c2-066d-4f4c-a599-e22e402cc1a7",
-    "latitude": "4.51225386466831",
-    "longitude": "97.94467938132584",
-    "kategori": "A"
   },
   {
     "assignment_id": "121759c2-066d-4f4c-a599-e22e402cc1a7",
@@ -6021,24 +5103,6 @@
     "assignment_id": "aaef4e16-443b-4ce3-bfdd-1bd53ee3d16c",
     "latitude": "4.4516766",
     "longitude": "97.9740344",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "aaef4e16-443b-4ce3-bfdd-1bd53ee3d16c",
-    "latitude": "4.4516766",
-    "longitude": "97.9740344",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "aaef4e16-443b-4ce3-bfdd-1bd53ee3d16c",
-    "latitude": "4.4516766",
-    "longitude": "97.9740344",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1a747602-393c-49b4-b55d-b2a0aa2e9c4e",
-    "latitude": "4.4706711",
-    "longitude": "97.9425868",
     "kategori": "A"
   },
   {
@@ -6204,27 +5268,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "925c2f94-48cc-4498-9764-0af4fc18ec57",
-    "latitude": "4.4723315",
-    "longitude": "97.9027096",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "a19c25c5-e84c-40c8-a962-bfcf6e5405f9",
     "latitude": "4.443033333333333",
     "longitude": "97.99154666666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a19c25c5-e84c-40c8-a962-bfcf6e5405f9",
-    "latitude": "4.443033333333333",
-    "longitude": "97.99154666666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "bf6894b1-7af1-4cec-9ada-7ce37150e4a3",
-    "latitude": "4.439352",
-    "longitude": "98.0176969",
     "kategori": "A"
   },
   {
@@ -6348,18 +5394,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "f9e8d2db-b6b0-423a-a9e7-a6e78a9ce435",
-    "latitude": "4.4458217",
-    "longitude": "97.9963169",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "df1a0d92-72f3-4349-b9d9-f594c004c447",
-    "latitude": "4.453811716666666",
-    "longitude": "98.01431929999998",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "df1a0d92-72f3-4349-b9d9-f594c004c447",
     "latitude": "4.453811716666666",
     "longitude": "98.01431929999998",
@@ -6370,12 +5404,6 @@
     "latitude": "4.4736787",
     "longitude": "97.9517851",
     "kategori": "O"
-  },
-  {
-    "assignment_id": "1614dbda-b0c7-4e66-8881-2b9d50b3219e",
-    "latitude": "4.44813706",
-    "longitude": "98.02821771",
-    "kategori": "A"
   },
   {
     "assignment_id": "1614dbda-b0c7-4e66-8881-2b9d50b3219e",
@@ -6396,18 +5424,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "1c7e592d-5462-4e3b-ae74-326742953fb6",
-    "latitude": "4.47217",
-    "longitude": "97.9318628",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1c7e592d-5462-4e3b-ae74-326742953fb6",
-    "latitude": "4.47217",
-    "longitude": "97.9318628",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "60f54c7d-4770-4e91-ad15-305baba3fcb5",
     "latitude": "4.4819457",
     "longitude": "97.9455536",
@@ -6418,12 +5434,6 @@
     "latitude": "4.478483333333333",
     "longitude": "97.95360000000001",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "9999c935-7ea3-436f-9992-885ca2a17e48",
-    "latitude": "4.4664733",
-    "longitude": "97.9851453",
-    "kategori": "A"
   },
   {
     "assignment_id": "9999c935-7ea3-436f-9992-885ca2a17e48",
@@ -6460,24 +5470,6 @@
     "latitude": "4.476318676024675",
     "longitude": "97.9847794957459",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "e1fa9c32-f48b-4a6b-a33c-205bb1751d37",
-    "latitude": "4.4313483",
-    "longitude": "98.036245",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e1fa9c32-f48b-4a6b-a33c-205bb1751d37",
-    "latitude": "4.4313483",
-    "longitude": "98.036245",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e1fa9c32-f48b-4a6b-a33c-205bb1751d37",
-    "latitude": "4.4313483",
-    "longitude": "98.036245",
-    "kategori": "A"
   },
   {
     "assignment_id": "e1fa9c32-f48b-4a6b-a33c-205bb1751d37",
@@ -6594,18 +5586,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "880a6b79-376f-4a7a-8eac-e2d41462b816",
-    "latitude": "4.4686344",
-    "longitude": "97.9439827",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "880a6b79-376f-4a7a-8eac-e2d41462b816",
-    "latitude": "4.4686344",
-    "longitude": "97.9439827",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "a19dbf10-c1af-400a-9ce4-f3d7597619c0",
     "latitude": "4.4705935",
     "longitude": "97.9330755",
@@ -6663,18 +5643,6 @@
     "assignment_id": "d47ebfcf-3c7a-490d-af4e-db7d59c1e9c4",
     "latitude": "4.4803519",
     "longitude": "97.94162",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d47ebfcf-3c7a-490d-af4e-db7d59c1e9c4",
-    "latitude": "4.4803519",
-    "longitude": "97.94162",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "32ba29f6-4267-49b0-bd0e-d7a8dffe32f6",
-    "latitude": "4.4524184",
-    "longitude": "98.0135194",
     "kategori": "A"
   },
   {
@@ -6747,19 +5715,7 @@
     "assignment_id": "2f227d26-d644-48f8-833e-05e35bbc0a10",
     "latitude": "4.48015901",
     "longitude": "97.97651",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "2f227d26-d644-48f8-833e-05e35bbc0a10",
-    "latitude": "4.48015901",
-    "longitude": "97.97651",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "7a948b55-3e58-4728-b81c-3805c0f14a97",
-    "latitude": "4.4512706",
-    "longitude": "98.0122919",
-    "kategori": "G"
   },
   {
     "assignment_id": "7a948b55-3e58-4728-b81c-3805c0f14a97",
@@ -6778,18 +5734,6 @@
     "latitude": "4.4801633333333335",
     "longitude": "97.94768166666667",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "b171a6ca-fc7b-4d39-ab0b-afa7bdc0d3b1",
-    "latitude": "4.4456416",
-    "longitude": "97.9783434",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b171a6ca-fc7b-4d39-ab0b-afa7bdc0d3b1",
-    "latitude": "4.4456416",
-    "longitude": "97.9783434",
-    "kategori": "A"
   },
   {
     "assignment_id": "b171a6ca-fc7b-4d39-ab0b-afa7bdc0d3b1",
@@ -6822,12 +5766,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "d3db5639-d887-4275-964f-5875dffc6319",
-    "latitude": "4.4876376",
-    "longitude": "97.9625904",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "df4ebee1-4edb-4eb9-8a16-82aef69a5392",
     "latitude": "4.4836257",
     "longitude": "97.9386863",
@@ -6850,12 +5788,6 @@
     "latitude": "4.4489121",
     "longitude": "98.0213616",
     "kategori": "H"
-  },
-  {
-    "assignment_id": "13bd9486-0ba9-4210-b5cb-1739a0d5a7bf",
-    "latitude": "4.4933378",
-    "longitude": "97.9620427",
-    "kategori": "A"
   },
   {
     "assignment_id": "13bd9486-0ba9-4210-b5cb-1739a0d5a7bf",
@@ -6918,12 +5850,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "32268854-603c-407e-8513-aacfa0a505d9",
-    "latitude": "4.4432383333333325",
-    "longitude": "97.98827000000001",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "a8764019-6b68-462b-948f-81d15baaf613",
     "latitude": "4.4804681",
     "longitude": "97.9436513",
@@ -6969,12 +5895,6 @@
     "assignment_id": "95e9a87e-8de0-4c2f-ad20-9e372bce996f",
     "latitude": "4.469516666666666",
     "longitude": "97.93617833333334",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "95e9a87e-8de0-4c2f-ad20-9e372bce996f",
-    "latitude": "4.469516666666666",
-    "longitude": "97.93617833333334",
     "kategori": "G"
   },
   {
@@ -6987,18 +5907,6 @@
     "assignment_id": "a82279f2-e921-4a49-8dd2-f6c1d829980c",
     "latitude": "4.4545984",
     "longitude": "98.0104872",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b08d4d9e-d93c-4dfc-9ae2-e1cb8e9a3997",
-    "latitude": "4.4778447",
-    "longitude": "97.9451213",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b08d4d9e-d93c-4dfc-9ae2-e1cb8e9a3997",
-    "latitude": "4.4778447",
-    "longitude": "97.9451213",
     "kategori": "A"
   },
   {
@@ -7024,12 +5932,6 @@
     "latitude": "4.4557397",
     "longitude": "98.03015538333332",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "d7a103b9-a3ea-46a9-b65b-8c648836972c",
-    "latitude": "4.4186733333333335",
-    "longitude": "98.02909",
-    "kategori": "A"
   },
   {
     "assignment_id": "d7a103b9-a3ea-46a9-b65b-8c648836972c",
@@ -7080,18 +5982,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "97310f90-6ecf-4b87-b316-85841c8dd594",
-    "latitude": "4.4936963",
-    "longitude": "97.9480043",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d8c1710c-de81-4f0b-b597-87a7b7c96245",
-    "latitude": "4.443293333333333",
-    "longitude": "97.99227666666665",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "d8c1710c-de81-4f0b-b597-87a7b7c96245",
     "latitude": "4.443293333333333",
     "longitude": "97.99227666666665",
@@ -7119,12 +6009,6 @@
     "assignment_id": "a2d7bf42-4dcf-4857-b0d0-3a7b85809679",
     "latitude": "4.423018333333333",
     "longitude": "98.025605",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a2d7bf42-4dcf-4857-b0d0-3a7b85809679",
-    "latitude": "4.423018333333333",
-    "longitude": "98.025605",
     "kategori": "G"
   },
   {
@@ -7134,12 +6018,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "c579c186-da5f-4dd8-8f12-4c9660e087af",
-    "latitude": "4.5248184",
-    "longitude": "97.9390132",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "cb30164c-b08f-4744-9518-b921dd05b8f5",
     "latitude": "4.4786287666666675",
     "longitude": "97.97985405",
@@ -7161,25 +6039,7 @@
     "assignment_id": "d0c95623-888b-4a45-ba14-a0ef5876bf90",
     "latitude": "4.467898333333333",
     "longitude": "97.93270666666668",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d0c95623-888b-4a45-ba14-a0ef5876bf90",
-    "latitude": "4.467898333333333",
-    "longitude": "97.93270666666668",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "e192e9d9-c0f2-4b15-a134-05bcf1a61d36",
-    "latitude": "4.4437445",
-    "longitude": "97.9995426",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e192e9d9-c0f2-4b15-a134-05bcf1a61d36",
-    "latitude": "4.4437445",
-    "longitude": "97.9995426",
-    "kategori": "A"
   },
   {
     "assignment_id": "e192e9d9-c0f2-4b15-a134-05bcf1a61d36",
@@ -7254,12 +6114,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "dc791ca8-adb1-46d7-9385-12718e344ecc",
-    "latitude": "4.480186002328992",
-    "longitude": "97.97746402211487",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "60cc53a2-678a-4f75-b34c-17b2f644732e",
     "latitude": "4.475126",
     "longitude": "97.9551136",
@@ -7281,12 +6135,6 @@
     "assignment_id": "4052b62f-97d4-47fb-bc03-2f4b2d748a7d",
     "latitude": "4.4751437",
     "longitude": "97.9823217",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "49463e61-4776-40cc-a0e5-4ac21b94446e",
-    "latitude": "4.494368333333333",
-    "longitude": "97.96745666666666",
     "kategori": "A"
   },
   {
@@ -7350,30 +6198,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "e8adda41-42f8-4d7c-98e0-c9b4316e990e",
-    "latitude": "4.449464",
-    "longitude": "97.9778199",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e8adda41-42f8-4d7c-98e0-c9b4316e990e",
-    "latitude": "4.449464",
-    "longitude": "97.9778199",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f2bf2968-a939-4c72-8da0-c97fa2539d9d",
-    "latitude": "4.4716317",
-    "longitude": "97.9812533",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f2bf2968-a939-4c72-8da0-c97fa2539d9d",
-    "latitude": "4.4716317",
-    "longitude": "97.9812533",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "f2bf2968-a939-4c72-8da0-c97fa2539d9d",
     "latitude": "4.4716317",
     "longitude": "97.9812533",
@@ -7410,12 +6234,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "cc94189e-0c6c-4fa2-960f-4eb08166f2df",
-    "latitude": "4.4766346",
-    "longitude": "97.9605001",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "e9bf9b6e-2a60-4724-b256-3814aee7d1b4",
     "latitude": "4.42129",
     "longitude": "98.02678166666668",
@@ -7425,12 +6243,6 @@
     "assignment_id": "fae05768-d5db-4071-aad6-991acae10243",
     "latitude": "4.4942383",
     "longitude": "97.9747438",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9e0e7310-db83-4fec-aa85-3fec856ef25f",
-    "latitude": "4.4343201",
-    "longitude": "98.0358598",
     "kategori": "A"
   },
   {
@@ -7458,12 +6270,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "dddf27a1-ad4d-4dad-864f-d957af2b735c",
-    "latitude": "4.4527785",
-    "longitude": "98.0146907",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "21f5d09b-7b2b-4b0b-aa21-68c598d8afb9",
     "latitude": "4.474189033333333",
     "longitude": "97.97343276666668",
@@ -7474,12 +6280,6 @@
     "latitude": "4.4958225",
     "longitude": "97.9529525",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "5769b768-2423-43ae-b691-e8a22bf2a2be",
-    "latitude": "4.4355791",
-    "longitude": "97.9912378",
-    "kategori": "A"
   },
   {
     "assignment_id": "5769b768-2423-43ae-b691-e8a22bf2a2be",
@@ -7578,18 +6378,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "7622e586-d0ee-4dc9-930d-e5e6fbf665a1",
-    "latitude": "4.4661994",
-    "longitude": "97.9641545",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7622e586-d0ee-4dc9-930d-e5e6fbf665a1",
-    "latitude": "4.4661994",
-    "longitude": "97.9641545",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "a1b2cfb5-12f6-4651-84d1-1baab3d53a2c",
     "latitude": "4.4352072",
     "longitude": "97.988366",
@@ -7626,12 +6414,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "30bef915-083d-4821-8953-ebf93f4f5703",
-    "latitude": "4.44744534",
-    "longitude": "98.02972853",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "4ab0d87b-515c-4d62-9a65-0d0eed516e35",
     "latitude": "4.4601461",
     "longitude": "97.9944244",
@@ -7653,18 +6435,6 @@
     "assignment_id": "49e046b4-9f1d-4de4-bccd-0abc675d3042",
     "latitude": "4.460673",
     "longitude": "97.9919809",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "5a3adb95-301a-4304-b29a-77a86e9f954a",
-    "latitude": "4.442044999999999",
-    "longitude": "97.98845333333333",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "5a3adb95-301a-4304-b29a-77a86e9f954a",
-    "latitude": "4.442044999999999",
-    "longitude": "97.98845333333333",
     "kategori": "A"
   },
   {
@@ -7734,12 +6504,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "d4f75375-364b-439d-9018-5aed51f181a6",
-    "latitude": "4.438553333333333",
-    "longitude": "98.00224833333331",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "eebe9cf7-ab55-4a69-b733-9254bee0d773",
     "latitude": "4.4782776",
     "longitude": "97.9463754",
@@ -7779,19 +6543,7 @@
     "assignment_id": "16193cf6-d147-43db-8bf6-d8c82d0cc32e",
     "latitude": "4.44821085",
     "longitude": "98.02872999",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "16193cf6-d147-43db-8bf6-d8c82d0cc32e",
-    "latitude": "4.44821085",
-    "longitude": "98.02872999",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "716c13ae-ffe6-42a2-b199-d97b07f946a5",
-    "latitude": "4.482571666666667",
-    "longitude": "97.97105166666667",
-    "kategori": "A"
   },
   {
     "assignment_id": "716c13ae-ffe6-42a2-b199-d97b07f946a5",
@@ -7866,22 +6618,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2c19c978-2d50-446a-9275-12477a18ea79",
-    "latitude": "4.466753333333333",
-    "longitude": "97.93699166666666",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "6abedecb-9e71-43ab-ac2f-8bdb90293446",
     "latitude": "4.478373166666667",
     "longitude": "97.98000339999999",
     "kategori": "H"
-  },
-  {
-    "assignment_id": "7839724a-0445-4859-9e8e-f3b06cc5e4e2",
-    "latitude": "4.466376666666666",
-    "longitude": "97.94261833333333",
-    "kategori": "A"
   },
   {
     "assignment_id": "7839724a-0445-4859-9e8e-f3b06cc5e4e2",
@@ -7947,24 +6687,6 @@
     "assignment_id": "1a1fae29-7e52-4c08-9432-d0f63a98db75",
     "latitude": "4.4491317",
     "longitude": "98.02096893",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1a1fae29-7e52-4c08-9432-d0f63a98db75",
-    "latitude": "4.4491317",
-    "longitude": "98.02096893",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1a1fae29-7e52-4c08-9432-d0f63a98db75",
-    "latitude": "4.4491317",
-    "longitude": "98.02096893",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "372e2012-380a-4c46-8df7-218ae0e05c1c",
-    "latitude": "4.444111866666666",
-    "longitude": "97.94014074999998",
     "kategori": "A"
   },
   {
@@ -8082,12 +6804,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "06a5052b-b124-439a-97f4-ed88cd585001",
-    "latitude": "4.458383333333333",
-    "longitude": "97.93423666666668",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "204ddc53-fb48-4b5b-bff8-28c1b2701f1e",
     "latitude": "4.4666249211877584",
     "longitude": "97.9583356808871",
@@ -8133,12 +6849,6 @@
     "assignment_id": "b7547ad0-1f60-4882-ab2e-a90ba8750b5d",
     "latitude": "4.454535000000001",
     "longitude": "97.98019500000001",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b7547ad0-1f60-4882-ab2e-a90ba8750b5d",
-    "latitude": "4.454535000000001",
-    "longitude": "97.98019500000001",
     "kategori": "F"
   },
   {
@@ -8151,18 +6861,6 @@
     "assignment_id": "073be350-8d16-4fd6-b3ea-e5cec0d2f3a2",
     "latitude": "4.4481811",
     "longitude": "97.9762339",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "073be350-8d16-4fd6-b3ea-e5cec0d2f3a2",
-    "latitude": "4.4481811",
-    "longitude": "97.9762339",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9ff241f7-c0d8-4b33-8b2b-9b473804d598",
-    "latitude": "4.4552609",
-    "longitude": "97.9304523",
     "kategori": "A"
   },
   {
@@ -8238,12 +6936,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "b54cd710-d236-4719-963b-ce33f138642a",
-    "latitude": "4.4793915",
-    "longitude": "97.9428907",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b6059f11-88c7-41f6-8c6d-c2d98ca95763",
     "latitude": "4.4444149",
     "longitude": "97.9784985",
@@ -8274,27 +6966,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "40e19b96-7abe-48fe-99b0-eb5397206a61",
-    "latitude": "4.461975",
-    "longitude": "97.97945",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "0c938206-cb70-4a71-a4ca-576b19ea499f",
     "latitude": "4.4442415",
     "longitude": "97.9875749",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "0c938206-cb70-4a71-a4ca-576b19ea499f",
-    "latitude": "4.4442415",
-    "longitude": "97.9875749",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7186af31-0a68-47c7-ae53-ddc05dcd775c",
-    "latitude": "4.434085",
-    "longitude": "98.0225217",
     "kategori": "A"
   },
   {
@@ -8352,27 +7026,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "c5a532b1-783b-4d23-87be-8aac2e9f08cd",
-    "latitude": "4.4732365",
-    "longitude": "97.9844971",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "c5a532b1-783b-4d23-87be-8aac2e9f08cd",
-    "latitude": "4.4732365",
-    "longitude": "97.9844971",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "ab5b9e29-4ffb-41e8-89b8-f7ecd23060a8",
     "latitude": "4.4627823",
     "longitude": "97.9393371",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "686421b9-8e77-48ec-b97e-84668352a877",
-    "latitude": "4.4469507",
-    "longitude": "97.9452902",
     "kategori": "A"
   },
   {
@@ -8404,18 +7060,6 @@
     "latitude": "4.4678057",
     "longitude": "97.9806496",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "bebec43d-19d5-4dc4-b202-eb32d5713720",
-    "latitude": "4.45806721",
-    "longitude": "97.99418859",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "bebec43d-19d5-4dc4-b202-eb32d5713720",
-    "latitude": "4.45806721",
-    "longitude": "97.99418859",
-    "kategori": "A"
   },
   {
     "assignment_id": "bebec43d-19d5-4dc4-b202-eb32d5713720",
@@ -8463,25 +7107,7 @@
     "assignment_id": "ffd1e67a-7303-4577-ab57-4d8bde2c26a7",
     "latitude": "4.4476469",
     "longitude": "98.0035772",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ffd1e67a-7303-4577-ab57-4d8bde2c26a7",
-    "latitude": "4.4476469",
-    "longitude": "98.0035772",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ffd1e67a-7303-4577-ab57-4d8bde2c26a7",
-    "latitude": "4.4476469",
-    "longitude": "98.0035772",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "d8964e5c-c19a-4a17-a17e-e1cd74121ec4",
-    "latitude": "4.4461",
-    "longitude": "98.0074801",
-    "kategori": "A"
   },
   {
     "assignment_id": "d8964e5c-c19a-4a17-a17e-e1cd74121ec4",
@@ -8574,18 +7200,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "52de7482-7584-4e21-a55c-6ae44af3d1ca",
-    "latitude": "4.4895043",
-    "longitude": "97.9746981",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9a0be0be-820a-447d-842f-c1504d50314a",
-    "latitude": "4.4767151",
-    "longitude": "97.9724592",
-    "kategori": "C"
-  },
-  {
     "assignment_id": "9a0be0be-820a-447d-842f-c1504d50314a",
     "latitude": "4.4767151",
     "longitude": "97.9724592",
@@ -8626,18 +7240,6 @@
     "latitude": "4.454017316666667",
     "longitude": "98.02808269999998",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "a03e2870-6d21-4cb5-95d1-412dad09762f",
-    "latitude": "4.4536773",
-    "longitude": "98.0146183",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a03e2870-6d21-4cb5-95d1-412dad09762f",
-    "latitude": "4.4536773",
-    "longitude": "98.0146183",
-    "kategori": "A"
   },
   {
     "assignment_id": "a03e2870-6d21-4cb5-95d1-412dad09762f",
@@ -8730,22 +7332,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "7eb454f0-d567-4185-a799-180d21a9fb3a",
-    "latitude": "4.49486",
-    "longitude": "97.97401333333333",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "83cb2e55-19ad-4485-a388-75ea09643e11",
     "latitude": "4.4298409",
     "longitude": "98.0232995",
     "kategori": "A"
-  },
-  {
-    "assignment_id": "9e79beb0-9e88-4ecc-a115-57a96c1196ba",
-    "latitude": "4.5027752",
-    "longitude": "97.9656948",
-    "kategori": "C"
   },
   {
     "assignment_id": "9e79beb0-9e88-4ecc-a115-57a96c1196ba",
@@ -8782,12 +7372,6 @@
     "latitude": "4.4765352",
     "longitude": "97.9723065",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "db66b0b4-b8f4-44df-8add-1d6570e8b336",
-    "latitude": "4.444370883333334",
-    "longitude": "97.93977948333334",
-    "kategori": "A"
   },
   {
     "assignment_id": "db66b0b4-b8f4-44df-8add-1d6570e8b336",
@@ -8886,12 +7470,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "21c585ef-69a3-43ee-8bd5-b732056ad813",
-    "latitude": "4.4554642",
-    "longitude": "97.9903756",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b0f4bf2e-c32a-4a50-b015-56059292ea0e",
     "latitude": "4.4724432",
     "longitude": "97.9358407",
@@ -8932,12 +7510,6 @@
     "latitude": "4.4879691",
     "longitude": "97.9596639",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "6680f845-75d5-4c56-9675-aff297e3138b",
-    "latitude": "4.4356385",
-    "longitude": "98.0018029",
-    "kategori": "A"
   },
   {
     "assignment_id": "6680f845-75d5-4c56-9675-aff297e3138b",
@@ -9054,12 +7626,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "3eca1c27-74da-4734-b10e-c98520266ab2",
-    "latitude": "4.43759",
-    "longitude": "98.0408417",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "41853eaf-d219-4ba6-affc-30b388d9f721",
     "latitude": "4.4356215",
     "longitude": "98.0142867",
@@ -9076,18 +7642,6 @@
     "latitude": "4.4611065",
     "longitude": "97.9645331",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "c67552f0-8623-48a6-8e40-5ec8e08a451f",
-    "latitude": "4.4728948",
-    "longitude": "97.9642024",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "c67552f0-8623-48a6-8e40-5ec8e08a451f",
-    "latitude": "4.4728948",
-    "longitude": "97.9642024",
-    "kategori": "A"
   },
   {
     "assignment_id": "c67552f0-8623-48a6-8e40-5ec8e08a451f",
@@ -9126,12 +7680,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "9c35f9be-9e97-4f1a-89f6-e549e744286e",
-    "latitude": "4.416346666666667",
-    "longitude": "98.02767333333334",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "9dda99e4-d513-4420-b15c-0c89c9b1ea67",
     "latitude": "4.4623874",
     "longitude": "97.9397583",
@@ -9159,31 +7707,7 @@
     "assignment_id": "07b74db2-b3cd-4376-8ec5-59e612eabd0f",
     "latitude": "4.468065",
     "longitude": "97.9569865",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "07b74db2-b3cd-4376-8ec5-59e612eabd0f",
-    "latitude": "4.468065",
-    "longitude": "97.9569865",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "07b74db2-b3cd-4376-8ec5-59e612eabd0f",
-    "latitude": "4.468065",
-    "longitude": "97.9569865",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "07b74db2-b3cd-4376-8ec5-59e612eabd0f",
-    "latitude": "4.468065",
-    "longitude": "97.9569865",
     "kategori": "H"
-  },
-  {
-    "assignment_id": "1283f07b-7d1c-4177-9dc3-9a50b67439be",
-    "latitude": "4.4363928",
-    "longitude": "98.0149038",
-    "kategori": "A"
   },
   {
     "assignment_id": "1283f07b-7d1c-4177-9dc3-9a50b67439be",
@@ -9240,24 +7764,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "f62af089-3a7b-4862-8507-aaf2f097433a",
-    "latitude": "4.440376666666666",
-    "longitude": "98.00427999999998",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f62af089-3a7b-4862-8507-aaf2f097433a",
-    "latitude": "4.440376666666666",
-    "longitude": "98.00427999999998",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ff8e28ad-0047-49fd-9362-d55a8cfa5523",
-    "latitude": "4.4456833",
-    "longitude": "97.9784844",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "ff8e28ad-0047-49fd-9362-d55a8cfa5523",
     "latitude": "4.4456833",
     "longitude": "97.9784844",
@@ -9274,12 +7780,6 @@
     "latitude": "4.46642",
     "longitude": "97.9705717",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "2bc84696-c62a-4786-b19b-dfd1c692b246",
-    "latitude": "4.458221666666666",
-    "longitude": "97.98271666666666",
-    "kategori": "A"
   },
   {
     "assignment_id": "2bc84696-c62a-4786-b19b-dfd1c692b246",
@@ -9345,12 +7845,6 @@
     "assignment_id": "9ff219d8-9051-4f86-89a2-8c90295f94d1",
     "latitude": "4.4663767",
     "longitude": "97.9683883",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9ff219d8-9051-4f86-89a2-8c90295f94d1",
-    "latitude": "4.4663767",
-    "longitude": "97.9683883",
     "kategori": "C"
   },
   {
@@ -9364,18 +7858,6 @@
     "latitude": "4.48287483",
     "longitude": "97.97541653",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "2170c23d-4288-4896-be07-715d3430c40c",
-    "latitude": "4.444725",
-    "longitude": "97.98865333333333",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "2170c23d-4288-4896-be07-715d3430c40c",
-    "latitude": "4.444725",
-    "longitude": "97.98865333333333",
-    "kategori": "A"
   },
   {
     "assignment_id": "2170c23d-4288-4896-be07-715d3430c40c",
@@ -9408,12 +7890,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "57c84ec6-e09c-4991-9b92-9df69c390c07",
-    "latitude": "4.441061666666667",
-    "longitude": "97.99370500000002",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "5ac8518f-b194-410c-ac41-95fa6aea0244",
     "latitude": "4.45778439",
     "longitude": "97.99653375",
@@ -9436,12 +7912,6 @@
     "latitude": "4.44919041",
     "longitude": "98.02224619",
     "kategori": "F"
-  },
-  {
-    "assignment_id": "d26c4f7e-5907-447a-9109-c9887d7a72ec",
-    "latitude": "4.4309683",
-    "longitude": "98.0405517",
-    "kategori": "A"
   },
   {
     "assignment_id": "d26c4f7e-5907-447a-9109-c9887d7a72ec",
@@ -9552,24 +8022,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "74d0bcbf-b0c9-4449-a614-ca6c7b219fa7",
-    "latitude": "4.4391469",
-    "longitude": "97.9718072",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "74d0bcbf-b0c9-4449-a614-ca6c7b219fa7",
-    "latitude": "4.4391469",
-    "longitude": "97.9718072",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "74d0bcbf-b0c9-4449-a614-ca6c7b219fa7",
-    "latitude": "4.4391469",
-    "longitude": "97.9718072",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "7f5d1a1a-d6c4-479e-8742-0b27d4b15995",
     "latitude": "4.473547",
     "longitude": "97.954913",
@@ -9606,12 +8058,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "bbd896f7-ead9-488f-b949-1b37afe293dd",
-    "latitude": "4.4558103",
-    "longitude": "97.9878112",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "147f6cff-c15e-4963-b4b1-384b64fa01ad",
     "latitude": "4.4613067",
     "longitude": "97.9804017",
@@ -9630,22 +8076,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "63d4fcb1-e08c-4181-89b4-ff843d3f8a84",
-    "latitude": "4.456413333333333",
-    "longitude": "97.98380333333334",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "e8efca32-2e9c-4c77-bd58-2d40748a73dc",
     "latitude": "4.4747962999999995",
     "longitude": "97.95309973333333",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "611f0aff-b43a-4022-b94c-7fed5d6a04ee",
-    "latitude": "4.472903333333333",
-    "longitude": "97.93555333333333",
-    "kategori": "A"
   },
   {
     "assignment_id": "611f0aff-b43a-4022-b94c-7fed5d6a04ee",
@@ -9670,12 +8104,6 @@
     "latitude": "4.4709754",
     "longitude": "97.9724361",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "c72ea4c6-e195-4fb1-ac7c-742d3402dbab",
-    "latitude": "4.44700779",
-    "longitude": "98.02883698",
-    "kategori": "A"
   },
   {
     "assignment_id": "c72ea4c6-e195-4fb1-ac7c-742d3402dbab",
@@ -9780,12 +8208,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "a87f93e0-37e2-45e7-8ed7-651f1b7c9312",
-    "latitude": "4.4358788",
-    "longitude": "97.9976875",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b7bf4881-628d-4fd2-9dc2-624c2b53fb88",
     "latitude": "4.4794198",
     "longitude": "97.9567917",
@@ -9831,18 +8253,6 @@
     "assignment_id": "3103a563-55ca-48c7-9867-5e27c4f66fa5",
     "latitude": "4.4709913",
     "longitude": "97.9322775",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3103a563-55ca-48c7-9867-5e27c4f66fa5",
-    "latitude": "4.4709913",
-    "longitude": "97.9322775",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3ec2d60d-640b-4745-ac5e-7cbaa2e75e9e",
-    "latitude": "4.438091666666667",
-    "longitude": "98.00215666666666",
     "kategori": "A"
   },
   {
@@ -9918,12 +8328,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "cd6fcbe5-a56b-4306-8d78-7c2446b49e99",
-    "latitude": "4.4470586",
-    "longitude": "97.9413836",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "52a46665-35d5-4da1-a1cf-6331693e11d7",
     "latitude": "4.4713869",
     "longitude": "97.9696915",
@@ -9963,24 +8367,6 @@
     "assignment_id": "155a7502-cea6-4cd2-b3c0-908cfb2aba0a",
     "latitude": "4.480284999999999",
     "longitude": "97.96341",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "155a7502-cea6-4cd2-b3c0-908cfb2aba0a",
-    "latitude": "4.480284999999999",
-    "longitude": "97.96341",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1b9902d6-6f63-4ba5-9e65-0c3d2dd162e4",
-    "latitude": "4.443663333333333",
-    "longitude": "97.99359833333334",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1b9902d6-6f63-4ba5-9e65-0c3d2dd162e4",
-    "latitude": "4.443663333333333",
-    "longitude": "97.99359833333334",
     "kategori": "A"
   },
   {
@@ -10140,18 +8526,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "6f1dcff3-49ef-4c78-8da5-84d4c336be2c",
-    "latitude": "4.4260576",
-    "longitude": "98.0216685",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b5eb2f82-ec2b-4023-a34b-b1eb3cfc45d1",
-    "latitude": "4.5050329",
-    "longitude": "97.9621519",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b5eb2f82-ec2b-4023-a34b-b1eb3cfc45d1",
     "latitude": "4.5050329",
     "longitude": "97.9621519",
@@ -10170,12 +8544,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "05c64e59-db6a-49c2-9be5-180329928631",
-    "latitude": "4.4324224",
-    "longitude": "98.0212964",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "18b3e46a-15e8-497f-b9af-d08b05e87c76",
     "latitude": "4.4963046",
     "longitude": "97.9742051",
@@ -10186,12 +8554,6 @@
     "latitude": "4.4716201",
     "longitude": "97.9570728",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "32a361b6-4f1d-463a-af2d-cc37c8aed3e1",
-    "latitude": "4.478965932503343",
-    "longitude": "97.97893823124468",
-    "kategori": "A"
   },
   {
     "assignment_id": "32a361b6-4f1d-463a-af2d-cc37c8aed3e1",
@@ -10234,12 +8596,6 @@
     "latitude": "4.44795746",
     "longitude": "98.0292948",
     "kategori": "F"
-  },
-  {
-    "assignment_id": "a80e568f-4f02-41d2-b312-3403d297b098",
-    "latitude": "4.478498833333333",
-    "longitude": "97.98065908333335",
-    "kategori": "A"
   },
   {
     "assignment_id": "a80e568f-4f02-41d2-b312-3403d297b098",
@@ -10293,24 +8649,6 @@
     "assignment_id": "406b9155-2739-4e89-af72-02b0f4ac04f9",
     "latitude": "4.455065",
     "longitude": "97.98109833333335",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "406b9155-2739-4e89-af72-02b0f4ac04f9",
-    "latitude": "4.455065",
-    "longitude": "97.98109833333335",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "406b9155-2739-4e89-af72-02b0f4ac04f9",
-    "latitude": "4.455065",
-    "longitude": "97.98109833333335",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "406b9155-2739-4e89-af72-02b0f4ac04f9",
-    "latitude": "4.455065",
-    "longitude": "97.98109833333335",
     "kategori": "C"
   },
   {
@@ -10324,12 +8662,6 @@
     "latitude": "4.4775576",
     "longitude": "97.9729875",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "8ae1bacd-1ffb-4005-a28c-91103ae4026e",
-    "latitude": "4.5338282",
-    "longitude": "97.9276537",
-    "kategori": "A"
   },
   {
     "assignment_id": "8ae1bacd-1ffb-4005-a28c-91103ae4026e",
@@ -10530,12 +8862,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "50246fd4-8318-42f8-88a6-0605755200be",
-    "latitude": "4.46678",
-    "longitude": "97.93245499999999",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "691fd651-6060-498e-9267-15e0ef82178a",
     "latitude": "4.47312553",
     "longitude": "97.97546615",
@@ -10551,18 +8877,6 @@
     "assignment_id": "9761cd54-78b8-4776-acf7-cf0cde41f387",
     "latitude": "4.4914384",
     "longitude": "97.9722617",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9761cd54-78b8-4776-acf7-cf0cde41f387",
-    "latitude": "4.4914384",
-    "longitude": "97.9722617",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b703d4fd-4d46-4e3d-94a5-d159966ea1a9",
-    "latitude": "4.454955",
-    "longitude": "97.97973166666667",
     "kategori": "A"
   },
   {
@@ -10623,30 +8937,12 @@
     "assignment_id": "5bab4994-8326-4940-a0d1-32782d2a10f2",
     "latitude": "4.465985759161413",
     "longitude": "97.9615705087781",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "5bab4994-8326-4940-a0d1-32782d2a10f2",
-    "latitude": "4.465985759161413",
-    "longitude": "97.9615705087781",
     "kategori": "C"
   },
   {
     "assignment_id": "69ee86ac-ec5d-4d7d-9960-6f0b836ae861",
     "latitude": "4.4917393",
     "longitude": "97.9711836",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "69ee86ac-ec5d-4d7d-9960-6f0b836ae861",
-    "latitude": "4.4917393",
-    "longitude": "97.9711836",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7f703f21-e530-4b03-ba17-3a8380679876",
-    "latitude": "4.440341666666667",
-    "longitude": "98.00458333333333",
     "kategori": "A"
   },
   {
@@ -10668,18 +8964,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "9847dde2-acd1-4dbc-9314-7e9a9827d7e3",
-    "latitude": "4.440196666666667",
-    "longitude": "98.00136833333333",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9847dde2-acd1-4dbc-9314-7e9a9827d7e3",
-    "latitude": "4.440196666666667",
-    "longitude": "98.00136833333333",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "badc3636-30ce-4d1c-a075-80f40e51f587",
     "latitude": "4.4308267",
     "longitude": "98.0408833",
@@ -10689,18 +8973,6 @@
     "assignment_id": "c693e7d9-c15b-40af-b53d-4732edbd409d",
     "latitude": "4.4653619",
     "longitude": "97.975397",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "de72483f-f46b-40d8-a1d4-e2ee4932c459",
-    "latitude": "4.467953333333333",
-    "longitude": "97.90281166666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "de72483f-f46b-40d8-a1d4-e2ee4932c459",
-    "latitude": "4.467953333333333",
-    "longitude": "97.90281166666666",
     "kategori": "A"
   },
   {
@@ -10732,12 +9004,6 @@
     "latitude": "4.4868849",
     "longitude": "97.9595659",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "bc827a8e-ac14-42da-a9b7-cd0d49a3d0da",
-    "latitude": "4.441596666666666",
-    "longitude": "97.98768999999999",
-    "kategori": "A"
   },
   {
     "assignment_id": "bc827a8e-ac14-42da-a9b7-cd0d49a3d0da",
@@ -10815,30 +9081,12 @@
     "assignment_id": "c0fd7e5e-b12b-4d56-b828-2cb60dd909cd",
     "latitude": "4.4336174",
     "longitude": "98.0075944",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "c0fd7e5e-b12b-4d56-b828-2cb60dd909cd",
-    "latitude": "4.4336174",
-    "longitude": "98.0075944",
     "kategori": "D"
   },
   {
     "assignment_id": "ca4f71b2-20e0-4d87-865e-8f3afea2f15b",
     "latitude": "4.454867",
     "longitude": "97.975419",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ca4f71b2-20e0-4d87-865e-8f3afea2f15b",
-    "latitude": "4.454867",
-    "longitude": "97.975419",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "cf6a28ce-f9a0-4a01-a9c1-647cd1bbfd16",
-    "latitude": "4.4407749",
-    "longitude": "98.0020084",
     "kategori": "A"
   },
   {
@@ -10858,12 +9106,6 @@
     "latitude": "4.4762076",
     "longitude": "97.9487777",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "8643fc7e-f19f-493a-a161-91d166836273",
-    "latitude": "4.4283997",
-    "longitude": "98.0229686",
-    "kategori": "A"
   },
   {
     "assignment_id": "8643fc7e-f19f-493a-a161-91d166836273",
@@ -10980,12 +9222,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "7f5a244e-0a83-4f34-b307-3438e808eccf",
-    "latitude": "4.457493333333333",
-    "longitude": "97.88901666666668",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "975d46c9-d993-435e-965d-4a9fbc9de637",
     "latitude": "4.4481049",
     "longitude": "97.979904",
@@ -11007,12 +9243,6 @@
     "assignment_id": "e0970d15-0371-4f14-bba1-46c7b5d63468",
     "latitude": "4.4798792",
     "longitude": "97.9686772",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e8e7b718-2e12-4ca9-8a06-fe2590f9d21d",
-    "latitude": "4.4748171",
-    "longitude": "97.9854402",
     "kategori": "A"
   },
   {
@@ -11061,12 +9291,6 @@
     "assignment_id": "def0d557-f787-472f-a3ba-af73bbc8c36f",
     "latitude": "4.439051666666667",
     "longitude": "97.98987166666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "def0d557-f787-472f-a3ba-af73bbc8c36f",
-    "latitude": "4.439051666666667",
-    "longitude": "97.98987166666666",
     "kategori": "C"
   },
   {
@@ -11091,12 +9315,6 @@
     "assignment_id": "65369771-f568-4f12-8891-8d182432ea69",
     "latitude": "4.490011666666666",
     "longitude": "97.96998166666665",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f02e2056-cd96-445a-9f0f-a6f476079c30",
-    "latitude": "4.438128066666667",
-    "longitude": "98.02118391666666",
     "kategori": "A"
   },
   {
@@ -11262,18 +9480,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "a47ba5e7-8bd8-4741-a8db-a61ead4f02a7",
-    "latitude": "4.52562456",
-    "longitude": "97.93624092",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a47ba5e7-8bd8-4741-a8db-a61ead4f02a7",
-    "latitude": "4.52562456",
-    "longitude": "97.93624092",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "ad53e31e-a918-4711-9c52-92a9a04a99a3",
     "latitude": "4.4690885",
     "longitude": "97.9840581",
@@ -11295,12 +9501,6 @@
     "assignment_id": "88440cba-1726-4b23-a01b-ae39dec5ad98",
     "latitude": "4.4866361",
     "longitude": "97.9270685",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9483515f-c2f6-4ffe-86c2-85afe5fdd6f3",
-    "latitude": "4.4550679",
-    "longitude": "97.9298699",
     "kategori": "A"
   },
   {
@@ -11496,12 +9696,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "1e06efb7-362d-4d2f-bd5f-b36a158515fb",
-    "latitude": "4.4310036",
-    "longitude": "98.0250879",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "2b111f7d-a9fd-47f3-a1ac-b80c214cb7a3",
     "latitude": "4.505611541680992",
     "longitude": "98.01047807559371",
@@ -11544,18 +9738,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "ccbfaee5-66fe-4cda-b090-b8cc62803cad",
-    "latitude": "4.4397095",
-    "longitude": "98.0130303",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d6e77a05-93b1-46e1-b24d-252aa74353a2",
-    "latitude": "4.4341167",
-    "longitude": "98.0225983",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "d6e77a05-93b1-46e1-b24d-252aa74353a2",
     "latitude": "4.4341167",
     "longitude": "98.0225983",
@@ -11592,21 +9774,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "83ab68d8-d763-41eb-8220-be5d0e29c4c1",
-    "latitude": "4.458055",
-    "longitude": "97.9796647",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "a20d86a0-4082-440b-9401-17199558034a",
     "latitude": "4.4668463",
     "longitude": "97.9361359",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e2a995bf-3a62-4f47-aa26-6512dc6716d3",
-    "latitude": "4.4786833",
-    "longitude": "97.9808195",
     "kategori": "A"
   },
   {
@@ -11688,12 +9858,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "90f2db2d-1085-4e78-be4c-d64a2790d644",
-    "latitude": "4.4740432",
-    "longitude": "97.9382581",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b1965a79-308a-4440-b94c-e35c4308ec59",
     "latitude": "4.490142906967146",
     "longitude": "97.96018547572952",
@@ -11751,18 +9915,6 @@
     "assignment_id": "529f40a3-95ed-429b-be96-8c296608f3f9",
     "latitude": "4.510593912564218",
     "longitude": "97.94408870860934",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "529f40a3-95ed-429b-be96-8c296608f3f9",
-    "latitude": "4.510593912564218",
-    "longitude": "97.94408870860934",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "529f40a3-95ed-429b-be96-8c296608f3f9",
-    "latitude": "4.510593912564218",
-    "longitude": "97.94408870860934",
     "kategori": "G"
   },
   {
@@ -11799,12 +9951,6 @@
     "assignment_id": "7d4c49c5-a480-479a-b158-db2c7b098196",
     "latitude": "4.4360258",
     "longitude": "97.9975558",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e0ef5508-8aaa-4b5f-98e4-d6d96b7d57b5",
-    "latitude": "4.453846666666666",
-    "longitude": "98.0131",
     "kategori": "A"
   },
   {
@@ -11926,12 +10072,6 @@
     "latitude": "4.4998433",
     "longitude": "97.9589",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "c196ba99-dc3d-430a-b734-aac823ffd884",
-    "latitude": "4.4588416",
-    "longitude": "97.9912837",
-    "kategori": "A"
   },
   {
     "assignment_id": "c196ba99-dc3d-430a-b734-aac823ffd884",
@@ -12108,12 +10248,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "0fd55fc5-93de-43b8-bcc3-87772b1decc3",
-    "latitude": "4.45619174",
-    "longitude": "97.99646971",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "23cf009d-2820-4c6a-a645-193686cb71bc",
     "latitude": "4.4969876",
     "longitude": "98.0012182",
@@ -12123,18 +10257,6 @@
     "assignment_id": "3653d20f-6d4d-4f79-a28f-2392beb66a73",
     "latitude": "4.4540953666666665",
     "longitude": "98.01453304999998",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3653d20f-6d4d-4f79-a28f-2392beb66a73",
-    "latitude": "4.4540953666666665",
-    "longitude": "98.01453304999998",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "57eb8c86-2761-404e-b21c-b96b6def6662",
-    "latitude": "4.4995878",
-    "longitude": "97.9560371",
     "kategori": "A"
   },
   {
@@ -12288,12 +10410,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "380ba2ae-e0e0-4460-b318-097ea6c739a5",
-    "latitude": "4.47144",
-    "longitude": "97.951975",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "a9907de9-11dc-41a4-9bdf-afc7032f1d99",
     "latitude": "4.484233333333333",
     "longitude": "97.98287499999999",
@@ -12339,18 +10455,6 @@
     "assignment_id": "855cf228-4f93-4121-9c61-459165bc4fd4",
     "latitude": "4.5124444",
     "longitude": "97.9402855",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "855cf228-4f93-4121-9c61-459165bc4fd4",
-    "latitude": "4.5124444",
-    "longitude": "97.9402855",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "855cf228-4f93-4121-9c61-459165bc4fd4",
-    "latitude": "4.5124444",
-    "longitude": "97.9402855",
     "kategori": "G"
   },
   {
@@ -12376,12 +10480,6 @@
     "latitude": "4.4280035",
     "longitude": "98.0235785",
     "kategori": "A"
-  },
-  {
-    "assignment_id": "fb023dc2-d7d4-469d-a3b6-0aad3619f9ac",
-    "latitude": "4.4690128",
-    "longitude": "97.974042",
-    "kategori": "S"
   },
   {
     "assignment_id": "fb023dc2-d7d4-469d-a3b6-0aad3619f9ac",
@@ -12492,12 +10590,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "1545fb9c-f77d-400f-a0ab-6941f58ef41b",
-    "latitude": "4.4519761",
-    "longitude": "98.0132917",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "2577c731-8df5-42f4-bc4d-8acba74e7c5e",
     "latitude": "4.4362542",
     "longitude": "98.015509",
@@ -12513,12 +10605,6 @@
     "assignment_id": "ae6f94b9-56e0-42d1-a73f-9d0a30631e40",
     "latitude": "4.455471666666667",
     "longitude": "97.98246666666667",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "eded31da-a179-400f-8b01-991f847bd629",
-    "latitude": "4.4306345",
-    "longitude": "98.012903",
     "kategori": "A"
   },
   {
@@ -12726,12 +10812,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "b85117e0-7d03-423b-965d-288fade8ba14",
-    "latitude": "4.4558945",
-    "longitude": "97.9296481",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "54d931fc-b91b-4aba-836a-0275f41f4e85",
     "latitude": "4.5047509",
     "longitude": "97.9508856",
@@ -12741,12 +10821,6 @@
     "assignment_id": "dce97431-91ec-4fb9-b77d-bb63aeb61792",
     "latitude": "4.45544583",
     "longitude": "97.99014816",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "24aff33a-2133-44a1-b355-3d47b2cb34a1",
-    "latitude": "4.4683579",
-    "longitude": "97.95331693333334",
     "kategori": "A"
   },
   {
@@ -12789,24 +10863,6 @@
     "assignment_id": "d4b81d26-06ce-4822-85ca-81f93a7d1d2e",
     "latitude": "4.4418824",
     "longitude": "97.9881348",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d4b81d26-06ce-4822-85ca-81f93a7d1d2e",
-    "latitude": "4.4418824",
-    "longitude": "97.9881348",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d4b81d26-06ce-4822-85ca-81f93a7d1d2e",
-    "latitude": "4.4418824",
-    "longitude": "97.9881348",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d4b81d26-06ce-4822-85ca-81f93a7d1d2e",
-    "latitude": "4.4418824",
-    "longitude": "97.9881348",
     "kategori": "C"
   },
   {
@@ -12831,18 +10887,6 @@
     "assignment_id": "3800332f-f343-49c4-aa4f-5eb9ce74a853",
     "latitude": "4.4335067",
     "longitude": "98.007935",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3800332f-f343-49c4-aa4f-5eb9ce74a853",
-    "latitude": "4.4335067",
-    "longitude": "98.007935",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "448c5588-874c-40e0-a749-2b52b21872fa",
-    "latitude": "4.4667365",
-    "longitude": "97.9406854",
     "kategori": "A"
   },
   {
@@ -13020,12 +11064,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "7819f31a-4aa2-429d-9d33-1fe037ceb6a6",
-    "latitude": "4.4561983",
-    "longitude": "97.977815",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "856cd75e-9f6a-4659-a653-22038038a4ec",
     "latitude": "4.4579562",
     "longitude": "97.978876",
@@ -13035,12 +11073,6 @@
     "assignment_id": "87b921e0-d1d6-4c60-bf3a-a7e2c18a2b1c",
     "latitude": "4.5047211",
     "longitude": "97.9598791",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "98540f46-3a79-4cc5-803a-a7292ce5cb7e",
-    "latitude": "4.4557166666666665",
-    "longitude": "97.97605",
     "kategori": "A"
   },
   {
@@ -13092,12 +11124,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "74f65c9b-e4d1-4ccc-ae50-fd77f6ae4ad7",
-    "latitude": "4.497428333333334",
-    "longitude": "97.96055999999999",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "8a695e95-d6fa-4078-b3a7-f8cddb626065",
     "latitude": "4.4342642",
     "longitude": "97.987491",
@@ -13107,24 +11133,6 @@
     "assignment_id": "8e16fdd5-bf63-4881-8421-e177d478c2e9",
     "latitude": "4.494355",
     "longitude": "97.97432166666667",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "8e16fdd5-bf63-4881-8421-e177d478c2e9",
-    "latitude": "4.494355",
-    "longitude": "97.97432166666667",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "8e16fdd5-bf63-4881-8421-e177d478c2e9",
-    "latitude": "4.494355",
-    "longitude": "97.97432166666667",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e95c78f1-0344-4119-a107-aaca1b81ca37",
-    "latitude": "4.5004985",
-    "longitude": "97.9594228",
     "kategori": "A"
   },
   {
@@ -13164,12 +11172,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "49dd1d6d-ef4a-4615-866c-4be9f6a00ae2",
-    "latitude": "4.4674876",
-    "longitude": "97.9557107",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "64f52c6a-b4fa-4b40-8a00-70327077e3b3",
     "latitude": "4.4525059",
     "longitude": "98.0099694",
@@ -13180,12 +11182,6 @@
     "latitude": "4.4934224",
     "longitude": "97.9782746",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "78a61b5b-9287-4122-875c-8a97fbb70221",
-    "latitude": "4.5050686",
-    "longitude": "97.9640027",
-    "kategori": "A"
   },
   {
     "assignment_id": "78a61b5b-9287-4122-875c-8a97fbb70221",
@@ -13239,12 +11235,6 @@
     "assignment_id": "7237b9a9-4f0e-494a-b889-267f0c7aca8b",
     "latitude": "4.489996666666667",
     "longitude": "97.969895",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "7237b9a9-4f0e-494a-b889-267f0c7aca8b",
-    "latitude": "4.489996666666667",
-    "longitude": "97.969895",
     "kategori": "F"
   },
   {
@@ -13276,12 +11266,6 @@
     "latitude": "4.465197",
     "longitude": "97.9577674",
     "kategori": "F"
-  },
-  {
-    "assignment_id": "653385ec-6c32-477e-b446-5ab138ab0530",
-    "latitude": "4.4356349",
-    "longitude": "98.0143476",
-    "kategori": "A"
   },
   {
     "assignment_id": "653385ec-6c32-477e-b446-5ab138ab0530",
@@ -13332,12 +11316,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "aa4db644-995c-4081-a99d-2976b79b9d5d",
-    "latitude": "4.44198",
-    "longitude": "97.98706500000002",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "e2980113-17a2-4e1e-82d2-6f0123347766",
     "latitude": "4.5048287333333334",
     "longitude": "97.9494101",
@@ -13360,12 +11338,6 @@
     "latitude": "4.4800822",
     "longitude": "97.9417504",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "41cf6ffd-81b9-4009-b5dc-311de8c99238",
-    "latitude": "4.4319613",
-    "longitude": "98.0133887",
-    "kategori": "A"
   },
   {
     "assignment_id": "41cf6ffd-81b9-4009-b5dc-311de8c99238",
@@ -13452,21 +11424,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2d2465d5-d2e8-4c4f-9b9a-e19c18dbd64f",
-    "latitude": "4.503865",
-    "longitude": "97.9637367",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "8746c198-1143-43db-9614-2976ba51b6d8",
     "latitude": "4.4470571",
     "longitude": "97.9372275",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a7b180b1-84d0-4ba1-a6cf-f848b0b6100b",
-    "latitude": "4.4566743",
-    "longitude": "97.9817566",
     "kategori": "A"
   },
   {
@@ -13491,18 +11451,6 @@
     "assignment_id": "d2496f6d-9430-477c-8778-f67656422a7d",
     "latitude": "4.464571666666667",
     "longitude": "97.935395",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d2496f6d-9430-477c-8778-f67656422a7d",
-    "latitude": "4.464571666666667",
-    "longitude": "97.935395",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "fbbeac34-2c35-411c-99b6-79b346ba711a",
-    "latitude": "4.45789714",
-    "longitude": "97.99743582",
     "kategori": "A"
   },
   {
@@ -13533,18 +11481,6 @@
     "assignment_id": "232fd27b-f8ef-49ef-9bf3-ed006c8d6b9c",
     "latitude": "4.44795533",
     "longitude": "98.02990332",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3003dd8f-fc82-4185-84ce-2bf1687ccf90",
-    "latitude": "4.4378412",
-    "longitude": "98.0166864",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3003dd8f-fc82-4185-84ce-2bf1687ccf90",
-    "latitude": "4.4378412",
-    "longitude": "98.0166864",
     "kategori": "A"
   },
   {
@@ -13588,12 +11524,6 @@
     "latitude": "4.4878618999999995",
     "longitude": "97.98047774999999",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "56bcdd03-400e-4dd2-9145-18675811ab52",
-    "latitude": "4.4419849",
-    "longitude": "97.9735709",
-    "kategori": "A"
   },
   {
     "assignment_id": "56bcdd03-400e-4dd2-9145-18675811ab52",
@@ -13701,18 +11631,6 @@
     "assignment_id": "16795488-4ba4-41d6-878e-d8bae17f1f4b",
     "latitude": "4.489435",
     "longitude": "97.970525",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d997cfc0-4120-4c4a-8c43-12f4ea2855a3",
-    "latitude": "4.4468753",
-    "longitude": "98.0046063",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d997cfc0-4120-4c4a-8c43-12f4ea2855a3",
-    "latitude": "4.4468753",
-    "longitude": "98.0046063",
     "kategori": "A"
   },
   {
@@ -13836,18 +11754,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "15fc5c1f-c701-4f95-9cd4-ae508b1f7597",
-    "latitude": "4.495423333333333",
-    "longitude": "97.94972666666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "15fc5c1f-c701-4f95-9cd4-ae508b1f7597",
-    "latitude": "4.495423333333333",
-    "longitude": "97.94972666666666",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "3a6a085c-025a-4213-9166-a24a7bfbb459",
     "latitude": "4.5044919",
     "longitude": "97.9527812",
@@ -13875,12 +11781,6 @@
     "assignment_id": "368ffe9b-34d3-4391-8e21-b76bef03fe4a",
     "latitude": "4.4256139",
     "longitude": "98.0243494",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "392cbb7c-373c-4684-b42f-dff903b9884a",
-    "latitude": "4.4783697",
-    "longitude": "97.9820269",
     "kategori": "A"
   },
   {
@@ -14052,28 +11952,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "862b2596-3b19-4f57-aa27-1772b5930784",
-    "latitude": "4.453068333333333",
-    "longitude": "98.01664333333335",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "862b2596-3b19-4f57-aa27-1772b5930784",
-    "latitude": "4.453068333333333",
-    "longitude": "98.01664333333335",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "0a017a87-5a20-4a89-82fb-a09cbc735274",
     "latitude": "4.443476666666667",
     "longitude": "97.98697500000002",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "3a6eed44-3b96-4ab3-ad50-e1d3ae5ac183",
-    "latitude": "4.445589",
-    "longitude": "98.0023048",
-    "kategori": "A"
   },
   {
     "assignment_id": "3a6eed44-3b96-4ab3-ad50-e1d3ae5ac183",
@@ -14098,12 +11980,6 @@
     "latitude": "4.4576488",
     "longitude": "97.9741141",
     "kategori": "L"
-  },
-  {
-    "assignment_id": "d32fa630-748c-44ae-ad1b-596d8d9dcd11",
-    "latitude": "4.4716501",
-    "longitude": "97.9026059",
-    "kategori": "A"
   },
   {
     "assignment_id": "d32fa630-748c-44ae-ad1b-596d8d9dcd11",
@@ -14148,24 +12024,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "27ce5342-fd76-4299-81ed-96418bb6ee0c",
-    "latitude": "4.4307567",
-    "longitude": "98.0382817",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "27ce5342-fd76-4299-81ed-96418bb6ee0c",
-    "latitude": "4.4307567",
-    "longitude": "98.0382817",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "fb556310-9974-4319-a381-1d4c4a155b9f",
-    "latitude": "4.4768365",
-    "longitude": "97.9433334",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "fb556310-9974-4319-a381-1d4c4a155b9f",
     "latitude": "4.4768365",
     "longitude": "97.9433334",
@@ -14187,18 +12045,6 @@
     "assignment_id": "31415815-fde3-4e4a-a461-dd6c15d2f54a",
     "latitude": "4.464741666666667",
     "longitude": "97.93512166666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "31415815-fde3-4e4a-a461-dd6c15d2f54a",
-    "latitude": "4.464741666666667",
-    "longitude": "97.93512166666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "31415815-fde3-4e4a-a461-dd6c15d2f54a",
-    "latitude": "4.464741666666667",
-    "longitude": "97.93512166666666",
     "kategori": "G"
   },
   {
@@ -14208,33 +12054,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "52249b18-21c6-4bfc-b35d-67eea0841a18",
-    "latitude": "4.4460627",
-    "longitude": "97.9977817",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "572a0f1c-9a39-4fd4-a6bf-5dd65436ce96",
     "latitude": "4.4936117",
     "longitude": "97.9733523",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "572a0f1c-9a39-4fd4-a6bf-5dd65436ce96",
-    "latitude": "4.4936117",
-    "longitude": "97.9733523",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "572a0f1c-9a39-4fd4-a6bf-5dd65436ce96",
-    "latitude": "4.4936117",
-    "longitude": "97.9733523",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "5a152b6c-23ad-4388-81f2-cf832333482d",
-    "latitude": "4.45173448",
-    "longitude": "98.03002882",
     "kategori": "A"
   },
   {
@@ -14247,12 +12069,6 @@
     "assignment_id": "6817b179-84dc-47e3-a737-715e154b4743",
     "latitude": "4.5527345",
     "longitude": "98.0649023",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "995a0769-6fbe-48dd-bef8-52c908d94436",
-    "latitude": "4.492381666666666",
-    "longitude": "97.97405333333333",
     "kategori": "A"
   },
   {
@@ -14322,12 +12138,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2ff6999c-ab27-4165-af28-f86203d0469f",
-    "latitude": "4.4325493",
-    "longitude": "98.0085307",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "35eb55f5-c914-44d1-b335-d76bd1f6434a",
     "latitude": "4.4625095",
     "longitude": "97.9775391",
@@ -14364,12 +12174,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "2fdd8c86-b760-46eb-b98e-f7f8cffcc373",
-    "latitude": "4.4274706",
-    "longitude": "98.0230437",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "4806a67a-b6d0-44d7-adf2-94d5294e2a9e",
     "latitude": "4.45690658",
     "longitude": "97.99066466",
@@ -14397,12 +12201,6 @@
     "assignment_id": "e3522a6d-af17-4886-84a3-32d18dc41c5f",
     "latitude": "4.4367957",
     "longitude": "98.0207472",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "097b2949-884b-4b24-a896-69531c865f06",
-    "latitude": "4.4341474",
-    "longitude": "97.9874172",
     "kategori": "A"
   },
   {
@@ -14451,12 +12249,6 @@
     "assignment_id": "20775e58-7084-4eb7-a580-5f2ffe2ae7f5",
     "latitude": "4.433369",
     "longitude": "98.0355614",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "20775e58-7084-4eb7-a580-5f2ffe2ae7f5",
-    "latitude": "4.433369",
-    "longitude": "98.0355614",
     "kategori": "C"
   },
   {
@@ -14482,18 +12274,6 @@
     "latitude": "4.4690455",
     "longitude": "97.9435582",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "0b316bbd-6ff8-4c8f-b0ee-c85c5cceb51f",
-    "latitude": "4.4952912",
-    "longitude": "97.9529956",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "0b316bbd-6ff8-4c8f-b0ee-c85c5cceb51f",
-    "latitude": "4.4952912",
-    "longitude": "97.9529956",
-    "kategori": "A"
   },
   {
     "assignment_id": "0b316bbd-6ff8-4c8f-b0ee-c85c5cceb51f",
@@ -14670,24 +12450,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "bc513b94-277a-476e-9311-bf9280aafbb5",
-    "latitude": "4.451436016666666",
-    "longitude": "97.9741437",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d37c5d5f-fa93-411b-8845-a45379f29e1c",
-    "latitude": "4.45584067",
-    "longitude": "97.98746111",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d37c5d5f-fa93-411b-8845-a45379f29e1c",
-    "latitude": "4.45584067",
-    "longitude": "97.98746111",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "d37c5d5f-fa93-411b-8845-a45379f29e1c",
     "latitude": "4.45584067",
     "longitude": "97.98746111",
@@ -14745,12 +12507,6 @@
     "assignment_id": "3fbd9d1a-bc99-48bc-af45-6383d7218d1e",
     "latitude": "4.46588",
     "longitude": "97.93708833333334",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "5718a743-49f1-44ee-acba-897fb0ea8a48",
-    "latitude": "4.4617283",
-    "longitude": "97.9682257",
     "kategori": "A"
   },
   {
@@ -14883,12 +12639,6 @@
     "assignment_id": "96796220-b21d-4b49-92e2-e5a0682192c1",
     "latitude": "4.4464569",
     "longitude": "98.0080377",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "96796220-b21d-4b49-92e2-e5a0682192c1",
-    "latitude": "4.4464569",
-    "longitude": "98.0080377",
     "kategori": "C"
   },
   {
@@ -14964,28 +12714,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "20b3b44e-de74-4121-a77a-92f2282fffc9",
-    "latitude": "4.44669789",
-    "longitude": "98.02956008",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "20b3b44e-de74-4121-a77a-92f2282fffc9",
-    "latitude": "4.44669789",
-    "longitude": "98.02956008",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "c1dc60e9-2df0-4f64-94d4-93249d29f23e",
     "latitude": "4.470238333333333",
     "longitude": "97.93388833333331",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "c49ca461-cd07-48d9-90b8-ef601308f541",
-    "latitude": "4.443178333333334",
-    "longitude": "97.98716166666667",
-    "kategori": "A"
   },
   {
     "assignment_id": "c49ca461-cd07-48d9-90b8-ef601308f541",
@@ -15003,18 +12735,6 @@
     "assignment_id": "07a08e42-62ff-49ab-92eb-5002eb78ec36",
     "latitude": "4.4826333",
     "longitude": "97.9577083",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3ffe1a4c-2366-4a54-ba8d-9df7244f19dd",
-    "latitude": "4.444348483333333",
-    "longitude": "97.93982241666666",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "3ffe1a4c-2366-4a54-ba8d-9df7244f19dd",
-    "latitude": "4.444348483333333",
-    "longitude": "97.93982241666666",
     "kategori": "A"
   },
   {
@@ -15045,12 +12765,6 @@
     "assignment_id": "ccf31546-1824-43e2-8346-19d167fa5b99",
     "latitude": "4.478841783333333",
     "longitude": "97.97951351666667",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "9fd14c89-7825-4003-b924-5e9031268afd",
-    "latitude": "4.466191666666666",
-    "longitude": "97.95637333333335",
     "kategori": "A"
   },
   {
@@ -15105,18 +12819,6 @@
     "assignment_id": "e16e997f-4486-42ed-9491-d756080b95fc",
     "latitude": "4.44856962",
     "longitude": "98.02917131",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e16e997f-4486-42ed-9491-d756080b95fc",
-    "latitude": "4.44856962",
-    "longitude": "98.02917131",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f7cfe341-3381-40f1-ae46-809671888fd2",
-    "latitude": "4.4405772",
-    "longitude": "97.9726177",
     "kategori": "A"
   },
   {
@@ -15270,12 +12972,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "f516090c-b11a-4e53-8dc3-18954408fe0c",
-    "latitude": "4.4355859",
-    "longitude": "97.9894488",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "d197968d-d582-4134-a6b4-012c298d5595",
     "latitude": "4.500328",
     "longitude": "97.9672348",
@@ -15285,12 +12981,6 @@
     "assignment_id": "ab644bc3-59a9-4c35-9ec1-0cf6072970bf",
     "latitude": "4.42737352",
     "longitude": "98.02222407",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "95849006-113f-4f2e-8344-d8974a6cc4ab",
-    "latitude": "4.4431411",
-    "longitude": "97.976732",
     "kategori": "A"
   },
   {
@@ -15360,12 +13050,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "f2b8c21c-d7bb-4b9a-a1fa-a4a8c3dca82b",
-    "latitude": "4.494108333333333",
-    "longitude": "97.97413",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "340f4719-5992-43b5-856b-6fe580980100",
     "latitude": "4.46822335",
     "longitude": "97.98332595",
@@ -15393,12 +13077,6 @@
     "assignment_id": "88c5d5c4-eb55-49af-a8c5-4bd2f76509f6",
     "latitude": "4.505565",
     "longitude": "97.9658589",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b48bd465-c16a-49df-b884-48b067e43718",
-    "latitude": "4.4617229",
-    "longitude": "97.9678708",
     "kategori": "A"
   },
   {
@@ -15480,12 +13158,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "21e7d089-aaf0-413a-a021-78c112a6036b",
-    "latitude": "4.4478855",
-    "longitude": "97.938487",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "773b7cb5-7c32-42b8-8806-703e90c40fd9",
     "latitude": "4.4351486",
     "longitude": "98.0085969",
@@ -15498,27 +13170,9 @@
     "kategori": "G"
   },
   {
-    "assignment_id": "7d6e31cd-d1ce-47e5-b5ea-62cc5dae9a13",
-    "latitude": "4.4581",
-    "longitude": "97.97289166666665",
-    "kategori": "G"
-  },
-  {
     "assignment_id": "8122aedc-a60a-49f3-8888-98062914d9a9",
     "latitude": "4.4716700000000005",
     "longitude": "97.90227833333331",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a79c40f5-0544-483b-865d-0a5ce0a6d1d6",
-    "latitude": "4.44888158",
-    "longitude": "98.02045669",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a79c40f5-0544-483b-865d-0a5ce0a6d1d6",
-    "latitude": "4.44888158",
-    "longitude": "98.02045669",
     "kategori": "A"
   },
   {
@@ -15582,12 +13236,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "e9fcd1d1-9d6f-4173-b191-ded241a45461",
-    "latitude": "4.4593996",
-    "longitude": "97.9342692",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "e464c890-e567-4c66-90f4-b54679d83850",
     "latitude": "4.434715",
     "longitude": "98.0214567",
@@ -15612,12 +13260,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "0e9e8528-f38d-4140-b8fb-4597e055e0bc",
-    "latitude": "4.471382",
-    "longitude": "97.9320194",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "10091079-5dd9-464b-8403-747d6504e4b9",
     "latitude": "4.4398373",
     "longitude": "97.968237",
@@ -15630,21 +13272,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "4e6182d2-91d4-4373-b66f-775ff212bddf",
-    "latitude": "4.474048",
-    "longitude": "97.9448734",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "5215150d-86f1-4b81-8ae4-56a9fb9865b0",
     "latitude": "4.47135141",
     "longitude": "97.98161522",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "69c5cfe6-862a-41d8-9097-ae20e344d153",
-    "latitude": "4.5313781",
-    "longitude": "97.9320231",
     "kategori": "A"
   },
   {
@@ -15699,12 +13329,6 @@
     "assignment_id": "f09dad73-b8bb-46c7-a945-36b18a6809ad",
     "latitude": "4.4474189",
     "longitude": "97.9812188",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "78e9778a-a751-4697-a6c7-cd7f895fb17a",
-    "latitude": "4.4369343",
-    "longitude": "98.0028341",
     "kategori": "A"
   },
   {
@@ -15808,12 +13432,6 @@
     "latitude": "4.512425",
     "longitude": "98.01136166666666",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "ab924a05-0b13-4cd9-a4b2-ab37c58cd349",
-    "latitude": "4.492743",
-    "longitude": "97.9721676",
-    "kategori": "A"
   },
   {
     "assignment_id": "ab924a05-0b13-4cd9-a4b2-ab37c58cd349",
@@ -15939,19 +13557,7 @@
     "assignment_id": "bf7d3ca3-a0fd-40cb-9e50-c5bc7c6f597e",
     "latitude": "4.44828908",
     "longitude": "98.02906568",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "bf7d3ca3-a0fd-40cb-9e50-c5bc7c6f597e",
-    "latitude": "4.44828908",
-    "longitude": "98.02906568",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "ce506b1e-d170-4ee4-b4a7-4fdff925f550",
-    "latitude": "4.5306888",
-    "longitude": "97.9350236",
-    "kategori": "A"
   },
   {
     "assignment_id": "ce506b1e-d170-4ee4-b4a7-4fdff925f550",
@@ -15990,18 +13596,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "70d7144e-018e-4359-a60e-9bc83791f53e",
-    "latitude": "4.4537463",
-    "longitude": "98.0175985",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "70d7144e-018e-4359-a60e-9bc83791f53e",
-    "latitude": "4.4537463",
-    "longitude": "98.0175985",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "81051096-ff3f-46cb-9ebb-a998fa1de4fd",
     "latitude": "4.48287013",
     "longitude": "97.97276053",
@@ -16023,18 +13617,6 @@
     "assignment_id": "71c75e27-24f6-4429-b92d-ec4f41e15c26",
     "latitude": "4.4577034",
     "longitude": "97.9874489",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f12b89a2-9bd4-4e70-8169-b740ac1ca292",
-    "latitude": "4.4309183",
-    "longitude": "98.0377683",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "f12b89a2-9bd4-4e70-8169-b740ac1ca292",
-    "latitude": "4.4309183",
-    "longitude": "98.0377683",
     "kategori": "A"
   },
   {
@@ -16089,18 +13671,6 @@
     "assignment_id": "9015141c-b57b-4764-a6eb-1d0d4de3da78",
     "latitude": "4.44744689",
     "longitude": "98.03020793",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b739f56e-311c-408c-972f-a495824e03bd",
-    "latitude": "4.4942742",
-    "longitude": "97.952132",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b739f56e-311c-408c-972f-a495824e03bd",
-    "latitude": "4.4942742",
-    "longitude": "97.952132",
     "kategori": "A"
   },
   {
@@ -16218,18 +13788,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "73697282-3fa8-4cca-948e-b73282cc3d29",
-    "latitude": "4.45166412",
-    "longitude": "97.98875269",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "73697282-3fa8-4cca-948e-b73282cc3d29",
-    "latitude": "4.45166412",
-    "longitude": "97.98875269",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "a33f81d9-f234-47b1-9a5f-87f73d732ec7",
     "latitude": "4.4713616",
     "longitude": "97.9697135",
@@ -16275,19 +13833,7 @@
     "assignment_id": "5c0025bd-69b0-4d4b-8e47-32a958d5f87f",
     "latitude": "4.465586666666667",
     "longitude": "97.93662666666665",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "5c0025bd-69b0-4d4b-8e47-32a958d5f87f",
-    "latitude": "4.465586666666667",
-    "longitude": "97.93662666666665",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "86a85691-79b0-40eb-86e0-3fcb929294ea",
-    "latitude": "4.437992",
-    "longitude": "97.9705971",
-    "kategori": "A"
   },
   {
     "assignment_id": "86a85691-79b0-40eb-86e0-3fcb929294ea",
@@ -16311,12 +13857,6 @@
     "assignment_id": "b0fae7b0-5ce2-45bf-b7a8-54300096d676",
     "latitude": "4.4456068",
     "longitude": "97.9401629",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d847634b-9dc6-4c0e-a746-a90568bab312",
-    "latitude": "4.45634803",
-    "longitude": "97.99626828",
     "kategori": "A"
   },
   {
@@ -16398,22 +13938,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "d2361dfe-67e1-49f6-8e7d-d9ef5bf1b3b2",
-    "latitude": "4.4283573",
-    "longitude": "98.023714",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "f9747d30-694c-41d4-9254-7bd4bb296451",
     "latitude": "4.4663336",
     "longitude": "97.9514471",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "17702c4f-37bc-42a6-9fa0-d58899e3d258",
-    "latitude": "4.4553898",
-    "longitude": "97.9304996",
-    "kategori": "A"
   },
   {
     "assignment_id": "17702c4f-37bc-42a6-9fa0-d58899e3d258",
@@ -16527,12 +14055,6 @@
     "assignment_id": "276409df-2069-43ed-b625-e3a2a65267c4",
     "latitude": "4.5029033",
     "longitude": "97.9633117",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "276409df-2069-43ed-b625-e3a2a65267c4",
-    "latitude": "4.5029033",
-    "longitude": "97.9633117",
     "kategori": "C"
   },
   {
@@ -16588,12 +14110,6 @@
     "latitude": "4.5115474",
     "longitude": "97.9447612",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "e7457fe6-7529-4db1-9617-77d118af34c1",
-    "latitude": "4.485975",
-    "longitude": "97.9586267",
-    "kategori": "A"
   },
   {
     "assignment_id": "e7457fe6-7529-4db1-9617-77d118af34c1",
@@ -16674,12 +14190,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "716795f0-9821-4ee5-ba4e-a7023b0b9117",
-    "latitude": "4.4461659",
-    "longitude": "97.9784357",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "73b402c6-74ab-41bb-ac6a-da0ce47a9f2a",
     "latitude": "4.461998",
     "longitude": "97.9818909",
@@ -16746,18 +14256,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "ae00dbc9-772d-4bd2-ab1d-f7ca0558ef61",
-    "latitude": "4.437056666666667",
-    "longitude": "98.00306166666665",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "ae00dbc9-772d-4bd2-ab1d-f7ca0558ef61",
-    "latitude": "4.437056666666667",
-    "longitude": "98.00306166666665",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "af083dd6-a177-4005-aad0-90d3e4c7a15e",
     "latitude": "4.4721492",
     "longitude": "97.9820734",
@@ -16812,24 +14310,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "32dba529-7cde-4921-b1af-23ebaec3d62f",
-    "latitude": "4.495038333333333",
-    "longitude": "97.972725",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "32dba529-7cde-4921-b1af-23ebaec3d62f",
-    "latitude": "4.495038333333333",
-    "longitude": "97.972725",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "4bc02d04-230d-4aa8-87bd-0d2208ff9df1",
-    "latitude": "4.4716952",
-    "longitude": "97.9025798",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "4bc02d04-230d-4aa8-87bd-0d2208ff9df1",
     "latitude": "4.4716952",
     "longitude": "97.9025798",
@@ -16840,12 +14320,6 @@
     "latitude": "4.45196054",
     "longitude": "98.0301601",
     "kategori": "F"
-  },
-  {
-    "assignment_id": "74121f05-094c-4f4c-b92b-ce455000a1be",
-    "latitude": "4.4366433",
-    "longitude": "98.0415883",
-    "kategori": "A"
   },
   {
     "assignment_id": "74121f05-094c-4f4c-b92b-ce455000a1be",
@@ -16962,21 +14436,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "f0fc11b8-679f-4dc4-8646-4d7fb4507563",
-    "latitude": "4.4279718",
-    "longitude": "98.0230537",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "1fc9fcb6-15fe-4de1-8473-d06de48c2f56",
     "latitude": "4.4801982",
     "longitude": "97.9822353",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "1e64f1f6-d153-44d5-8ae2-a4de6a97ff66",
-    "latitude": "4.4780917",
-    "longitude": "97.9780957",
     "kategori": "A"
   },
   {
@@ -17046,27 +14508,9 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "f20bc585-a886-4002-995e-9ed5425027bd",
-    "latitude": "4.4461252",
-    "longitude": "97.94118018333332",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "2c9ba30b-052d-4060-8e45-1f796117d0d0",
     "latitude": "4.4712816",
     "longitude": "97.9320401",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "2c9ba30b-052d-4060-8e45-1f796117d0d0",
-    "latitude": "4.4712816",
-    "longitude": "97.9320401",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "4b4f2313-a59c-4a28-aeea-0819681a92e2",
-    "latitude": "4.440173333333333",
-    "longitude": "98.00144999999999",
     "kategori": "A"
   },
   {
@@ -17130,12 +14574,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "1df11001-ea4c-4247-80b5-256996e1f59e",
-    "latitude": "4.4381845",
-    "longitude": "98.0171245",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "3cf06d47-cdc8-4b36-9e22-0c43f83ed71b",
     "latitude": "4.498543333333333",
     "longitude": "97.97262833333335",
@@ -17146,12 +14584,6 @@
     "latitude": "4.453786816666667",
     "longitude": "98.02983386666668",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "ac08f18d-6501-43c2-bf85-637c26eb9feb",
-    "latitude": "4.499085",
-    "longitude": "97.97316000000001",
-    "kategori": "A"
   },
   {
     "assignment_id": "ac08f18d-6501-43c2-bf85-637c26eb9feb",
@@ -17187,18 +14619,6 @@
     "assignment_id": "fcd236bd-62f0-4859-b634-a1665bae326e",
     "latitude": "4.499615",
     "longitude": "97.96247",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "20fb2c49-455b-456f-9518-3e3a7edd2edd",
-    "latitude": "4.488784999999999",
-    "longitude": "97.971185",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "20fb2c49-455b-456f-9518-3e3a7edd2edd",
-    "latitude": "4.488784999999999",
-    "longitude": "97.971185",
     "kategori": "A"
   },
   {
@@ -17349,24 +14769,6 @@
     "assignment_id": "c1706f4d-88e9-44b3-882c-b5cdc2a87e68",
     "latitude": "4.433995",
     "longitude": "98.0213517",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "c1706f4d-88e9-44b3-882c-b5cdc2a87e68",
-    "latitude": "4.433995",
-    "longitude": "98.0213517",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "cc976529-e94f-480a-95f4-e487079642ed",
-    "latitude": "4.455935",
-    "longitude": "97.884655",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "cc976529-e94f-480a-95f4-e487079642ed",
-    "latitude": "4.455935",
-    "longitude": "97.884655",
     "kategori": "A"
   },
   {
@@ -17556,22 +14958,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "1399d5fe-8d24-4f94-8853-4fadca5e6ac0",
-    "latitude": "4.464796666666667",
-    "longitude": "97.93511500000001",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "142493b2-ca08-4cca-9e9b-3b53d2b73927",
     "latitude": "4.5248002",
     "longitude": "97.9390393",
     "kategori": "G"
-  },
-  {
-    "assignment_id": "1c80644a-02a9-48ce-99b5-031f658d1b8d",
-    "latitude": "4.4446265",
-    "longitude": "97.9939178",
-    "kategori": "A"
   },
   {
     "assignment_id": "1c80644a-02a9-48ce-99b5-031f658d1b8d",
@@ -17604,12 +14994,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "67dd79a8-3b91-4f0b-a9ae-e3c2a04b6b1b",
-    "latitude": "4.458675",
-    "longitude": "97.92957",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "8b49c487-687b-4d97-96ff-7855e02e1bc4",
     "latitude": "4.48082663",
     "longitude": "97.96791362",
@@ -17622,34 +15006,10 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "981ba15b-0609-439d-9fd9-89b1bfe70b9f",
-    "latitude": "4.5019481",
-    "longitude": "97.9560512",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "981ba15b-0609-439d-9fd9-89b1bfe70b9f",
-    "latitude": "4.5019481",
-    "longitude": "97.9560512",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "981ba15b-0609-439d-9fd9-89b1bfe70b9f",
-    "latitude": "4.5019481",
-    "longitude": "97.9560512",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "10e95fb9-653d-4751-b68c-9e5783b91219",
     "latitude": "4.460115",
     "longitude": "97.9774583",
     "kategori": "F"
-  },
-  {
-    "assignment_id": "5ab4da0e-b484-4176-a4b0-779f6a4021e4",
-    "latitude": "4.5341133",
-    "longitude": "97.9296029",
-    "kategori": "A"
   },
   {
     "assignment_id": "5ab4da0e-b484-4176-a4b0-779f6a4021e4",
@@ -17685,12 +15045,6 @@
     "assignment_id": "5866312f-224c-41f8-a0eb-83ebc4df1bd6",
     "latitude": "4.42169",
     "longitude": "98.02014166666667",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "a220d7e8-a8a3-4ad6-be7a-1af948b75d2e",
-    "latitude": "4.4361025",
-    "longitude": "97.9903284",
     "kategori": "A"
   },
   {
@@ -17868,18 +15222,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "b1a5eecd-782c-4967-b26f-c707e5e0d9e4",
-    "latitude": "4.489708333333334",
-    "longitude": "97.95931999999999",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "b1a5eecd-782c-4967-b26f-c707e5e0d9e4",
-    "latitude": "4.489708333333334",
-    "longitude": "97.95931999999999",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "b7793c87-70e2-4bf8-a827-b81ce7b750fa",
     "latitude": "4.4286591",
     "longitude": "98.0244513",
@@ -17928,12 +15270,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "3d10b649-c545-4250-8bce-b399206b132f",
-    "latitude": "4.4387097",
-    "longitude": "98.0147703",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "4a3a8abb-6577-4365-9ff4-7067baed32cc",
     "latitude": "4.4464731",
     "longitude": "97.9449352",
@@ -17943,12 +15279,6 @@
     "assignment_id": "ac0ccc4c-08e8-4bb1-a769-fa23cb53e283",
     "latitude": "4.480005",
     "longitude": "97.96378333333332",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "bb7497db-d611-4287-b296-fb13245fe650",
-    "latitude": "4.4684217",
-    "longitude": "97.9713133",
     "kategori": "A"
   },
   {
@@ -17982,12 +15312,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "f8b1772c-d277-4f84-b562-ee01aecf4e26",
-    "latitude": "4.5046468",
-    "longitude": "97.9631997",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "577136d6-ec21-4be5-9155-85a2b43ae98c",
     "latitude": "4.489821666666667",
     "longitude": "97.97067333333334",
@@ -18010,12 +15334,6 @@
     "latitude": "4.4973872",
     "longitude": "98.0022698",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "255d118d-ac47-42b4-8326-fcc3131139c6",
-    "latitude": "4.439795",
-    "longitude": "98.0158167",
-    "kategori": "A"
   },
   {
     "assignment_id": "255d118d-ac47-42b4-8326-fcc3131139c6",
@@ -18078,12 +15396,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "a921c13f-4cfb-4e6e-a72c-d6a4820b6bf2",
-    "latitude": "4.4886437",
-    "longitude": "97.9748782",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "ebea0ba4-6bc5-45ef-b3b7-1a29f459060f",
     "latitude": "4.43092",
     "longitude": "98.04027",
@@ -18124,12 +15436,6 @@
     "latitude": "4.467770883333333",
     "longitude": "97.95228784999999",
     "kategori": "H"
-  },
-  {
-    "assignment_id": "87776da8-1f55-4264-9485-4e97a9e11ce5",
-    "latitude": "4.4779852",
-    "longitude": "97.9451739",
-    "kategori": "A"
   },
   {
     "assignment_id": "87776da8-1f55-4264-9485-4e97a9e11ce5",
@@ -18231,18 +15537,6 @@
     "assignment_id": "d5516bc2-e5e4-4c04-bbbd-2302132fc267",
     "latitude": "4.45796369",
     "longitude": "97.99123029",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "d5516bc2-e5e4-4c04-bbbd-2302132fc267",
-    "latitude": "4.45796369",
-    "longitude": "97.99123029",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "fe67078e-7f5f-4e3f-8e51-3bef42c547b2",
-    "latitude": "4.440144916666667",
-    "longitude": "98.01343016666667",
     "kategori": "A"
   },
   {
@@ -18354,12 +15648,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "1ecd78dd-7d55-425f-bd6e-ac1d19bfc7ca",
-    "latitude": "4.4661076",
-    "longitude": "97.9029962",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "361b16cd-7dd7-477e-9d46-2709483d982d",
     "latitude": "4.44775745",
     "longitude": "98.02951496",
@@ -18375,12 +15663,6 @@
     "assignment_id": "73419ef2-3f06-48af-a625-7cdcb644227d",
     "latitude": "4.4938403",
     "longitude": "97.9619365",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "8dd51d0d-42cd-4d74-b626-fa63a5b7f1a0",
-    "latitude": "4.480377",
-    "longitude": "97.9476389",
     "kategori": "A"
   },
   {
@@ -18420,12 +15702,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "e7608d50-8a60-45a0-b640-e408099fcd86",
-    "latitude": "4.44049",
-    "longitude": "98.0016",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "edd5e5e3-b097-473b-8f01-79fafa9a6e1c",
     "latitude": "4.465628333333333",
     "longitude": "97.97194166666668",
@@ -18435,12 +15711,6 @@
     "assignment_id": "f432a698-2546-48ba-bfb4-92ff67a7d7b1",
     "latitude": "4.4317438",
     "longitude": "98.0132057",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "412eaf95-7e37-4810-aa2b-cee79c3c8b09",
-    "latitude": "4.437542966666667",
-    "longitude": "98.02011588333335",
     "kategori": "A"
   },
   {
@@ -18615,12 +15885,6 @@
     "assignment_id": "5e1c9609-403b-4ee4-96b5-fc287fb66751",
     "latitude": "4.511405699886382",
     "longitude": "97.9447107296437",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "5e1c9609-403b-4ee4-96b5-fc287fb66751",
-    "latitude": "4.511405699886382",
-    "longitude": "97.9447107296437",
     "kategori": "C"
   },
   {
@@ -18640,12 +15904,6 @@
     "latitude": "4.47780907",
     "longitude": "97.94446969",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "936aaabe-b69d-42a4-b00e-8aa336d64a3e",
-    "latitude": "4.4825101",
-    "longitude": "97.9598533",
-    "kategori": "G"
   },
   {
     "assignment_id": "936aaabe-b69d-42a4-b00e-8aa336d64a3e",
@@ -18732,12 +15990,6 @@
     "kategori": "A"
   },
   {
-    "assignment_id": "e3a2102b-15e9-4cbb-b9ba-8a9b3d01b126",
-    "latitude": "4.4315175",
-    "longitude": "98.023755",
-    "kategori": "A"
-  },
-  {
     "assignment_id": "470aefdf-50c2-4ddc-8d8f-92be37fdf2d3",
     "latitude": "4.4277267",
     "longitude": "98.022342",
@@ -18747,18 +15999,6 @@
     "assignment_id": "520b3900-4662-4707-98b4-ddd4949156d4",
     "latitude": "4.4279034",
     "longitude": "98.0218628",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e73fe812-2c6d-4b33-a58b-7db811ed7c6b",
-    "latitude": "4.4608051",
-    "longitude": "97.9917498",
-    "kategori": "A"
-  },
-  {
-    "assignment_id": "e73fe812-2c6d-4b33-a58b-7db811ed7c6b",
-    "latitude": "4.4608051",
-    "longitude": "97.9917498",
     "kategori": "A"
   },
   {
@@ -18790,12 +16030,6 @@
     "latitude": "4.479666666666666",
     "longitude": "97.96366333333332",
     "kategori": "C"
-  },
-  {
-    "assignment_id": "d7990b92-52b3-4e42-89d9-696214d7bd3c",
-    "latitude": "4.449556566666667",
-    "longitude": "97.97900178333333",
-    "kategori": "A"
   },
   {
     "assignment_id": "d7990b92-52b3-4e42-89d9-696214d7bd3c",
