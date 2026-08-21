@@ -1,4 +1,4 @@
-const DATA_POINTS_URLS = ["data/points.geojson", "data/points.json"];
+const DATA_POINTS_URLS = ["data/points.json", "data/points.geojson"];
 const DATA_KOTA_BOUNDARY_URL = "data/kota_langsa.geojson";
 const DATA_KECAMATAN_BOUNDARY_URL = "data/kecamatan_langsa.geojson";
 
@@ -53,7 +53,7 @@ const KECAMATAN_COLORS = {
   "Langsa Baro": { stroke: "#0d9488", fill: "#5eead4" },
   "Langsa Kota": { stroke: "#db2777", fill: "#f472b6" },
   "Langsa Lama": { stroke: "#7c3aed", fill: "#c4b5fd" },
-  "Langsa Timur": { stroke: "#d97706", fill: "#fbbf24" }
+  "Langsa Timur": { stroke: "#eab308", fill: "#fde047" }
 };
 
 const statusContainer = document.querySelector("#load-status");
@@ -62,6 +62,7 @@ const statusSpinner = document.querySelector("#load-spinner");
 const familyCountElement = document.querySelector("#family-count");
 const businessCountElement = document.querySelector("#business-count");
 const totalPointsElement = document.querySelector("#total-points");
+const scopeCountElement = document.querySelector("#scope-count");
 const toggleKotaCheckbox = document.querySelector("#toggle-kota");
 const toggleKecamatanCheckbox = document.querySelector("#toggle-kecamatan");
 const kecamatanLegendBar = document.querySelector("#kecamatan-legend-bar");
@@ -96,13 +97,9 @@ const darkLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x
   noWrap: true,
 });
 
-// Use marker clustering for better performance with many points
-const familyLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true }) : L.layerGroup();
-const businessLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true }) : L.layerGroup();
-const categoryLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true }) : L.layerGroup();
-familyLayer.addTo(map);
+// Single optimized marker clustering layer
+const businessLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true, maxClusterRadius: 45 }) : L.layerGroup();
 businessLayer.addTo(map);
-categoryLayer.addTo(map);
 
 let kotaBoundaryLayer = null;
 let kecamatanBoundaryLayer = null;
@@ -137,14 +134,31 @@ if (mapContainer && typeof ResizeObserver !== "undefined") {
 
 window.addEventListener("resize", refreshMapSize);
 
-function setStatus(message, isError = false, showSpinner = false) {
+let statusDismissTimeout = null;
+function setStatus(message, isError = false, showSpinner = false, autoDismiss = false) {
+  if (statusDismissTimeout) {
+    clearTimeout(statusDismissTimeout);
+    statusDismissTimeout = null;
+  }
   if (statusTextElement) statusTextElement.textContent = message;
   if (statusContainer) {
+    statusContainer.style.display = "flex";
+    statusContainer.style.opacity = "1";
     statusContainer.classList.toggle("text-danger", isError);
     statusContainer.classList.toggle("text-secondary", !isError);
   }
   if (statusSpinner) {
     statusSpinner.style.display = showSpinner ? "inline-block" : "none";
+  }
+  if (autoDismiss && statusContainer) {
+    statusDismissTimeout = setTimeout(() => {
+      statusContainer.style.transition = "opacity 0.4s ease, max-height 0.4s ease, padding 0.4s ease";
+      statusContainer.style.opacity = "0";
+      setTimeout(() => {
+        statusContainer.style.display = "none";
+        refreshMapSize();
+      }, 400);
+    }, 3000);
   }
 }
 
@@ -275,12 +289,6 @@ function createPopup(point) {
   return container;
 }
 
-function getRenderLayer(point) {
-  if (point.type === "keluarga") return familyLayer;
-  if (point.type === "usaha") return businessLayer;
-  return categoryLayer;
-}
-
 function normalizePointList(rawPoints) {
   if (!rawPoints) return [];
 
@@ -298,41 +306,42 @@ function normalizePointList(rawPoints) {
 }
 
 function renderPoints(points, districtFeatures = []) {
-  familyLayer.clearLayers();
   businessLayer.clearLayers();
-  categoryLayer.clearLayers();
 
   const validPoints = normalizePointList(points).filter(isUsahaPoint);
-  const counts = { usaha: 0 };
   const pointBounds = [];
+  const markers = [];
+  const catCounts = {};
 
-  validPoints.forEach((point) => {
-    const layer = businessLayer;
-    counts.usaha += 1;
+  for (let i = 0; i < validPoints.length; i++) {
+    const point = validPoints[i];
     pointBounds.push([point.lat, point.lng]);
 
-    const categoryValue = String(point.kategori || point.type || "").toUpperCase();
-    const markerOptionsForPoint = markerOptions[categoryValue] || markerOptions[point.type] || { color: "#cc7a00", fillColor: "#ffc107" };
     const marker = L.circleMarker([point.lat, point.lng], {
-      ...markerOptionsForPoint,
+      color: "#c2410c",
+      fillColor: "#ea580c",
       radius: 8,
       weight: 2,
       opacity: 1,
-      fillOpacity: 0.85,
-    }).bindPopup(createPopup(point), { className: "custom-popup" });
+      fillOpacity: 0.9,
+    }).bindPopup(() => createPopup(point), { className: "custom-popup" });
 
-    if (layer && layer.addLayer) {
-      layer.addLayer(marker);
-    } else {
-      marker.addTo(map);
-    }
-  });
-
-  if (totalPointsElement) {
-    totalPointsElement.textContent = validPoints.length;
+    markers.push(marker);
   }
 
-  [familyCountElement, businessCountElement, totalPointsElement].forEach((el) => {
+  if (businessLayer.addLayers) {
+    businessLayer.addLayers(markers);
+  } else if (businessLayer.addLayer) {
+    for (let i = 0; i < markers.length; i++) {
+      businessLayer.addLayer(markers[i]);
+    }
+  }
+
+  if (totalPointsElement) {
+    totalPointsElement.textContent = validPoints.length.toLocaleString('id-ID');
+  }
+
+  [familyCountElement, businessCountElement, totalPointsElement, scopeCountElement].forEach((el) => {
     if (el && el.classList.contains("is-loading")) el.classList.remove("is-loading");
   });
 
@@ -369,6 +378,7 @@ async function loadDashboard() {
     }).addTo(map);
 
     // 2. Batas Kecamatan Layer (Multi-color District Polygons)
+    const districtLayersMap = new Map();
     kecamatanBoundaryLayer = L.geoJSON(kecamatanGeojson, {
       style: (feature) => {
         const districtName = feature.properties?.district || "Lainnya";
@@ -386,6 +396,7 @@ async function loadDashboard() {
       onEachFeature: (feature, layer) => {
         const distName = feature.properties?.district || "Kecamatan";
         const palette = KECAMATAN_COLORS[distName] || { stroke: "#2563eb" };
+        districtLayersMap.set(distName, layer);
 
         layer.bindTooltip(`Kecamatan ${distName}`, {
           className: "kecamatan-tooltip",
@@ -427,17 +438,18 @@ async function loadDashboard() {
             if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
               target.bringToFront();
             }
-            // Open tooltip and auto-close after 2 seconds
+            // Open tooltip and auto-close after 1 second if still hovered
             try {
               layer.openTooltip();
             } catch (err) {}
             if (layer._tooltipTimeout) clearTimeout(layer._tooltipTimeout);
             layer._tooltipTimeout = setTimeout(() => {
               try { layer.closeTooltip(); } catch (err) {}
-            }, 2000);
+            }, 1000);
           },
           mouseout: (e) => {
             kecamatanBoundaryLayer.resetStyle(e.target);
+            try { layer.closeTooltip(); } catch (err) {}
             if (e.target && e.target._tooltipTimeout) {
               clearTimeout(e.target._tooltipTimeout);
               e.target._tooltipTimeout = null;
@@ -465,6 +477,19 @@ async function loadDashboard() {
         });
       },
     }).addTo(map);
+
+    // Setup interactive kecamatan legend click-to-focus
+    document.querySelectorAll('#kecamatan-legend-bar .kec-badge').forEach((badge) => {
+      badge.addEventListener('click', (e) => {
+        e.preventDefault();
+        const distName = badge.dataset.district;
+        const layer = districtLayersMap.get(distName);
+        if (layer && layer.getBounds && layer.getBounds().isValid()) {
+          map.fitBounds(layer.getBounds(), { padding: [40, 40], maxZoom: 14 });
+          layer.fire('click');
+        }
+      });
+    });
 
     // Normalize points once for filtering and rendering
     const normalizedPoints = normalizePointList(points);
@@ -520,13 +545,14 @@ async function loadDashboard() {
       },
     });
     map.addControl(new ResetControl());
-    // Auto-close popups after 6 seconds when opened (memberi waktu baca yang cukup)
+
+    // Auto-close popups after 2.5 seconds when opened
     map.on('popupopen', (e) => {
       const popup = e.popup;
       if (popup && !popup._autoCloseTimer) {
         popup._autoCloseTimer = setTimeout(() => {
           try { map.closePopup(popup); } catch (err) {}
-        }, 6000);
+        }, 2500);
       }
     });
     map.on('popupclose', (e) => {
@@ -578,7 +604,7 @@ async function loadDashboard() {
     setTimeout(refreshMapSize, 200);
     setTimeout(refreshMapSize, 600);
 
-    setStatus(`Berhasil memuat ${pointBounds.length} titik sebaran dan batas wilayah Kota Langsa & 5 Kecamatan.`, false, false);
+    setStatus(`Berhasil memuat ${pointBounds.length} titik sebaran dan batas wilayah Kota Langsa & 5 Kecamatan.`, false, false, true);
     // Build compact dropdown multi-select for business fields
     try {
       if (bizFilterOptions) {
@@ -588,6 +614,13 @@ async function loadDashboard() {
         const availableCategories = Array.from(
           new Set(normalizedPoints.map(p => p.kategori).filter(Boolean))
         ).sort();
+
+        const filterBtn = document.querySelector('#biz-filter-dropdown-btn');
+        const updateFilterBtnLabel = (count) => {
+          if (filterBtn) {
+            filterBtn.textContent = count > 0 ? `Filter Kategori (${count})` : 'Filter Kategori';
+          }
+        };
         
         // Create "Select All" checkbox
         const selectAllId = 'biz-filter-select-all';
@@ -642,27 +675,35 @@ async function loadDashboard() {
           bizFilterOptions.dispatchEvent(new Event('change', { bubbles: true }));
         });
 
-        // Filter change
+        // Debounced filter change
+        let filterDebounceTimer = null;
         bizFilterOptions.addEventListener('change', () => {
-          const allCheckboxes = Array.from(bizFilterOptions.querySelectorAll('input.biz-filter'));
-          const checkedCheckboxes = allCheckboxes.filter(cb => cb.checked);
-          
-          // Update "Select All" checkbox state
-          selectAllInput.checked = allCheckboxes.length > 0 && allCheckboxes.length === checkedCheckboxes.length;
-          selectAllInput.indeterminate = checkedCheckboxes.length > 0 && checkedCheckboxes.length < allCheckboxes.length;
-          
-          // Get selected categories
-          const selectedCategories = new Set(checkedCheckboxes.map(cb => cb.dataset.value));
-          
-          // Filter points by selected categories
-          const filtered = normalizedPoints.filter(p => selectedCategories.size > 0 && selectedCategories.has(p.kategori));
-          const bounds = filtered.length ? L.latLngBounds(filtered.map(p => [p.lat, p.lng])) : null;
-          renderPoints(filtered, kecamatanGeojson?.features || []);
-          if (bounds && bounds.isValid()) {
-            map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
-          } else if (combinedBounds && combinedBounds.isValid()) {
-            map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: 14 });
-          }
+          if (filterDebounceTimer) clearTimeout(filterDebounceTimer);
+          filterDebounceTimer = setTimeout(() => {
+            const allCheckboxes = Array.from(bizFilterOptions.querySelectorAll('input.biz-filter'));
+            const checkedCheckboxes = allCheckboxes.filter(cb => cb.checked);
+            
+            // Update "Select All" checkbox state
+            selectAllInput.checked = allCheckboxes.length > 0 && allCheckboxes.length === checkedCheckboxes.length;
+            selectAllInput.indeterminate = checkedCheckboxes.length > 0 && checkedCheckboxes.length < allCheckboxes.length;
+            
+            // Get selected categories
+            const selectedCategories = new Set(checkedCheckboxes.map(cb => cb.dataset.value));
+            updateFilterBtnLabel(selectedCategories.size);
+            
+            // Filter points by selected categories (or show all if none checked)
+            const filtered = selectedCategories.size === 0 
+              ? normalizedPoints 
+              : normalizedPoints.filter(p => selectedCategories.has(p.kategori));
+
+            const bounds = filtered.length ? L.latLngBounds(filtered.map(p => [p.lat, p.lng])) : null;
+            renderPoints(filtered, kecamatanGeojson?.features || []);
+            if (bounds && bounds.isValid()) {
+              map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
+            } else if (combinedBounds && combinedBounds.isValid()) {
+              map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: 14 });
+            }
+          }, 30);
         });
 
         // Search inside dropdown
@@ -682,6 +723,7 @@ async function loadDashboard() {
             Array.from(bizFilterOptions.querySelectorAll('input.biz-filter')).forEach(i => i.checked = false);
             selectAllInput.checked = false;
             selectAllInput.indeterminate = false;
+            updateFilterBtnLabel(0);
             renderPoints(normalizedPoints, kecamatanGeojson?.features || []);
             if (combinedBounds && combinedBounds.isValid()) map.fitBounds(combinedBounds, { padding: [30, 30], maxZoom: 14 });
           });

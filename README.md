@@ -73,6 +73,39 @@ Kemudian buka `http://localhost:8000`.
 5. Simpan, lalu tunggu GitHub selesai build dan memberi URL Pages.
 6. Buka URL tersebut dan cek apakah peta, data JSON, dan layer GeoJSON tampil normal.
 
+## Analisis Spasial & Titik Usaha di Luar Batas Wilayah
+
+Berdasarkan analisis spasial (*point-in-polygon & distance calculation*) antara layer batas administratif (`data/kota_langsa.geojson` & `data/kecamatan_langsa.geojson`) dengan titik usaha (`data/points.json`):
+
+| Kategori | Jumlah Titik | Persentase |
+| :--- | :---: | :---: |
+| **Titik di Dalam Batas Kota Langsa** | **2.540 Titik** | **94,88%** |
+| **Titik di Luar Batas Kota Langsa (*Outliers*)** | **137 Titik** | **5,12%** |
+| **Total Keseluruhan** | **2.677 Titik** | **100%** |
+
+### Distribusi Jarak & Lokasi Titik di Luar Batas (137 Titik)
+* **< 100 meter dari batas**: **54 titik** (sebagian besar hanya 2–15 meter di luar poligon).
+* **100 – 500 meter**: **15 titik**.
+* **500 m – 1 km**: **23 titik**.
+* **1 – 3 km**: **42 titik** (terkonsentrasi di koridor perbatasan barat).
+* **> 3 km**: **3 titik**.
+
+Secara geografis, titik luar batas terkonsentrasi di:
+1. **Perbatasan Sisi Barat (~56 titik)**: Berbatasan dengan **Kecamatan Birem Bayeun & Rantau Selamat, Kab. Aceh Timur**.
+2. **Perbatasan Sisi Selatan/Tenggara (~4 titik)**: Berbatasan dengan **Kecamatan Manyak Payed, Kab. Aceh Tamiang**.
+3. **Pesisir Pantai/Tambak (~3 titik)**: Area tambak muara pesisir timur/utara.
+4. **Buffer Tepi Batas (~74 titik)**: Menempel di sepanjang garis batas luar administratif.
+
+### Faktor Penyebab Titik Berada di Luar Batas
+1. **Dominasi Sektor Pertanian & Tambak (Kategori A — 65,7%)**:
+   Sebanyak 90 dari 137 titik di luar batas merupakan usaha pertanian, kebun, atau tambak perikanan. Pemilik/pengelola usaha terdata sebagai warga berdomisili di Kota Langsa, namun lokasi petak lahan/tambak fisiknya berada di wilayah pinggiran perbatasan kabupaten tetangga (Kab. Aceh Timur / Kab. Aceh Tamiang).
+2. **Akurasi Perangkat GPS / Geotagging Lapangan**:
+   Sebanyak 54 titik berada dalam radius < 100 meter dari garis batas. Hal ini wajar terjadi akibat deviasi akurasi alami perangkat GPS ponsel surveyor lapangan (margin of error 5–25 meter), terutama di area perumahan padat tepi batas atau perkebunan berkanopi lebat.
+3. **Aglomerasi Koridor Jalan Lintas Perbatasan**:
+   Kawasan permukiman dan perdagangan di Kecamatan Langsa Barat/Baro dan Kecamatan Birem Bayeun (Aceh Timur) telah menyatu secara fisik (*urban sprawl*) di sepanjang koridor Jalan Lintas Sumatera.
+4. **Generalisasi Poligon Batas GIS**:
+   Layer batas `kota_langsa.geojson` merupakan poligon makro digital yang memiliki toleransi generalisasi garis kartografi tertentu jika dibandingkan dengan patok definitif di lapangan.
+
 ## Catatan Penting
 
 - Project ini bersifat statis, jadi GitHub Pages cocok untuk hostingnya.
@@ -82,3 +115,4 @@ Kemudian buka `http://localhost:8000`.
 ## Roadmap
 - ~~Kalau nanti kamu menambahkan routing khusus atau framework SPA, mungkin perlu penyesuaian tambahan. Untuk versi sekarang belum perlu.~~
 - ~~Menambahkan layer batas desa/gampong menggunakan `data/batas_desa_langa.geojson` sebagai layer opsional pada dashboard.~~
+
