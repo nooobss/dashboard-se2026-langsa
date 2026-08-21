@@ -501,18 +501,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
 }
 
-.legend-line.border-kota {
-  background-color: var(--c-danger-500);
-  border: 1px dashed var(--c-danger-600);
-}
-
 .legend-line.border-kecamatan {
   background: linear-gradient(90deg, #0284c7, #0d9488, #db2777, #7c3aed, #eab308);
-}
-
-.custom-switch-kota:checked {
-  background-color: var(--c-danger-500);
-  border-color: var(--c-danger-500);
 }
 
 .custom-switch-kecamatan:checked {

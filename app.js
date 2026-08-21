@@ -1,5 +1,4 @@
 const DATA_POINTS_URLS = ["data/points.json", "data/points.geojson"];
-const DATA_KOTA_BOUNDARY_URL = "data/kota_langsa.geojson";
 const DATA_KECAMATAN_BOUNDARY_URL = "data/kecamatan_langsa.geojson";
 
 const LANGSA_CENTER = [4.476, 97.968];
@@ -63,7 +62,6 @@ const familyCountElement = document.querySelector("#family-count");
 const businessCountElement = document.querySelector("#business-count");
 const totalPointsElement = document.querySelector("#total-points");
 const scopeCountElement = document.querySelector("#scope-count");
-const toggleKotaCheckbox = document.querySelector("#toggle-kota");
 const toggleKecamatanCheckbox = document.querySelector("#toggle-kecamatan");
 const kecamatanLegendBar = document.querySelector("#kecamatan-legend-bar");
 const bizFilterMenu = document.querySelector('#biz-filter-menu');
@@ -101,7 +99,6 @@ const darkLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x
 const businessLayer = L.markerClusterGroup ? L.markerClusterGroup({ chunkedLoading: true, maxClusterRadius: 45 }) : L.layerGroup();
 businessLayer.addTo(map);
 
-let kotaBoundaryLayer = null;
 let kecamatanBoundaryLayer = null;
 
 const markerOptions = {
@@ -351,33 +348,12 @@ function renderPoints(points, districtFeatures = []) {
 async function loadDashboard() {
   try {
     setStatus("Memuat data peta dan titik...", false, true);
-    const [kotaGeojson, kecamatanGeojson, points] = await Promise.all([
-      fetchJson(DATA_KOTA_BOUNDARY_URL),
+    const [kecamatanGeojson, points] = await Promise.all([
       fetchJson(DATA_KECAMATAN_BOUNDARY_URL),
       fetchPointsData(),
     ]);
 
-    // 1. Batas Kota Langsa Layer (Red Crimson Dash Border)
-    kotaBoundaryLayer = L.geoJSON(kotaGeojson, {
-      style: {
-        color: "#dc3545",
-        weight: 3.5,
-        dashArray: "7, 5",
-        fillColor: "#dc3545",
-        fillOpacity: 0.03,
-        opacity: 0.95,
-      },
-      onEachFeature: (feature, layer) => {
-        layer.bindPopup(`
-          <div class="p-1">
-            <h6 class="mb-1 fw-bold text-danger"><i class="bi bi-building me-1"></i>Kota Langsa</h6>
-            <p class="mb-0 small text-secondary">Batas Luar Wilayah Administratif Kota Langsa, Aceh.</p>
-          </div>
-        `, { className: "custom-popup" });
-      },
-    }).addTo(map);
-
-    // 2. Batas Kecamatan Layer (Multi-color District Polygons)
+    // Batas Kecamatan Layer (Multi-color District Polygons)
     const districtLayersMap = new Map();
     kecamatanBoundaryLayer = L.geoJSON(kecamatanGeojson, {
       style: (feature) => {
@@ -496,8 +472,8 @@ async function loadDashboard() {
     const pointBounds = renderPoints(normalizedPoints, kecamatanGeojson?.features || []);
     combinedBounds = L.latLngBounds(pointBounds);
 
-    if (kotaBoundaryLayer.getBounds().isValid()) {
-      combinedBounds.extend(kotaBoundaryLayer.getBounds());
+    if (kecamatanBoundaryLayer && kecamatanBoundaryLayer.getBounds().isValid()) {
+      combinedBounds.extend(kecamatanBoundaryLayer.getBounds());
     }
 
     if (combinedBounds.isValid()) {
@@ -738,20 +714,6 @@ async function loadDashboard() {
 }
 
 function setupBoundaryToggles() {
-  if (toggleKotaCheckbox) {
-    toggleKotaCheckbox.addEventListener("change", (e) => {
-      if (e.target.checked) {
-        if (kotaBoundaryLayer && !map.hasLayer(kotaBoundaryLayer)) {
-          map.addLayer(kotaBoundaryLayer);
-        }
-      } else {
-        if (kotaBoundaryLayer && map.hasLayer(kotaBoundaryLayer)) {
-          map.removeLayer(kotaBoundaryLayer);
-        }
-      }
-    });
-  }
-
   if (toggleKecamatanCheckbox) {
     toggleKecamatanCheckbox.addEventListener("change", (e) => {
       if (e.target.checked) {
@@ -774,9 +736,6 @@ function setupBoundaryToggles() {
 
   // Bidirectional sync with Leaflet Layer Control
   map.on("overlayadd", (e) => {
-    if (e.layer === kotaBoundaryLayer && toggleKotaCheckbox) {
-      toggleKotaCheckbox.checked = true;
-    }
     if (e.layer === kecamatanBoundaryLayer) {
       if (toggleKecamatanCheckbox) toggleKecamatanCheckbox.checked = true;
       if (kecamatanLegendBar) kecamatanLegendBar.style.display = "flex";
@@ -784,9 +743,6 @@ function setupBoundaryToggles() {
   });
 
   map.on("overlayremove", (e) => {
-    if (e.layer === kotaBoundaryLayer && toggleKotaCheckbox) {
-      toggleKotaCheckbox.checked = false;
-    }
     if (e.layer === kecamatanBoundaryLayer) {
       if (toggleKecamatanCheckbox) toggleKecamatanCheckbox.checked = false;
       if (kecamatanLegendBar) kecamatanLegendBar.style.display = "none";
